@@ -10,7 +10,7 @@ class Statistics extends Controller
 
     public function index()
     {
-        //header('Content-Type: text/html; charset=utf-8');
+        header('Content-Type: text/html; charset=utf-8');
         $data = $this->input->post('postname');
         $this->load->model('statistics_model');
         $status = $this->statistics_model->get_server_status();

@@ -1,0 +1,211 @@
+﻿-- phpMyAdmin SQL Dump
+-- version 4.0.10.6
+-- http://www.phpmyadmin.net
+--
+-- Хост: 127.0.0.1:3306
+-- Время создания: Июл 15 2015 г., 15:57
+-- Версия сервера: 5.5.41-log
+-- Версия PHP: 5.3.29
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- База данных: `dcs_world`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `banlist`
+--
+
+CREATE TABLE IF NOT EXISTS `banlist` (
+  `email` varchar(128) NOT NULL,
+  `ip_adress` varchar(128) NOT NULL,
+  `banned_to` datetime NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `chat`
+--
+
+CREATE TABLE IF NOT EXISTS `chat` (
+  `message_id` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(64) NOT NULL,
+  `text` text NOT NULL,
+  `date` datetime NOT NULL,
+  PRIMARY KEY (`message_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Дамп данных таблицы `chat`
+--
+
+INSERT INTO `chat` (`message_id`, `login`, `text`, `date`) VALUES
+(1, 'admin', 'Тест', '2015-07-02 00:00:00'),
+(2, 'admin', 'Test', '2015-07-02 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `fail_logins`
+--
+
+CREATE TABLE IF NOT EXISTS `fail_logins` (
+  `email` varchar(128) NOT NULL,
+  `ip_adress` varchar(128) NOT NULL,
+  `date` datetime NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `fail_logins`
+--
+
+INSERT INTO `fail_logins` (`email`, `ip_adress`, `date`) VALUES
+('admin', '127.0.0.1', '2015-06-25 17:21:03'),
+('admin', '127.0.0.1', '2015-06-25 14:09:50'),
+('admin', '127.0.0.1', '2015-06-26 12:17:37');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `mail`
+--
+
+CREATE TABLE IF NOT EXISTS `mail` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `from` varchar(100) NOT NULL,
+  `email` varchar(128) NOT NULL,
+  `text` text NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0',
+  `date` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26 ;
+
+--
+-- Дамп данных таблицы `mail`
+--
+
+INSERT INTO `mail` (`id`, `from`, `email`, `text`, `status`, `date`) VALUES
+(1, '', 'vasyl@starsam.net', '', 0, '2015-05-19 11:55:06'),
+(2, 'fff', 'vasyl@starsam.net', 'fcff', 0, '2015-05-19 12:00:07'),
+(3, 'ааааа', 'dfd', 'ааааааа', 0, '2015-05-19 12:41:27'),
+(4, 'апапап', 'апап', 'апапа', 0, '2015-05-19 12:43:37'),
+(5, 'dfdfdf', 'dfdfdf', 'dfdfdf', 0, '2015-05-19 13:22:38'),
+(6, 'ghghhg', 'undefined', 'ghghgh', 0, '2015-05-19 13:23:58'),
+(7, 'ааа', 'aaa@test.su', 'ааа', 0, '2015-05-20 07:23:07'),
+(8, 'Капітан Джек Уарабєй', 'mr16snake@gmail.com', 'Де мій корабель? Віддайте корабель!', 0, '2015-05-20 07:30:13'),
+(9, 'Файловый менеджер!', 'vasyl@starsa.net', 'ааааааааааа', 0, '2015-05-20 07:38:41'),
+(10, 'Файловый менеджер!', 'vasyl@starsm.net', 'длваопдвалопдавлопдлвапвавапвапвап', 0, '2015-05-20 07:39:19'),
+(11, 'бег', '1352254fgb@bbb.com', 'Ех', 0, '2015-05-20 07:41:34'),
+(12, 'ботрп', 'vasyl@starsam.net', 'орпорпаорпорп', 0, '2015-05-20 07:54:03'),
+(13, 'Образование', 'ghghgh@starsam.net', 'dfdfdfdf', 0, '2015-05-20 09:10:55'),
+(14, 'вавава', 'vasyl@stars.net', 'вававававава', 0, '2015-05-20 11:43:37'),
+(15, 'вава', 'vasyl@starsam.net', 'вавава\n', 0, '2015-05-25 06:10:35'),
+(16, 'вава', 'vasyl@starsam.net', 'вавава\n', 0, '2015-05-25 06:10:39'),
+(17, 'Файловый менеджер!', 'vasyl@starsam.net', 'парапрар', 0, '2015-05-25 06:13:16'),
+(18, 'Образование', 'vasyl@starsam.net', 'длдд', 0, '2015-05-25 06:13:26'),
+(19, 'Образование', 'vasyl@starsam.net', 'орлорлролор', 0, '2015-05-25 06:14:54'),
+(20, 'Отклик...', 'vasyl@starsam.net', 'обляяяяяяяяя', 0, '2015-05-25 06:29:48'),
+(21, 'Отклик...', 'ghghgh@starsam.net', 'івбопталіворалоіва', 0, '2015-05-25 06:30:37'),
+(22, 'Образование', 'ghghgh@starsam.net', 'олролролорл', 0, '2015-05-25 06:32:03'),
+(23, 'DSERVER', 'ghghgh@starsam.net', 'jiuhyuuuu', 0, '2015-05-25 07:51:46'),
+(24, 'ggg', 'vasyl@starsam.net', 'gggg', 0, '2015-06-04 06:34:51'),
+(25, 'Сєрий', 'mr16snake@gmail.com', 'дай бублика', 0, '2015-06-04 15:03:41');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `news`
+--
+
+CREATE TABLE IF NOT EXISTS `news` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(128) NOT NULL,
+  `keywords` varchar(512) NOT NULL,
+  `mini_description` varchar(256) NOT NULL,
+  `description` text NOT NULL,
+  `image` varchar(256) NOT NULL,
+  `date` date NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=64 ;
+
+--
+-- Дамп данных таблицы `news`
+--
+
+INSERT INTO `news` (`id`, `title`, `keywords`, `mini_description`, `description`, `image`, `date`, `status`) VALUES
+(57, '11111111111111111', '1111111111111111', '111111111111111111', '111111111111111111111111111111111', 'dragma_news.jpg', '2015-06-06', 1),
+(58, '22222222222222', '22222222222222222', '222222222222222222', '222222222222222222222222222', 'dragma_news.jpg', '2015-06-06', 1),
+(59, '3333333333333333333', '3333333333333333', '3333333333333333333', '3333333333333333333', 'dragma_news.jpg', '2015-06-06', 1),
+(60, '44444444444444444444444444444444444', '44444444444444444444444444444444444', '44444444444444444444444444444444444', '44444444444444444444444444444444444', 'dragma_news.jpg', '2015-06-06', 1),
+(61, '55555555555555555555555555555555555555555555', '55555555555555555555555555555555555555555555', '55555555555555555555555555555555555555555555', '55555555555555555555555555555555555555555555', 'dragma_news.jpg', '2015-06-06', 1),
+(62, '66666666666666666666666666666666666666666666666', '66666666666666666666666666666666666666666666666', '66666666666666666666666666666666666666666666666', '66666666666666666666666666666666666666666666666', 'dragma_news.jpg', '2015-06-06', 1),
+(63, '7777777777777777777777777777777777777777777', '7777777777777777777777777777777777777777777', '7777777777777777777777777777777777777777777', '7777777777777777777777777777777777777777777', 'dragma_news.jpg', '2015-06-06', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `sessions`
+--
+
+CREATE TABLE IF NOT EXISTS `sessions` (
+  `session_id` varchar(128) NOT NULL,
+  `ip_address` varchar(32) NOT NULL,
+  `user_agent` varchar(128) NOT NULL,
+  `last_activity` datetime NOT NULL,
+  `user_data` text NOT NULL,
+  UNIQUE KEY `session_id` (`session_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(32) NOT NULL,
+  `password` varchar(512) NOT NULL,
+  `clear_password` varchar(64) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `full_name` varchar(128) NOT NULL,
+  `photo` varchar(128) NOT NULL,
+  `rights` int(11) NOT NULL DEFAULT '0',
+  `admin` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`user_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=27 ;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`user_id`, `login`, `password`, `clear_password`, `email`, `full_name`, `photo`, `rights`, `admin`) VALUES
+(16, 'admin', '0f31cd5c0bbdd395746071aeffaf023943d0b026', '1921680100', 'vasyl@starsam.net', 'Комаричин Василь Сергійович', 'admin.jpg', 1, 1),
+(8, 'test4', 'adcd7048512e64b48da55b027577886ee5a36350', '123', 'test4@sa.ru', 'test4', '', 0, 0),
+(17, '1', '', '1', '1', '1', '', 0, 0),
+(18, '2', '', '2', '2', '2', '', 0, 0),
+(19, '3', '', '3', '3', '3', '', 0, 0),
+(20, '4', '', '4', '4', '4', '', 0, 0),
+(21, '5', '', '5', '5', '5', '', 0, 0),
+(22, '6', '', '6', '6', '6', '', 0, 0),
+(23, '7', '', '7', '7', '7', '', 0, 0),
+(24, '8', '', '8', '8', '8', '', 0, 0),
+(25, '9', '', '9', '9', '9', '', 0, 0),
+(26, '10', '', '10', '10', '10', '', 0, 0);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

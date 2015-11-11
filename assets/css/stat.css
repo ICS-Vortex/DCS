@@ -1,0 +1,39 @@
+body
+{
+    background-color: white;
+}
+#navbar{
+
+}
+#nicks:hover{
+    text-decoration: underline;
+}
+
+      tbody tr td,thead tr th,tfoot tr th{
+      text-align:center;
+      vertical-align: middle;
+    } 
+      tbody tr td input{
+      width:100%;
+      text-align: center;
+    }
+
+table#example1 > thead th:hover{cursor: pointer;}    
+.btn:hover, 
+.btn-o-white:hover,
+.btn-sm .btn:hover{
+    text-color:black;
+    
+}
+.medals>div:hover{
+    cursor: pointer;
+}
+
+a#red_team:hover{
+    color:red;
+    font:bold 16px sans-serif;
+}
+a#blue_team:hover{
+    color:blue;
+    font:bold 16px sans-serif;
+}

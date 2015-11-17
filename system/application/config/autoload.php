@@ -80,7 +80,7 @@
 
 
 
-$autoload['libraries'] = array('database','display_lib','functions_lib','dcs_lib');
+$autoload['libraries'] = array('database','display_lib','dcs_lib');
 
 
 
@@ -218,7 +218,7 @@ $autoload['language'] = array();
 
 
 
-$autoload['model'] = array('main_model','admin_model');
+$autoload['model'] = array('statistics_model');
 
 
 

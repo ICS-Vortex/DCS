@@ -7,12 +7,7 @@
     <meta charset="UTF-8">
 
     <title>Сервер статистики | АВИАТОР СССР</title>
-
-
-
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-
-
 
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans'>
 

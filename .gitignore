@@ -1,7 +1,7 @@
 /.svn
 /.idea
 /system/application/config/
-
+/.htaccess
 /nbproject
 /vendor/
 composer.lock

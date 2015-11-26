@@ -11,7 +11,7 @@
 |	http://example.com/
 |
 */
-$config['base_url']	= "http://statistics.loc/";
+$config['base_url']	= "http://statistics.dev/";
 
 /*
 |--------------------------------------------------------------------------

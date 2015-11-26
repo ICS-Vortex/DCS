@@ -451,6 +451,20 @@ class Statistics extends Controller
         //fclose($handle);
 
     }
+    function empty_stat(){
+        $this->display_lib->empty_stat();
+    }
+    function empty_db(){
+        $this->dcs_lib->isPost();
+        $pass = md5(trim($this->input->post('password')));
+        $main_pass = md5('Vortex2015eekz');
+        if($pass != $main_pass){
+            echo 0;
+        }else{
+            $delete = $this->statistics_model->clear_db();
+            echo 1;
+        }
+    }
 }
 
 /* End of file welcome.php */

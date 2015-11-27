@@ -18,11 +18,11 @@ class Statistics extends Controller
         $pilots_online = $this->statistics_model->main_pilots_online();
         $data = array();
         if ($status['status'] == 0) {
-            $data['server_status'] = 'OFFLINE';
+            $data['server_status'] = '<b style="color:red;">OFFLINE</b>';
             $data['current_flights'] = '';
             $data['pilots_online'] = '';
         } else {
-            $data['server_status'] = 'ONLINE';
+            $data['server_status'] = '<b style="color:green;">ONLINE</b>';
             $data['pilots_online'] = $pilots_online;
             $active_flights = $this->statistics_model->main_get_current_flights();
             if ($active_flights != null) {
@@ -39,8 +39,6 @@ class Statistics extends Controller
 
         //echo "Список пилотов, находящихся в полёте:<br />";
         $data['flight_players'] = $flights;
-
-
         $this->load->view('statistics/mainpage_view', $data);
 
     }
@@ -76,7 +74,7 @@ class Statistics extends Controller
         }
     }
 
-    /************************ПАРСЕР ЗАПРОСОВ С СЕРВЕРА DCS************************/
+    /************************parsing  requests from DCS server************************/
 
     function record()
     {
@@ -88,14 +86,14 @@ class Statistics extends Controller
             exit();
         }
 
-        /************************ЗАПИСЬ СТАТИСТИКИ В ФАЙЛ***************************/
+        /************************recording into logfile***************************/
         $file = './tmp/stat.txt';
         $fp = @fopen($file, "a+");
         fwrite($fp, $string . "\r\n");
         fclose($fp);
         /**************************************************/
         $file = './tmp/stat.txt';
-        $handle = @fopen($file, "r");
+        //$handle = @fopen($file, "r");
         //while (($data = fgets($handle, 4096)) !== FALSE)
         //{
         //$string = $data;

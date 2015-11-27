@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f35238b7-3bc6-4702-bd3a-237752de1428" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/application/models/statistics_model.php" afterPath="$PROJECT_DIR$/system/application/models/statistics_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/application/views/statistics/empty_stat.php" afterPath="$PROJECT_DIR$/system/application/views/statistics/empty_stat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/application/libraries/display_lib.php" afterPath="$PROJECT_DIR$/system/application/libraries/display_lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/stat.txt" afterPath="$PROJECT_DIR$/tmp/stat.txt" />
     </list>
     <ignored path="statistics.loc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +30,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state vertical-scroll-proportion="-1.8">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -39,8 +40,8 @@
       <file leaf-file-name="empty_stat.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/application/views/statistics/empty_stat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+            <state vertical-scroll-proportion="-4.0">
+              <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -49,8 +50,8 @@
       <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/application/controllers/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="463" column="55" selection-start-line="463" selection-start-column="55" selection-end-line="463" selection-end-column="55" />
+            <state vertical-scroll-proportion="34.666668">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
                 <marker date="1448550238745" expanded="true" signature="7188:7198" placeholder="..." />
                 <marker date="1448550238745" expanded="true" signature="17184:17194" placeholder="..." />
@@ -59,74 +60,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statistics_model.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/system/application/models/statistics_model.php">
+      <file leaf-file-name="stat.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tmp/stat.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5328597">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <marker date="1448608924729" expanded="true" signature="1081:1248" placeholder="SELECT fligh..flights..." />
-                <marker date="1448608924729" expanded="true" signature="1391:1567" placeholder="SELECT dcs_o..dcs_online..." />
-                <marker date="1448608924729" expanded="true" signature="1731:3182" placeholder="SELECT pilot..pilots..." />
-                <marker date="1448608924729" expanded="true" signature="2103:2200" placeholder="SELECT pilot..flight_hours..." />
-                <marker date="1448608924729" expanded="true" signature="2343:2486" placeholder="SELECT pilot..pilots_kills..." />
-                <marker date="1448608924729" expanded="true" signature="2652:2796" placeholder="SELECT pilot..pilots_death..." />
-                <marker date="1448608924729" expanded="true" signature="2899:3047" placeholder="SELECT pilot..fail_flights..." />
-                <marker date="1448608924729" expanded="true" signature="3388:3582" placeholder="SELECT dcs_s..dcs_spectators..." />
-                <marker date="1448608924729" expanded="true" signature="3793:4031" placeholder="SELECT dcs_r..dcs_redteam..." />
-                <marker date="1448608924729" expanded="true" signature="4240:4482" placeholder="SELECT dcs_b..dcs_blueteam..." />
-                <marker date="1448608924729" expanded="true" signature="4677:4753" placeholder="SELECT COUNT..pilots..." />
-                <marker date="1448608924729" expanded="true" signature="5028:5076" placeholder="SELECT id FR..pilots..." />
-                <marker date="1448608924729" expanded="true" signature="5230:5286" placeholder="INSERT INTO flights..." />
-                <marker date="1448608924729" expanded="true" signature="5422:5511" placeholder="SELECT fligh..flights..." />
-                <marker date="1448608924729" expanded="true" signature="5782:5817" placeholder="DELETE FROM ..." />
-                <marker date="1448608924729" expanded="true" signature="5946:6013" placeholder="SELECT nickn..pilots..." />
-                <marker date="1448608924729" expanded="true" signature="6165:6224" placeholder="SELECT * FRO..dcs_redteam..." />
-                <marker date="1448608924729" expanded="true" signature="6387:6446" placeholder="INSERT INTO fail_flights..." />
-                <marker date="1448608924729" expanded="true" signature="6583:6683" placeholder="INSERT INTO pilots_dogfights..." />
-                <marker date="1448608924729" expanded="true" signature="6962:6983" placeholder="SELECT * FRO..flights..." />
-                <marker date="1448608924729" expanded="true" signature="7160:7184" placeholder="SELECT * FRO..dcs_online..." />
-                <marker date="1448608924729" expanded="true" signature="7376:7449" placeholder="INSERT INTO flight_hours..." />
-                <marker date="1448608924729" expanded="true" signature="7599:7634" placeholder="DELETE FROM ..." />
-                <marker date="1448608924729" expanded="true" signature="7912:7974" placeholder="INSERT INTO pilots_takeoffs..." />
-                <marker date="1448608924729" expanded="true" signature="8105:8165" placeholder="INSERT INTO pilots_lands..." />
-                <marker date="1448608924729" expanded="true" signature="8280:8343" placeholder="INSERT INTO dcs_spectators..." />
-                <marker date="1448608924729" expanded="true" signature="8468:8512" placeholder="SELECT * FRO..dcs_spectators..." />
-                <marker date="1448608924729" expanded="true" signature="8692:8720" placeholder="SELECT * FRO..dcs_spectators..." />
-                <marker date="1448608924729" expanded="true" signature="9026:9100" placeholder="INSERT INTO dcs_redteam..." />
-                <marker date="1448608924729" expanded="true" signature="9220:9295" placeholder="INSERT INTO dcs_blueteam..." />
-                <marker date="1448608924729" expanded="true" signature="9429:9482" placeholder="UPDATE dcs_r..." />
-                <marker date="1448608924729" expanded="true" signature="9618:9672" placeholder="UPDATE dcs_b..." />
-                <marker date="1448608924729" expanded="true" signature="10555:10580" placeholder="SELECT * FRO..dcs_redteam..." />
-                <marker date="1448608924729" expanded="true" signature="10741:10767" placeholder="SELECT * FRO..dcs_blueteam..." />
-                <marker date="1448608924729" expanded="true" signature="10978:11037" placeholder="UPDATE serve..." />
-                <marker date="1448608924729" expanded="true" signature="11112:11171" placeholder="UPDATE serve..." />
-                <marker date="1448608924729" expanded="true" signature="11294:11352" placeholder="SELECT statu..server..." />
-                <marker date="1448608924729" expanded="true" signature="11471:11529" placeholder="INSERT INTO dcs_online..." />
-                <marker date="1448608924729" expanded="true" signature="11607:11645" placeholder="DELETE FROM ..." />
-                <marker date="1448608924729" expanded="true" signature="12130:12559" placeholder="SELECT dcs_c..pilots_kills..." />
-                <marker date="1448608924729" expanded="true" signature="12297:12341" placeholder="SELECT DISTI..dcs_units..." />
-                <marker date="1448608924729" expanded="true" signature="12764:12833" placeholder="SELECT COUNT..pilots_kills..." />
-                <marker date="1448608924729" expanded="true" signature="13006:13067" placeholder="INSERT INTO pilots_ejects..." />
-                <marker date="1448608924729" expanded="true" signature="13176:14317" placeholder="SELECT pilot..pilots..." />
-                <marker date="1448608924729" expanded="true" signature="13500:13580" placeholder="SELECT pilot..pilots_death..." />
-                <marker date="1448608924729" expanded="true" signature="13670:13751" placeholder="SELECT pilot..pilots_ejects..." />
-                <marker date="1448608924729" expanded="true" signature="13844:13924" placeholder="SELECT pilot..pilots_lands..." />
-                <marker date="1448608924729" expanded="true" signature="13994:14080" placeholder="SELECT pilot..pilots_takeoffs..." />
-                <marker date="1448608924729" expanded="true" signature="14156:14238" placeholder="SELECT pilot..fail_flights..." />
-                <marker date="1448608924729" expanded="true" signature="14524:14992" placeholder="SELECT pilot..pilots..." />
-                <marker date="1448608924729" expanded="true" signature="14688:14773" placeholder="SELECT COUNT..pilots_dogfights..." />
-                <marker date="1448608924729" expanded="true" signature="14835:14922" placeholder="SELECT COUNT..pilots_dogfights..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dcs_lib.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/application/libraries/dcs_lib.php">
+      <file leaf-file-name="display_lib.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/application/libraries/display_lib.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+            <state vertical-scroll-proportion="-4.6666665">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -155,15 +103,16 @@
         <option value="$PROJECT_DIR$/system/application/config/routes.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/_db/dcs_world_db.sql" />
-        <option value="$PROJECT_DIR$/system/application/libraries/display_lib.php" />
         <option value="$PROJECT_DIR$/system/application/config/config.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/system/application/libraries/dcs_lib.php" />
         <option value="$PROJECT_DIR$/system/application/views/statistics/mainpage_view.php" />
         <option value="$PROJECT_DIR$/system/application/controllers/statistics.php" />
-        <option value="$PROJECT_DIR$/system/application/views/statistics/empty_stat.php" />
         <option value="$PROJECT_DIR$/system/application/models/statistics_model.php" />
+        <option value="$PROJECT_DIR$/system/application/libraries/display_lib.php" />
+        <option value="$PROJECT_DIR$/tmp/stat.txt" />
+        <option value="$PROJECT_DIR$/system/application/views/statistics/empty_stat.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -207,6 +156,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -235,117 +186,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="tmp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,8 +206,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,7 +279,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448550480336</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Очистка БД и т.д. Небольшой рефактор">
+      <created>1448611999595</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1448611999595</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -456,11 +301,14 @@
     <frame x="1345" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22535211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22868526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -468,13 +316,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30806452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -495,7 +341,8 @@
     <MESSAGE value="added gitignore" />
     <MESSAGE value="Обновил РИДМИ" />
     <MESSAGE value="Очистка БД и т.д." />
-    <option name="LAST_COMMIT_MESSAGE" value="Очистка БД и т.д." />
+    <MESSAGE value="Очистка БД и т.д. Небольшой рефактор" />
+    <option name="LAST_COMMIT_MESSAGE" value="Очистка БД и т.д. Небольшой рефактор" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,6 +351,49 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/empty_stat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/application/controllers/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="463" column="55" selection-start-line="463" selection-start-column="55" selection-end-line="463" selection-end-column="55" />
+          <folding>
+            <marker date="1448550238745" expanded="true" signature="7188:7198" placeholder="..." />
+            <marker date="1448550238745" expanded="true" signature="17184:17194" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/application/libraries/display_lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/mainpage_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -739,13 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/libraries/display_lib.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5843694">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06101695">
@@ -778,33 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.80714285">
           <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/empty_stat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/controllers/statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="463" column="55" selection-start-line="463" selection-start-column="55" selection-end-line="463" selection-end-column="55" />
-          <folding>
-            <marker date="1448550238745" expanded="true" signature="7188:7198" placeholder="..." />
-            <marker date="1448550238745" expanded="true" signature="17184:17194" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,18 +725,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/libraries/dcs_lib.php">
+    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/mainpage_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/application/libraries/dcs_lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67140317">
           <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/mainpage_view.php">
+    <entry file="file://$PROJECT_DIR$/system/application/libraries/display_lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6666665">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/application/controllers/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="34.666668">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <marker date="1448550238745" expanded="true" signature="7188:7198" placeholder="..." />
+            <marker date="1448550238745" expanded="true" signature="17184:17194" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/empty_stat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/stat.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

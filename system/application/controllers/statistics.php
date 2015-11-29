@@ -118,10 +118,11 @@ class Statistics extends Controller
         }
         $nickname = trim(str_replace('"', '', $data[1]));
         $event = trim($data[2]);
-        $hash = $data[3];
+
         //echo "Обрабатываем событие '$event'. <br>";
         if (array_key_exists(3, $data) == true) {
-            $object = str_replace('"', '', $data[3]);
+            $hash = trim($data[3]);
+
         }
         //echo "Проверка, имя игрока Server или нет?<br>";
         switch($nickname){
@@ -219,24 +220,26 @@ class Statistics extends Controller
             //Игроки
             default:
                 //echo "Нет. Это не Server.Ищем пилота в базе данных(его ID).<br>";
-                $check_nick = $this->statistics_model->check_nick($hash);
-                if ($check_nick == 0) {
-                    //echo "Игрока $nickname нету в базе данных.<br>";
-                    $nick = array();
-                    $nick['nickname'] = $nickname;
-                    $nick['hash'] = $data[3];
-                    $record = $this->statistics_model->add_pilot($nick);
-                    //echo "Пилот $nickname добавлен в БД.<br>";
-                }
-                $nick_id = $this->statistics_model->get_pilot_id_with_hash($hash);
-                if(!empty($nick_id)){
-                    $id = $nick_id['id'];
-                    //echo "Пилот $nickname найден. ID = $id.<br>";
-                }else{
-                    exit;
+                if($hash != 'server'){
+                    $check_nick = $this->statistics_model->check_nick($hash);
+                    if ($check_nick == 0) {
+                        //echo "Игрока $nickname нету в базе данных.<br>";
+                        $nick = array();
+                        $nick['nickname'] = $nickname;
+                        $nick['hash'] = $data[3];
+                        $record = $this->statistics_model->add_pilot($nick);
+                        //echo "Пилот $nickname добавлен в БД.<br>";
+                    }
+                    $nick_id = $this->statistics_model->get_pilot_id_with_hash($hash);
+                    if(!empty($nick_id)){
+                        $id = $nick_id['id'];
+                        //echo "Пилот $nickname найден. ID = $id.<br>";
+                    }else{
+                        exit;
+                    }
                 }
                 switch ($event) {
-                    case 'entered the game':/*Событие входа игрока на сервер*/
+                    case 'entered':/*Событие входа игрока на сервер*/
                         //echo "Пилот $nickname присоединился к серверу. Проверяем Базу Данных.<br>";
                         $this->statistics_model->add_online($id, $time);
                         //echo "Добавление пилота $nickname в таблицу 'Online'.<br>";
@@ -443,7 +446,7 @@ class Statistics extends Controller
                         $this->statistics_model->left_red($id);
                         $this->statistics_model->add_spectator($id, $time);
                         break;
-                    case 'left the game':/*Событие покидания сервера пилотом*/
+                    case 'left':/*Событие покидания сервера пилотом*/
                         $check_nickname = $this->statistics_model->get_pilot_id($nickname);
                         if(!empty($check_nickname)){
                             $id = $check_nickname['id'];

@@ -389,21 +389,23 @@ class Statistics_model extends Model
     /*���� � ������� �������*/
 
     function join_red($id, $time, $plane)
-
     {
+        $this->db->query("
+          INSERT INTO dcs_redteam(pilot_id,data,plane) VALUES ($id,'$time','$plane')
+          ON DUPLICATE KEY UPDATE pilot_id=VALUES(plane) AND data=VALUES(data);
 
-        $this->db->query("INSERT INTO dcs_redteam(pilot_id,data,plane) VALUES ($id,'$time','$plane')");
-
+        ");
     }
 
     /*���� � ������� ����� */
 
     function join_blue($id, $time, $plane)
-
     {
+        $this->db->query("
+          INSERT INTO dcs_blueteam(pilot_id,data,plane) VALUES ($id,'$time','$plane')
+          ON DUPLICATE KEY UPDATE pilot_id=VALUES(plane) AND data=VALUES(data);
 
-        $this->db->query("INSERT INTO dcs_blueteam(pilot_id,data,plane) VALUES ($id,'$time','$plane')");
-
+        ");
     }
 
     /*������ ������� ������ �������*/

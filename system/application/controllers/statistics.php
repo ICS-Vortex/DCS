@@ -11,6 +11,8 @@ class Statistics extends Controller
 
     public function index()
     {
+        header("Cache-Control: no-store, no-cache, must-revalidate");
+
         //header('Content-Type: text/html; charset=utf-8');
         $data = $this->input->post('postname');
         $this->load->model('statistics_model');
@@ -36,6 +38,7 @@ class Statistics extends Controller
             $data['blue_team'] = $this->statistics_model->get_blueteam();
         }
         $flights = $this->statistics_model->main_get_all_flights();
+        //echo "<pre>";print_r($flights);exit;
 
         //echo "Список пилотов, находящихся в полёте:<br />";
         $data['flight_players'] = $flights;
@@ -61,16 +64,20 @@ class Statistics extends Controller
     {
         header('Content-Type: text/html; charset=utf-8');
         $file = './tmp/stat.txt';
-        $handle = @fopen($file, "r");
-        $log = array();
-        while (($data = fgets($handle, 4096)) !== FALSE) {
-            $log[] = $data;
-        }
-        fclose($handle);
-        $count = count($log);
-        $offset = $count - 50;
-        for ($i = $offset; $i < $count; $i++) {
-            echo $log[$i] . "<br />";
+        if(file_exists($file)){
+            $handle = fopen($file, "r");
+            $log = array();
+            while (($data = fgets($handle, 4096)) !== FALSE) {
+                $log[] = $data;
+            }
+            fclose($handle);
+            $count = count($log);
+            $offset = $count - 50;
+            for ($i = 0; $i < $count; $i++) {
+                echo $log[$i] . "<br />";
+            }
+        }else{
+            echo "Файл лога не существует!";
         }
     }
 
@@ -78,375 +85,396 @@ class Statistics extends Controller
 
     function record()
     {
-        $this->load->model('statistics_model');
-        header('Content-Type: text/html; charset=utf-8');
+        header("Cache-Control: no-store, no-cache, must-revalidate");
 
+        //header('Content-Type: text/html; charset=utf-8');
         $string = trim($this->input->post('postname'));
         if (empty($string) || $string == '') {
             exit();
         }
-
         /************************recording into logfile***************************/
         $file = './tmp/stat.txt';
-        $fp = @fopen($file, "a+");
+        $fp = fopen($file, "a+");
         fwrite($fp, $string . "\r\n");
         fclose($fp);
         /**************************************************/
-        $file = './tmp/stat.txt';
-        //$handle = @fopen($file, "r");
-        //while (($data = fgets($handle, 4096)) !== FALSE)
-        //{
-        //$string = $data;
-
+//        $file = './tmp/stat.txt';
+//        $handle = @fopen($file, "r");
+//        while (($data = fgets($handle, 4096)) !== FALSE)
+//        {
+//        $string = $data;
+//        echo "===================================================<br>".
+//            $string
+//            ."<br>- - - - - - - - - - - - - - - - - - - - - - - - - -
+//            - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br>
+//        ";
+        //Подготовка даты в нормальный формат
         $data = explode(';', $string);
-        //print_r($data);echo "<br />";
-        $time = date("Y-m-d H:i:s", strtotime($data[0]));
-        $nickname = str_replace('"', '', $data[1]);
+        $date = explode(' ', $data[0]);
+        $month = explode('/',$date[0]);
+        $time = date('Y')."-$month[0]-$month[1] ".$date[1];
+        if(empty($data[1])){
+            exit;//TODO Заменить на continue();
+        }
+        $nickname = trim(str_replace('"', '', $data[1]));
         $event = trim($data[2]);
+        $hash = $data[3];
+        //echo "Обрабатываем событие '$event'. <br>";
         if (array_key_exists(3, $data) == true) {
             $object = str_replace('"', '', $data[3]);
         }
-        if (!empty($nickname) || $nickname != '') {
-
-            $check_nick = $this->statistics_model->check_nick($nickname);
-            if ($check_nick['pilot_count'] == 0) {
-                $nick = array();
-                $nick['nickname'] = $nickname;
-                $record = $this->statistics_model->add_pilot($nick);
-            }
-            $nick_id = $this->statistics_model->get_pilot_id($nickname);
-            $id = $nick_id['id'];
-
-            if (preg_match("/joined BLUE/", $event) || preg_match("/joined RED/", $event)) {
-                if (preg_match("/UH-1H/", $event)) {
-                    $plane = 'UH-1H';
-                }
-                if (preg_match("/Ка-50/", $event)) {
-                    $plane = 'Ка-50';
-                }
-                if (preg_match("/Ми-8МТВ2/", $event)) {
-                    $plane = 'Ми-8МТВ2';
-                }
-                if (preg_match("/TF-51D/", $event)) {
-                    $plane = 'TF-51D';
-                }
-                if (preg_match("/Bf 109 K-4/", $event)) {
-                    $plane = 'Bf 109 K-4';
-                }
-                if (preg_match("/Су-25/", $event)) {
-                    $plane = 'Су-25';
-                }
-                if (preg_match("/Су-25Т/", $event)) {
-                    $plane = 'Су-25Т';
-                }
-                if (preg_match("/Су-27/", $event)) {
-                    $plane = 'Су-27';
-                }
-                if (preg_match("/Су-33/", $event)) {
-                    $plane = 'Су-33';
-                }
-                if (preg_match("/МиГ-29А/", $event)) {
-                    $plane = 'МиГ-29А';
-                }
-                if (preg_match("/МиГ-29С/", $event)) {
-                    $plane = 'МиГ-29С';
-                }
-                if (preg_match("/A-10C/", $event)) {
-                    $plane = 'A-10C';
-                }
-                if (preg_match("/F-15C/", $event)) {
-                    $plane = 'F-15C';
-                }
-                if (preg_match("/А-10А/", $event)) {
-                    $plane = 'А-10А';
-                }
-                if (preg_match("/F-86F/", $event)) {
-                    $plane = 'F-86F';
-                }
-                if (preg_match("/MiG-15bis/", $event)) {
-                    $plane = 'MiG-15bis';
-                }
-                if (preg_match("/MiG-21Bis/", $event)) {
-                    $plane = 'MiG-21Bis';
-                }
-                $start_flight = $this->statistics_model->get_start_flight($id);
-                if (!empty($start_flight)) {
-                    //echo '<b style = "color:red;">ВНИМАНИЕ</b>.Игрок '.$nickname.' сменил команду, находясь в полёте. Время выхода - '.$time.'<br>';//exit();
-                    $start = $start_flight['last_flight'];
-                    $hours = strtotime($time) - strtotime($start);
-                    $total = array();
-                    $total['pilot_id'] = $id;
-                    $total['start_flight'] = $start;
-                    $total['end_flight'] = $time;
-                    $total['total'] = $hours;
-                    $flight = $this->statistics_model->add_total_flight($total);
-                    $this->statistics_model->clear_flights($id);
-                    echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - " . date("H:i:s", $hours) . "</p><br />";
-                    $this->statistics_model->add_fail_crash($id, $time);
-                    //exit();
-                } else {
-                    if (preg_match("/joined BLUE/", $event)) {
-                        //echo "Игрок $nickname присоединился в команду <b style='color:blue;'>Синих</b><br />";
-                        $this->statistics_model->delete_from_spectators($id);
-
-                        $check_blue = $this->statistics_model->check_blue($id);
-                        if ($check_blue == 0) {
-                            $this->statistics_model->join_blue($id, $time, $plane);
-                        } else {
-                            $this->statistics_model->update_blue_pilot_plane($id, $plane);
+        //echo "Проверка, имя игрока Server или нет?<br>";
+        switch($nickname){
+            //Server
+            case 'Server':
+                //echo "Да, єто Server. Операция с сервером!<br>";
+                switch ($event){
+                    case 'Start':
+                        //echo "Старт сервера в $time<br/>";
+                        $this->statistics_model->server_online();
+                        //echo "Очистка всех таблиц для веб-статистики(Команды, Зрители...).<br>";
+                        $this->statistics_model->empty_web_tables();
+                        break;
+                    case 'Stop':
+                        //echo "Остановка сервера в $time<br />";
+                        $this->statistics_model->server_offline();
+                        //echo "Ищем активные полёты в базе данных.<br>";
+                        $flights = $this->statistics_model->get_all_current_flights();
+                        if (!empty($flights)) {
+                            //echo "Найдено ".count($flights). " активных полётов.Начинаем процедуру сохранения полётов.<br>";
+                            $values = '';
+                            $fl = 1;//Маркер для дебага
+                            //print_r($flights);exit;
+                            foreach ($flights as $endflight) {
+                                $start = $endflight['flight'];
+                                //echo "Время начала полёта #$fl - $start.<br>";
+                                $end = $time;
+                                //echo "Время окончания полёта #$fl - $end.<br>";
+                                $hours = strtotime($end) - strtotime($start);
+                                if($hours < 0){$hours = $hours*(-1);}
+                                //echo "Время полёта #$fl - $hours сек.<br>";
+                                $values = $values . "(" . $endflight['pilot_id'] . ",'" . $start . "','" . $end . "'," . $hours . "),";
+                                $flight_id = $endflight['pilot_id'];
+                                //echo "Удаляем полёт # $fl.<br>";
+                                $this->statistics_model->delete_all_flights($flight_id);
+                                $fl++;// Добавление маркера дебага
+                            }
+                            $values = substr($values, 0, -1);
+                            //echo $values;exit;
+                            //echo "Добавление записей в общий налёт(flight_hours).<br>";
+                            $this->statistics_model->add_not_ended_flights($values);
                         }
-                        $this->statistics_model->left_red($id);
-                    }
-                    if (preg_match("/joined RED/", $event)) {
+                        //echo "Активных полётов не обнаружено.<br>";
+                        //echo "Получаем список пользователей онлайн.<br>";
+                        $online = $this->statistics_model->get_online_all();
+                        //echo "Получаем список Зрителей.<br>";
+                        $spectators = $this->statistics_model->get_all_spectators();
+                        //echo "Получаем список Красных.<br>";
+                        $red = $this->statistics_model->get_all_red();
+                        //echo "Получаем список Синих.<br>";
+                        $blue = $this->statistics_model->get_all_blue();
+                        if (!empty($online)) {
+                            //echo "Таблица ONLINE не пустая. Выполняется очистка таблицы:<br>";
+                            $on = 1;
+                            foreach ($online as $delete) {
+                                $id = $delete['pilot_id'];
+                                $this->statistics_model->delete_online($id);
+                                //echo "Удалена запись №$on.<br>";
+                                $on++;
+                            }
+                        }//echo "Таблица ONLINE пустая.<br>";
+                        if (!empty($spectators)) {
+                            //echo "Таблица Spectators не пустая. Выполняется очистка таблицы:<br>";
+                            $sp=1;
+                            foreach ($spectators as $spect){
+                                $id = $spect['pilot_id'];
+                                $this->statistics_model->delete_from_spectators($id);
+                                //echo "Удален зритель №$sp.<br>";
+                                $sp++;
+                            }
+                        }//echo "Таблица Spectators пустая.<br>";
+                        if (!empty($red)) {
+                            //echo "Таблица Красных не пустая. Выполняется очистка таблицы:<br>";
+                            $rd = 1;
+                            foreach ($red as $member){
+                                $id = $member['pilot_id'];
+                                $this->statistics_model->left_red($id);
+                                //echo "Удален Красный игрок №$rd.<br>";
+                                $rd++;
+                            }//echo "Таблица Красных пустая.<br>";
+                        }
+                        if (!empty($blue)) {
+                            //echo "Таблица Синих не пустая. Выполняется очистка таблицы:<br>";
+                            $bl = 1;
+                            foreach ($blue as $member) {
+                                $id = $member['pilot_id'];
+                                $this->statistics_model->left_blue($id);
+                                //echo "Удален Синий игрок №$bl.<br>";
+                                $bl++;
+                            }
+                        }
+                        break;
+                }
+                break;
+            //Игроки
+            default:
+                //echo "Нет. Это не Server.Ищем пилота в базе данных(его ID).<br>";
+                $check_nick = $this->statistics_model->check_nick($hash);
+                if ($check_nick == 0) {
+                    //echo "Игрока $nickname нету в базе данных.<br>";
+                    $nick = array();
+                    $nick['nickname'] = $nickname;
+                    $nick['hash'] = $data[3];
+                    $record = $this->statistics_model->add_pilot($nick);
+                    //echo "Пилот $nickname добавлен в БД.<br>";
+                }
+                $nick_id = $this->statistics_model->get_pilot_id_with_hash($hash);
+                if(!empty($nick_id)){
+                    $id = $nick_id['id'];
+                    //echo "Пилот $nickname найден. ID = $id.<br>";
+                }else{
+                    exit;
+                }
+                switch ($event) {
+                    case 'entered the game':/*Событие входа игрока на сервер*/
+                        //echo "Пилот $nickname присоединился к серверу. Проверяем Базу Данных.<br>";
+                        $this->statistics_model->add_online($id, $time);
+                        //echo "Добавление пилота $nickname в таблицу 'Online'.<br>";
+                        $this->statistics_model->add_spectator($id, $time);
+                        //echo "Добавление пилота $nickname в таблицу 'Зрители'.<br>";
+                        break;
+                    case 'joined RED':
                         //echo "Игрок $nickname присоединился в команду <b style='color:red;'>Красных</b><br />";
+                        $plane = $data[4];
                         $this->statistics_model->delete_from_spectators($id);
+                        //echo "Удаляем пилота $nickname из зрителей.<br>";
                         $check_red = $this->statistics_model->check_red($id);
+                        //echo "Проверяем таблицу красных.<br>";
                         if ($check_red == 0) {
+                            //echo "Пилота $nickname - нету в таблицу красных.<br>";
                             $this->statistics_model->join_red($id, $time, $plane);
+                            //echo "Пилот $nickname записан в таблицу Красных.<br>";
                         } else {
+                            //echo "Пилот находится уже в таблице красных. Обновляем страницу красных.<br>";
                             $this->statistics_model->update_red_pilot_plane($id, $plane);
                         }
+                        //echo "Если пилот находился в таблице синих - удаляем его оттуда.<br>";
                         $this->statistics_model->left_blue($id);
-                    }
-
-                }
-
-            }
-        }
-        switch ($event) {
-            case 'Start':
-                //echo "Старт сервера в $time<br />";
-                $this->statistics_model->server_online();
-                break;
-
-            case 'Stop':
-                //echo "Остановка сервера в $time<br />";
-                $this->statistics_model->server_offline();
-                $flights = $this->statistics_model->get_all_current_flights();
-                if (!empty($flights)) {
-                    $values = '';
-                    foreach ($flights as $endflight) {
-                        $start = $endflight['flight'];
-                        $end = $time;
-                        $hours = strtotime($end) - strtotime($start);
-                        $values = $values . "(" . $endflight['pilot_id'] . ",'" . $start . "','" . $end . "'," . $hours . "),";
-                        $id = $endflight['pilot_id'];
-                        $this->statistics_model->delete_all_flights($id);
-                    }
-                    $values = substr($values, 0, -1);
-                    $this->statistics_model->add_not_ended_flights($values);
-                }
-                $online = $this->statistics_model->get_online_all();
-                $spectators = $this->statistics_model->get_all_spectators();
-                $red = $this->statistics_model->get_all_red();
-                $blue = $this->statistics_model->get_all_blue();
-                if (!empty($online)) {
-                    foreach ($online as $delete): {
-                        $id = $delete['pilot_id'];
-                        $this->statistics_model->delete_online($id);
-                    }
-                    endforeach;
-                }
-                if (!empty($spectators)) {
-                    foreach ($spectators as $spect): {
-                        $id = $spect['pilot_id'];
-                        $this->statistics_model->delete_from_spectators($id);
-                    }
-                    endforeach;
-                }
-                if (!empty($red)) {
-                    foreach ($red as $member): {
-                        $id = $member['pilot_id'];
-                        $this->statistics_model->left_red($id);
-                    }
-                    endforeach;
-                }
-                if (!empty($blue)) {
-                    foreach ($blue as $member): {
-                        $id = $member['pilot_id'];
-                        $this->statistics_model->left_blue($id);
-                    }
-                    endforeach;
-                }
-
-                break;
-
-            case 'entered the game':/*Событие входа игрока на сервер*/
-                $start_flight = $this->statistics_model->get_start_flight($id);
-                if (!empty($start_flight)) {
-                    $this->statistics_model->clear_flights($id);
-                    //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
-                }
-                $this->statistics_model->add_online($id, $time);
-                $this->statistics_model->add_spectator($id, $time);
-                break;
-
-            case 'takeoff from':/*Событие взлёта самолёта/вертолёта с аэродрома/корабля*/
-                //echo 'Игрок '.$nickname.' взлетел с аэродрома '.$object.' в '.$time.'<br>';
-                $nick_id = $this->statistics_model->get_pilot_id($nickname);
-                $id = $nick_id['id'];//echo 'ID пилота = '.$id.'<br />';
-                $this->statistics_model->add_new_flight($id, $time);
-                $this->statistics_model->add_takeoff($id, $time);
-                break;
-
-            case 'takeoff': /*Событие взлёта с ППБ*/
-                //echo 'Игрок '.$nickname.' взлетел на вертолёте в '.$time.'<br>';
-                $nick_id = $this->statistics_model->get_pilot_id($nickname);
-                $id = $nick_id['id'];//echo 'ID пилота = '.$id.'<br />';
-                $this->statistics_model->add_new_flight($id, $time);
-                $this->statistics_model->add_takeoff($id, $time);
-                break;
-
-            case 'landed at':/*Событие посадки*/
-                //echo 'Игрок '.$nickname.' сел на аэродром '.$object.' в '.$time.'<br>';
-
-                $start_flight = $this->statistics_model->get_start_flight($id);
-                $start = $start_flight['last_flight'];
-                $hours = strtotime($time) - strtotime($start);
-                $total = array();
-                $total['pilot_id'] = $id;
-                $total['start_flight'] = $start;
-                $total['end_flight'] = $time;
-                $total['total'] = $hours;
-                $flight = $this->statistics_model->add_total_flight($total);
-                $this->statistics_model->clear_flights($id);
-                $this->statistics_model->add_landing($id, $time);
-                //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
-                break;
-
-
-            case 'killed':   /*Событие убития*/
-                if (preg_match("/$nickname/", $object)) /*ИГРОКА*/ {
-                    echo 'Игрок ' . $nickname . ' самоубился в ' . $time . '<br />';//exit();
-                    $player_kill = array();
-                    $player_kill['pilot_id'] = $id;
-                    $player_kill['death'] = $time;
-                    $this->statistics_model->add_death($player_kill);
-                    $start_flight = $this->statistics_model->get_start_flight($id);
-                    if (!empty($start_flight)) {
-                        $start = $start_flight['last_flight'];
-                        $hours = strtotime($time) - strtotime($start);
-                        $total = array();
-                        $total['pilot_id'] = $id;
-                        $total['start_flight'] = $start;
-                        $total['end_flight'] = $time;
-                        $total['total'] = $hours;
-                        $flight = $this->statistics_model->add_total_flight($total);
-                        $this->statistics_model->clear_flights($id);
-                    }
-                    $this->statistics_model->add_fail_crash($id, $time);
-                } else /*Убитие бота или наземки*/ {
-                    $check_nick = $this->statistics_model->find_victim($object);
-                    if (!empty($check_nick)) {
-                        $victim = $check_nick['victim'];
-                        $victim_id = $check_nick['id'];
-                        $check_pilot_team = $this->statistics_model->get_teamkill($id, $victim_id);
-                        if ($check_pilot_team > 1) {
-                            $this->statistics_model->add_victim($id, $victim, $time, 1);
-                        } else {
-                            $this->statistics_model->add_victim($id, $victim, $time, 0);
+                        //echo "Проверяем, находился ли пилот в воздухе.<br>";
+                        $start_flight = $this->statistics_model->get_start_flight($id);
+                        if (!empty($start_flight)) {
+                            //echo '<b style = "color:red;">ВНИМАНИЕ</b>.Игрок '.$nickname.' сменил команду, находясь в полёте. Время выхода - '.$time.'<br>';//exit();
+                            $start = $start_flight['last_flight'];
+                            $hours = strtotime($time) - strtotime($start);
+                            //echo "Время полёта игрока $nickname составляет $hours секунд.<br>";
+                            $total = array();
+                            $total['pilot_id'] = $id;
+                            $total['start_flight'] = $start;
+                            $total['end_flight'] = $time;
+                            $total['total'] = $hours;
+                            //echo "Запись полёта в таблицу flights_hours.<br>";
+                            $flight = $this->statistics_model->add_total_flight($total);
+                            //echo "Очистка таблицы текущих полётов.<br>";
+                            $this->statistics_model->clear_flights($id);
+                            //echo "Запись потери летательного аппарата игроком $nickname.<br>";
+                            $this->statistics_model->add_fail_crash($id, $time);
+                        }else{
+                            //echo "Активных полётов при смене команды для игрока $nickname не обнаружено.<br>";
                         }
-                        //echo 'Игрок '.$nickname.' убил игрока '.$victim.' в '.$time.'<br />';
+                        break;
+                    case 'joined BLUE':
+                        //echo "Игрок $nickname присоединился в команду <b style='color:blue;'>Синих</b><br />";
+                        $plane = $data[4];
+                        //echo "Удаляем игрока $nickname из таблицы Зрителей, если он там был.<br>";
+                        $this->statistics_model->delete_from_spectators($id);
+                        //echo "Проверяем, находится ли игрок $nickname в таблице Синих.<br>";
+                        $check_blue = $this->statistics_model->check_blue($id);
+                        if ($check_blue == 0) {
+                            //echo "Игрок $nickname не находился в таблице Синих.<br>";
+                            $this->statistics_model->join_blue($id, $time, $plane);
+                            //echo "Игрока $nickname записали в таблицу Синих.<br>";
+                        } else {
+                            //echo "Игрок $nickname находился в таблицу Синих, обновляем запись.<br>";
+                            $this->statistics_model->update_blue_pilot_plane($id, $plane);
+                        }
+                        //echo "Если игрок $nickname находился в таблице Красных, удаляем из Красных.<br>";
+                        $this->statistics_model->left_red($id);
+                        //echo "Проверяем, находился ли пилот в воздухе.<br>";
+                        $start_flight = $this->statistics_model->get_start_flight($id);
+                        if (!empty($start_flight)) {
+                            //echo '<b style = "color:red;">ВНИМАНИЕ</b>.Игрок '.$nickname.' сменил команду, находясь в полёте. Время выхода - '.$time.'<br>';//exit();
+                            $start = $start_flight['last_flight'];
+                            $hours = strtotime($time) - strtotime($start);
+                            //echo "Время полёта игрока $nickname составляет $hours секунд.<br>";
+                            $total = array();
+                            $total['pilot_id'] = $id;
+                            $total['start_flight'] = $start;
+                            $total['end_flight'] = $time;
+                            $total['total'] = $hours;
+                            //echo "Запись полёта в таблицу flights_hours.<br>";
+                            $flight = $this->statistics_model->add_total_flight($total);
+                            //echo "Очистка таблицы текущих полётов.<br>";
+                            $this->statistics_model->clear_flights($id);
+                            //echo "Запись потери летательного аппарата игроком $nickname.<br>";
+                            $this->statistics_model->add_fail_crash($id, $time);
+                        }else{
+                            //echo "Активных полётов при смене команды для игрока $nickname не обнаружено.<br>";
+                        }
+                        break;
+                    case 'takeoff from':/*Событие взлёта самолёта/вертолёта с аэродрома/корабля*/
+                        //echo 'Игрок '.$nickname.' взлетел с аэродрома '.$object.' в '.$time.'<br>';
+                        $nick_id = $this->statistics_model->get_pilot_id($nickname);
+                        $id = $nick_id['id'];//echo 'ID пилота = '.$id.'<br />';
+                        $this->statistics_model->add_new_flight($id, $time);
+                        $this->statistics_model->add_takeoff($id, $time);
+                        break;
+//            case 'takeoff': /*Событие взлёта с ППБ*/
+//                //echo 'Игрок '.$nickname.' взлетел на вертолёте в '.$time.'<br>';
+//                $nick_id = $this->statistics_model->get_pilot_id($nickname);
+//                $id = $nick_id['id'];//echo 'ID пилота = '.$id.'<br />';
+//                $this->statistics_model->add_new_flight($id, $time);
+//                $this->statistics_model->add_takeoff($id, $time);
+//                break;
+//
+                    case 'landed at':/*Событие посадки*/
+                        //echo 'Игрок '.$nickname.' сел на аэродром '.$object.' в '.$time.'<br>';
+                        $start_flight = $this->statistics_model->get_start_flight($id);
+                        if(!empty($start_flight)){
+                            $start = $start_flight['last_flight'];
+                            $hours = strtotime($time) - strtotime($start);
+                            $total = array();
+                            $total['pilot_id'] = $id;
+                            $total['start_flight'] = $start;
+                            $total['end_flight'] = $time;
+                            $total['total'] = $hours;
+                            $flight = $this->statistics_model->add_total_flight($total);
+                            $this->statistics_model->add_landing($id, $time);
+                        }
+                        $this->statistics_model->clear_flights($id);
+                        //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
+                        break;
+                    case 'killed':   /*Событие убития*/
+                        $temp_victim = $data[5];
+                        $check_victim = $this->statistics_model->check_victim_by_hash($temp_victim);
+                        if(!empty($check_victim)){
+                            $victim_id = $check_victim['id'];
+                            $dogfight = array();
+                            $dogfight['pilot_id'] = $id;
+                            $dogfight['victim_id'] = $victim_id;
+                            $dogfight['data'] = $time;
+                            $dogfight['friendly'] = 0;
+                            $dogfight['points'] = $data[6];
+                            $insert = $this->statistics_model->insert_dogfight($dogfight);
+                        }else{
+                            //echo 'Игрок '.$nickname.' уничтожил '.$object.' с помощью '.$ammunition.' в '.$time.'<br>';//exit();
+                            $check_unit_type_temp = $data[5];
+                            $check_type = $this->statistics_model->check_unit_type($check_unit_type_temp);
+                            if(!empty($check_type)){
+                                $unit_id = $check_type['id'];
+                                $unit_type_id = $check_type['category'];
+                                $points = $data[6];
+                                $kill = array();
+                                $kill['pilot_id'] = $id;
+                                $kill['data'] = $time;
+                                $kill['unit_id'] = $unit_id;
+                                $kill['unit_type_id'] = $unit_type_id;
+                                $kill['points'] = $points;
+                                $this->statistics_model->add_new_kill($kill);
+                            }else{
+                            }
+                        }
+                        break;
+                    case 'ejected': /*Событие катапультирования*/
+                        //echo 'Игрок '.$nickname.' катапультировался в '.$time.'<br>';
+                        $start_flight = $this->statistics_model->get_start_flight($id);
+                        if (!empty($start_flight)) {
+                            $start = $start_flight['last_flight'];
+                            $hours = strtotime($time) - strtotime($start);
+                            $total = array();
+                            $total['pilot_id'] = $id;
+                            $total['start_flight'] = $start;
+                            $total['end_flight'] = $time;
+                            $total['total'] = $hours;
+                            $flight = $this->statistics_model->add_total_flight($total);
+                            $this->statistics_model->clear_flights($id);
+                            //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - " . date("H:i:s", $hours) . "</p><br />";
+                            $this->statistics_model->add_fail_crash($id, $time);
+                        }
+                        $this->statistics_model->add_eject($id, $time);
+                        break;
+                    case 'crashed': /*Событие потери ЛА*/
+                        //echo 'Игрок '.$nickname.' разбил свой ЛА в '.$time.'<br>';
 
-                    } else {
-                        $ammunition = trim($data[4]);
-                        //echo 'Игрок '.$nickname.' уничтожил '.$object.' с помощью '.$ammunition.' в '.$time.'<br>';//exit();
-                        $kill = array();
-                        $kill['pilot_id'] = $id;
-                        $kill['object'] = $object;
-                        $kill['ammunition'] = $ammunition;
-                        $kill['data'] = $time;
-                        $this->statistics_model->add_new_kill($kill);
-                    }
+                        $start_flight = $this->statistics_model->get_start_flight($id);
+                        if (!empty($start_flight)) {
+                            $start = $start_flight['last_flight'];
+                            $hours = strtotime($time) - strtotime($start);
+                            $total = array();
+                            $total['pilot_id'] = $id;
+                            $total['start_flight'] = $start;
+                            $total['end_flight'] = $time;
+                            $total['total'] = $hours;
+                            $flight = $this->statistics_model->add_total_flight($total);
+                            $this->statistics_model->clear_flights($id);
+                            $this->statistics_model->add_fail_crash($id, $time);
+                            //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
+                            $this->statistics_model->add_fail_crash($id, $time);
+                        }
+                        break;
+                    case 'joined SPECTATORS':/*Событие входа Пилота в зрители*/
+                        $start_flight = $this->statistics_model->get_start_flight($id);
+                        if (!empty($start_flight)) {
+                            //echo "Пилот $nickname тупо потратил время техников и вышел в зрители!<br />";
+                            $this->statistics_model->add_fail_crash($id, $time);
+                            $start_flight = $this->statistics_model->get_start_flight($id);
+                            $start = $start_flight['last_flight'];
+                            $hours = strtotime($time) - strtotime($start);
+                            $total = array();
+                            $total['pilot_id'] = $id;
+                            $total['start_flight'] = $start;
+                            $total['end_flight'] = $time;
+                            $total['total'] = $hours;
+                            $flight = $this->statistics_model->add_total_flight($total);
+                            $this->statistics_model->clear_flights($id);
+                        } else {
+                            //echo "Пилот $nickname присоединился к зрителям сервера!<br />";
+                        }
+                        $this->statistics_model->left_blue($id);
+                        $this->statistics_model->left_red($id);
+                        $this->statistics_model->add_spectator($id, $time);
+                        break;
+                    case 'left the game':/*Событие покидания сервера пилотом*/
+                        $check_nickname = $this->statistics_model->get_pilot_id($nickname);
+                        if(!empty($check_nickname)){
+                            $id = $check_nickname['id'];
+                        }else{
+                            exit;
+                        }
+                        $start_flight = $this->statistics_model->get_start_flight($id);
+                        if (!empty($start_flight)) {
+                            //echo "Пилот $nickname тупо потратил время техников и своё!<br />";
+                            $this->statistics_model->add_fail_crash($id, $time);
+                            $start_flight = $this->statistics_model->get_start_flight($id);
+                            $start = $start_flight['last_flight'];
+                            $hours = strtotime($time) - strtotime($start);
+                            $total = array();
+                            $total['pilot_id'] = $id;
+                            $total['start_flight'] = $start;
+                            $total['end_flight'] = $time;
+                            $total['total'] = $hours;
+                            $flight = $this->statistics_model->add_total_flight($total);
+                            $this->statistics_model->clear_flights($id);
+                        }
+                        $this->statistics_model->delete_from_spectators($id);
+                        $this->statistics_model->delete_online($id);
+                        $this->statistics_model->left_blue($id);
+                        $this->statistics_model->left_red($id);
+                        break;
                 }
-                break;
-
-            case 'ejected': /*Событие катапультирования*/
-                //echo 'Игрок '.$nickname.' катапультировался в '.$time.'<br>';
-                $start_flight = $this->statistics_model->get_start_flight($id);
-                if (!empty($start_flight)) {
-                    $start = $start_flight['last_flight'];
-                    $hours = strtotime($time) - strtotime($start);
-                    $total = array();
-                    $total['pilot_id'] = $id;
-                    $total['start_flight'] = $start;
-                    $total['end_flight'] = $time;
-                    $total['total'] = $hours;
-                    $flight = $this->statistics_model->add_total_flight($total);
-                    $this->statistics_model->clear_flights($id);
-                    echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - " . date("H:i:s", $hours) . "</p><br />";
-                }
-                $this->statistics_model->add_fail_crash($id, $time);
-                $this->statistics_model->add_eject($id, $time);
-                break;
-
-            case 'crashed': /*Событие потери ЛА*/
-                //echo 'Игрок '.$nickname.' разбил свой ЛА в '.$time.'<br>';
-
-                $start_flight = $this->statistics_model->get_start_flight($id);
-                if (!empty($start_flight)) {
-                    $start = $start_flight['last_flight'];
-                    $hours = strtotime($time) - strtotime($start);
-                    $total = array();
-                    $total['pilot_id'] = $id;
-                    $total['start_flight'] = $start;
-                    $total['end_flight'] = $time;
-                    $total['total'] = $hours;
-                    $flight = $this->statistics_model->add_total_flight($total);
-                    $this->statistics_model->clear_flights($id);
-                    $this->statistics_model->add_fail_crash($id, $time);
-                    //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
-                }
-                $this->statistics_model->add_fail_crash($id, $time);
-                break;
-
-            case 'joined SPECTATORS':/*Событие входа Пилота в зрители*/
-                $start_flight = $this->statistics_model->get_start_flight($id);
-                if (!empty($start_flight)) {
-                    //echo "Пилот $nickname тупо потратил время техников и вышел в зрители!<br />";
-                    $this->statistics_model->add_fail_crash($id, $time);
-                    $start_flight = $this->statistics_model->get_start_flight($id);
-                    $start = $start_flight['last_flight'];
-                    $hours = strtotime($time) - strtotime($start);
-                    $total = array();
-                    $total['pilot_id'] = $id;
-                    $total['start_flight'] = $start;
-                    $total['end_flight'] = $time;
-                    $total['total'] = $hours;
-                    $flight = $this->statistics_model->add_total_flight($total);
-                    $this->statistics_model->clear_flights($id);
-                } else {
-                    //echo "Пилот $nickname присоединился к зрителям сервера!<br />";
-                }
-                $this->statistics_model->left_blue($id);
-                $this->statistics_model->left_red($id);
-                $this->statistics_model->add_spectator($id, $time);
-                break;
-            case 'left the game':/*Событие покидания сервера пилотом*/
-                $start_flight = $this->statistics_model->get_start_flight($id);
-                if (!empty($start_flight)) {
-                    //echo "Пилот $nickname тупо потратил время техников и своё!<br />";
-                    $this->statistics_model->add_fail_crash($id, $time);
-                    $start_flight = $this->statistics_model->get_start_flight($id);
-                    $start = $start_flight['last_flight'];
-                    $hours = strtotime($time) - strtotime($start);
-                    $total = array();
-                    $total['pilot_id'] = $id;
-                    $total['start_flight'] = $start;
-                    $total['end_flight'] = $time;
-                    $total['total'] = $hours;
-                    $flight = $this->statistics_model->add_total_flight($total);
-                    $this->statistics_model->clear_flights($id);
-                }
-                $this->statistics_model->delete_from_spectators($id);
-                $this->statistics_model->delete_online($id);
-                $this->statistics_model->left_blue($id);
-                $this->statistics_model->left_red($id);
                 break;
         }
-
-        //}
-        //fclose($handle);
+//        }
+//        fclose($handle);
 
     }
     function empty_stat(){
@@ -454,14 +482,50 @@ class Statistics extends Controller
     }
     function empty_db(){
         $this->dcs_lib->isPost();
+        $file = './tmp/stat.txt';
         $pass = md5(trim($this->input->post('password')));
         $main_pass = md5('Vortex2015eekz');
         if($pass != $main_pass){
             echo 0;
         }else{
             $delete = $this->statistics_model->clear_db();
+            unlink($file);
             echo 1;
         }
+    }
+
+    function test(){
+        $hash = '4a1f11d5feabb05dceb5feb330f73951';
+        $nickname = 'Pacman';
+        $time = date('Y-m-d H:i:s');
+        $check_nickname = $this->statistics_model->get_pilot_id($nickname);
+        //print_r($check_nickname);exit;
+        if(!empty($check_nickname)){
+            $id = $check_nickname['id'];
+        }else{
+            exit;
+        }
+        $start_flight = $this->statistics_model->get_start_flight($id);
+
+        if (!empty($start_flight)) {
+            //echo "Пилот $nickname тупо потратил время техников и своё!<br />";
+            $this->statistics_model->add_fail_crash($id, $time);
+            $start_flight = $this->statistics_model->get_start_flight($id);
+            $start = $start_flight['last_flight'];
+            $hours = strtotime($time) - strtotime($start);
+            $total = array();
+            $total['pilot_id'] = $id;
+            $total['start_flight'] = $start;
+            $total['end_flight'] = $time;
+            $total['total'] = $hours;
+            $flight = $this->statistics_model->add_total_flight($total);
+            $this->statistics_model->clear_flights($id);
+        }
+        $this->statistics_model->delete_from_spectators(3);
+        $this->statistics_model->delete_online(3);
+        $this->statistics_model->left_blue(3);
+        $this->statistics_model->left_red(3);
+
     }
 }
 

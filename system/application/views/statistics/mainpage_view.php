@@ -41,6 +41,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class=""><a href="http://digitalcombatsimulator.com" target="_blank"><b>DCS Site</b></a></li>
                     <li class=""><a href="http://forums.eagle.ru/forumdisplay.php?f=54" target="_blank"><b>Русский ED форум</b></a></li>
+                    <li class=""><a href="https://www.facebook.com/burningskieswwii/" target="_blank"><b>Facebook</b></a></li>
+
+
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -206,7 +209,11 @@
                                 }
                                 ?>
                             </td>
-                            <td></td>
+                            <td>
+                                <? if(empty($players['total_victims'])){echo 0;}
+                                    else{echo $players['total_victims'];}
+                                ?>
+                            </td>
                         </tr>
                     <? endforeach; ?>
                 <? } else { ?>

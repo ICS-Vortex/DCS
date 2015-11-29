@@ -1,0 +1,332 @@
+11/27/15 13:38:52;Server;Start
+11/27/15 13:38:55;Бемби;entered the game;ae733ba0004d69b1f329f0f5d1ac8f19
+11/27/15 13:39:29;Бемби;joined BLUE;Su-33
+11/27/15 14:42:08;_Feodor_;entered the game;70c4b56e2b4787a6ee1b143d4fe9c7ce
+11/27/15 14:44:09;_Feodor_;joined BLUE;Su-33
+11/27/15 14:49:06;_Feodor_;takeoff from;Novorossiysk
+11/27/15 14:50:04;DT;entered the game;574378d7f238893b5298cb7de954bcaa
+11/27/15 14:50:24;DT;joined RED;Su-33
+11/27/15 14:51:03;DT;joined RED;Su-33
+11/27/15 14:51:05;DT;joined RED;Su-33
+11/27/15 14:58:10;DT;takeoff from;Anapa-Vityazevo
+11/27/15 15:01:21;DT;killed;_Feodor_;;50
+11/27/15 15:07:05;_Feodor_;takeoff from;Novorossiysk
+11/27/15 15:11:47;DT;killed;_Feodor_;;50
+11/27/15 15:19:05;=VNVV=Steata;entered the game;60d945369d97c5b540bbddae9135f856
+11/27/15 15:19:17;=VNVV=Steata;joined BLUE;Su-33
+11/27/15 15:21:43;=VNVV=Steata;takeoff from;Novorossiysk
+11/27/15 15:22:10;DT;landed at;Anapa-Vityazevo
+11/27/15 15:24:12;DT;takeoff from;Anapa-Vityazevo
+11/27/15 15:35:50;-=Крылатый=-;entered the game;40a7729cc232f2181039167567580279
+11/27/15 15:39:07;DT;killed;=VNVV=Steata;;50
+11/27/15 15:39:08;=VNVV=Steata;crashed
+11/27/15 15:39:41;-=Крылатый=-;joined BLUE;Su-33
+11/27/15 15:43:49;-=Крылатый=-;joined BLUE;Su-33
+11/27/15 15:46:43;-=Крылатый=-;takeoff from;Novorossiysk
+11/27/15 15:52:10;DT;killed;-=Крылатый=-;;50
+11/27/15 15:52:16;-=Крылатый=-;crashed
+11/27/15 15:54:04;-=Крылатый=-;takeoff from;Novorossiysk
+11/27/15 16:00:45;-=Крылатый=-;dead
+11/27/15 16:00:46;-=Крылатый=-;crashed
+11/27/15 16:04:57;DT;landed at;Anapa-Vityazevo
+11/27/15 16:07:58;DT;joined SPECTATORS;Su-33
+11/27/15 16:52:55;SpeeZ;entered the game;9a0314db9cd7bec0e806d21d98e53c93
+11/27/15 16:55:03;SpeeZ;joined RED;Su-33
+11/27/15 16:58:31;SpeeZ;takeoff from;Anapa-Vityazevo
+11/27/15 17:05:29;SpeeZ;killed;Ural-375;;5
+11/27/15 17:05:30;SpeeZ;killed;Ural-375;;5
+11/27/15 17:05:30;SpeeZ;killed;KAMAZ Truck;;5
+11/27/15 17:05:31;SpeeZ;killed;KAMAZ Truck;;5
+11/27/15 17:06:23;SpeeZ;killed;Ural-375;;5
+11/27/15 17:06:24;SpeeZ;killed;Ural-375;;5
+11/27/15 17:07:02;iam insane from hell;entered the game;b9ab7e55aadc54a9f785b0e0fb883afd
+11/27/15 17:07:05;SpeeZ;killed;house2arm;;5
+11/27/15 17:07:14;iam insane from hell;joined RED;Su-33
+11/27/15 17:07:24;SpeeZ;killed;Tigr_233036;;5
+11/27/15 17:09:17;iam insane from hell;takeoff from;Anapa-Vityazevo
+11/27/15 17:09:21;iam insane from hell;landed at;Anapa-Vityazevo
+11/27/15 17:09:23;iam insane from hell;joined RED;Su-33
+11/27/15 17:18:15;SpeeZ;landed at;Anapa-Vityazevo
+11/27/15 17:30:00;=TMS=273=GUMAR;entered the game;83e87efed2b185547c818302a098e8c4
+11/27/15 17:30:47;=TMS=273=GUMAR;joined BLUE;Su-33
+11/27/15 17:33:42;999;entered the game;5718f6eb6e4afb79eda91c85c4de9c1d
+11/27/15 17:36:36;=TMS=273=GUMAR;takeoff from;Novorossiysk
+11/27/15 17:39:10;Dingo;entered the game;d645cb0312430cd07d63f3cf5613e81a
+11/27/15 17:39:46;Dingo;joined RED;Su-33
+11/27/15 17:42:39;Dingo;dead
+11/27/15 17:42:39;Dingo;crashed
+11/27/15 17:43:01;=TMS=273=GUMAR;killed;TPZ;HVAR;5
+11/27/15 17:43:51;=TMS=273=GUMAR;killed;house2arm;;5
+11/27/15 17:44:45;Dingo;takeoff from;Anapa-Vityazevo
+11/27/15 17:44:47;=TMS=273=GUMAR;killed;M-109;HVAR;5
+11/27/15 17:44:47;Dingo;landed at;Anapa-Vityazevo
+11/27/15 17:44:56;Dingo;ejected
+11/27/15 17:44:59;Dingo;crashed
+11/27/15 17:46:11;=TMS=273=GUMAR;killed;outpost_road;;5
+11/27/15 17:46:50;=TMS=273=GUMAR;killed;GAZ-66;;5
+11/27/15 17:47:06;Dingo;ejected
+11/27/15 17:47:09;Dingo;crashed
+11/27/15 17:47:34;=TMS=273=GUMAR;killed;Hummer;;5
+11/27/15 17:52:09;=TMS=273=GUMAR;killed;house2arm;;5
+11/27/15 17:52:59;=TMS=273=GUMAR;killed;house2arm;;5
+11/27/15 17:53:43;=TMS=273=GUMAR;killed;house2arm;;5
+11/27/15 17:53:49;=TMS=273=GUMAR;killed;Hummer;;5
+11/27/15 17:54:35;=TMS=273=GUMAR;killed;HEMTT TFFT;;5
+11/27/15 17:55:36;Dingo;dead
+11/27/15 17:55:36;Dingo;crashed
+11/27/15 17:57:35;Dingo;dead
+11/27/15 17:57:36;Dingo;crashed
+11/27/15 17:59:28;Dingo;dead
+11/27/15 17:59:33;Dingo;crashed
+11/27/15 18:01:01;Dingo;takeoff from;Anapa-Vityazevo
+11/27/15 18:01:01;Dingo;dead
+11/27/15 18:01:02;Dingo;crashed
+11/27/15 18:01:47;=TMS=273=GUMAR;landed at;Novorossiysk
+11/27/15 18:02:46;Dingo;takeoff from;Anapa-Vityazevo
+11/27/15 18:06:08;-=Крылатый=-;joined BLUE;Su-33
+11/27/15 18:12:35;-=Крылатый=-;takeoff from;Novorossiysk
+11/27/15 18:28:04;Dingo;landed at;Anapa-Vityazevo
+11/27/15 18:28:22;Dingo;ejected
+11/27/15 18:33:00;ПЕ;entered the game;62e7f8be251f0bbb0b82e9f11bcc8466
+11/27/15 18:33:46;ПЕ;joined BLUE;Su-33
+11/27/15 18:33:47;ПЕ;joined BLUE;Su-33
+11/27/15 18:33:48;ПЕ;joined BLUE;Su-33
+11/27/15 18:33:49;ПЕ;joined BLUE;Su-33
+11/27/15 18:33:49;ПЕ;joined BLUE;Su-33
+11/27/15 18:34:03;ПЕ;joined BLUE;Su-33
+11/27/15 18:34:03;ПЕ;joined BLUE;Su-33
+11/27/15 18:35:10;-=Крылатый=-;dead
+11/27/15 18:35:10;-=Крылатый=-;crashed
+11/27/15 18:38:09;-=Крылатый=-;takeoff from;Novorossiysk
+11/27/15 18:41:37;ПЕ;ejected
+11/27/15 18:41:37;ПЕ;dead
+11/27/15 18:42:01;ПЕ;crashed
+11/27/15 18:44:26;-=Крылатый=-;killed;TPZ;;5
+11/27/15 18:46:45;-=Крылатый=-;killed;TPZ;;5
+11/27/15 19:36:55;gin;entered the game;1f6b233c2a4c3c44c5acef09f9311e70
+11/27/15 19:37:49;gin;joined RED;Su-33
+11/27/15 19:50:38;gin;takeoff from;Anapa-Vityazevo
+11/27/15 20:14:25;=UKS=DEST;entered the game;3432bb6a1188d647efa4e3e5ae3c4763
+11/27/15 20:15:00;=UKS=DEST;joined BLUE;Su-33
+11/27/15 20:16:20;_Feodor_;entered the game;70c4b56e2b4787a6ee1b143d4fe9c7ce
+11/27/15 20:16:58;_Feodor_;joined BLUE;Su-33
+11/27/15 20:19:36;gin;landed at;Anapa-Vityazevo
+11/27/15 20:20:41;_Feodor_;takeoff from;Novorossiysk
+11/27/15 20:23:47;=UKS=DEST;takeoff from;Novorossiysk
+11/27/15 20:24:29;pavlich;entered the game;5cc5168f9ee9d7f46b539fee1c723e35
+11/27/15 20:24:34;argo32;entered the game;b22a3ffae9a67300446db3ede4b2d531
+11/27/15 20:24:41;pavlich;joined RED;Su-33
+11/27/15 20:24:50;argo32;joined RED;Su-33
+11/27/15 20:28:12;pavlich;takeoff from;Anapa-Vityazevo
+11/27/15 20:28:30;PRIZ_ROK;entered the game;a1d88b83a3c80f923ca1f536c582b2da
+11/27/15 20:30:02;=UKS=THRUST;entered the game;657200f9599d371ebcecf5c80ad35aa6
+11/27/15 20:39:27;=UKS=DEST;landed at;Novorossiysk
+11/27/15 20:40:18;=UKS=DEST;joined BLUE;Su-33
+11/27/15 20:40:21;=UKS=DEST;joined BLUE;Su-33
+11/27/15 20:40:25;=UKS=DEST;joined BLUE;Su-33
+11/27/15 20:41:48;gin;entered the game;1f6b233c2a4c3c44c5acef09f9311e70
+11/27/15 20:41:54;gin;joined RED;Su-33
+11/27/15 20:43:31;=UKS=THRUST;joined RED;Su-33
+11/27/15 20:44:54;Zeroskills;entered the game;c26f43fcfbf54ba51d436089a4b488a4
+11/27/15 20:45:39;Zeroskills;joined RED;Su-33
+11/27/15 20:46:01;_Feodor_;dead
+11/27/15 20:46:34;=UKS=THRUST;killed;gin;FW-190D9;50
+11/27/15 20:47:04;=UKS=THRUST;joined SPECTATORS
+11/27/15 20:47:06;=UKS=THRUST;joined RED;Su-33
+11/27/15 20:47:17;gin;joined RED;Su-33
+11/27/15 20:47:55;=UKS=DEST;takeoff from;Novorossiysk
+11/27/15 20:49:02;pavlich;killed;ZU-23 Emplacement Closed;;5
+11/27/15 20:50:34;Zeroskills;takeoff from;Anapa-Vityazevo
+11/27/15 20:51:18;pavlich;dead
+11/27/15 20:51:18;pavlich;crashed
+11/27/15 20:52:30;=UKS=THRUST;takeoff from;Anapa-Vityazevo
+11/27/15 20:53:37;=UKS=THRUST;landed at;Anapa-Vityazevo
+11/27/15 20:53:38;=UKS=THRUST;dead
+11/27/15 20:53:38;=UKS=THRUST;crashed
+11/27/15 20:53:57;gin;takeoff from;Anapa-Vityazevo
+11/27/15 20:56:04;mark sawtell;entered the game;cf6d54845eb6e63c3b2401bb12a02d65
+11/27/15 20:56:14;mark sawtell;joined RED;Su-33
+11/27/15 20:56:22;=UKS=THRUST;takeoff from;Anapa-Vityazevo
+11/27/15 20:57:41;-=Крылатый=-;entered the game;40a7729cc232f2181039167567580279
+11/27/15 20:58:00;-=Крылатый=-;joined BLUE;Su-33
+11/27/15 20:59:05;=UKS=DEST;dead
+11/27/15 20:59:06;=UKS=DEST;crashed
+11/27/15 20:59:06;mark sawtell;takeoff from;Anapa-Vityazevo
+11/27/15 20:59:33;mark sawtell;dead
+11/27/15 20:59:33;mark sawtell;crashed
+11/27/15 21:00:13;-=Крылатый=-;takeoff from;Novorossiysk
+11/27/15 21:00:20;gin;killed;Dry-cargo ship-2;;5
+11/27/15 21:01:08;Little Mac;entered the game;1f47605c378bf3f24b6becd9f47cb4a5
+11/27/15 21:01:56;=UKS=DEST;takeoff from;Novorossiysk
+11/27/15 21:02:57;mark sawtell;joined RED;Su-33
+11/27/15 21:02:59;mark sawtell;joined RED;Su-33
+11/27/15 21:03:00;PVI_ ROSS;entered the game;c1ef37ca4e7d5bf9e2eed9fce6aa9df6
+11/27/15 21:03:18;PVI_ ROSS;joined BLUE;Su-33
+11/27/15 21:03:24;PVI_ ROSS;joined SPECTATORS
+11/27/15 21:05:30;PVI_ ROSS;joined BLUE;Su-33
+11/27/15 21:06:11;mark sawtell;takeoff from;Anapa-Vityazevo
+11/27/15 21:06:48;=UKS=THRUST;killed;=UKS=DEST;;50
+11/27/15 21:06:49;=UKS=DEST;crashed
+11/27/15 21:07:53;gin;landed at;Anapa-Vityazevo
+11/27/15 21:08:21;=UKS=THRUST;dead
+11/27/15 21:08:36;-=Крылатый=-;killed;ZU-23 Emplacement Closed;;5
+11/27/15 21:09:36;=UKS=DEST;takeoff from;Novorossiysk
+11/27/15 21:11:34;=UKS=THRUST;takeoff from;Anapa-Vityazevo
+11/27/15 21:12:46;-=Крылатый=-;killed;Zeroskills;;50
+11/27/15 21:15:59;mark sawtell;killed;ZU-23 Emplacement Closed;;5
+11/27/15 21:16:00;mark sawtell;killed;ZU-23 Emplacement Closed;;5
+11/27/15 21:16:06;mark sawtell;dead
+11/27/15 21:19:04;gin;takeoff from;Anapa-Vityazevo
+11/27/15 21:19:54;=UKS=DEST;killed;gin;;50
+11/27/15 21:19:55;-=Крылатый=-;killed;ZU-23 Emplacement Closed;;5
+11/27/15 21:19:57;-=Крылатый=-;killed;ZU-23 Emplacement Closed;;5
+11/27/15 21:20:07;=UKS=THRUST;killed;Dry-cargo ship-1;SC-500;5
+11/27/15 21:20:08;gin;landed at;Anapa-Vityazevo
+11/27/15 21:20:52;[DoW] SnowTiger;entered the game;159f41a38361766cc8a7d0e3d16dc74a
+11/27/15 21:21:33;[DoW] SnowTiger;joined BLUE;Su-33
+11/27/15 21:21:33;=UKS=THRUST;killed;ZU-23 Emplacement Closed;;5
+11/27/15 21:21:55;=UKS=THRUST;dead
+11/27/15 21:23:32;=UKS=THRUST;joined SPECTATORS
+11/27/15 21:23:33;=UKS=THRUST;joined RED;Su-33
+11/27/15 21:24:19;-=Крылатый=-;killed;ZU-23 Emplacement Closed;;5
+11/27/15 21:24:40;gin;joined SPECTATORS
+11/27/15 21:25:01;[DoW] SnowTiger;takeoff from;Novorossiysk
+11/27/15 21:25:32;Shadow;entered the game;848eb0431a905ee04d86af37f8441c9f
+11/27/15 21:26:03;Shadow;joined RED;Su-33
+11/27/15 21:26:51;-=Крылатый=-;dead
+11/27/15 21:27:30;gin;joined RED;Su-33
+11/27/15 21:27:59;mugen;landed at;Anapa-Vityazevo
+11/27/15 21:28:40;=UKS=THRUST;takeoff from;Anapa-Vityazevo
+11/27/15 21:28:44;-=Крылатый=-;takeoff from;Novorossiysk
+11/27/15 21:29:10;Shadow;takeoff from;Anapa-Vityazevo
+11/27/15 21:30:03;=UKS=DEST;landed at;Novorossiysk
+11/27/15 21:30:32;=UKS=DEST;joined BLUE;Su-33
+11/27/15 21:30:33;=UKS=DEST;joined BLUE;Su-33
+11/27/15 21:30:35;[DoW] SnowTiger;killed;[DoW] SnowTiger;;50
+11/27/15 21:30:36;[DoW] SnowTiger;crashed
+11/27/15 21:31:51;gin;dead
+11/27/15 21:31:51;gin;crashed
+11/27/15 21:32:04;mark sawtell;joined RED;Su-33
+11/27/15 21:32:05;mark sawtell;joined RED;Su-33
+11/27/15 21:33:02;=UKS=DEST;takeoff from;Novorossiysk
+11/27/15 21:33:33;mugen;entered the game;87801f7ae28410ef63ebfd44eab13d22
+11/27/15 21:33:42;mugen;joined RED;Su-33
+11/27/15 21:35:56;=UKS=THRUST;killed;Dry-cargo ship-2;;5
+11/27/15 21:35:56;=UKS=THRUST;killed;=UKS=THRUST;;50
+11/27/15 21:35:56;mark sawtell;takeoff from;Anapa-Vityazevo
+11/27/15 21:35:58;=UKS=THRUST;crashed
+11/27/15 21:37:15;gin;takeoff from;Anapa-Vityazevo
+11/27/15 21:37:33;mugen;takeoff from;Anapa-Vityazevo
+11/27/15 21:38:05;-=Крылатый=-;killed;ZU-23 Emplacement Closed;;5
+11/27/15 21:41:48;-=Крылатый=-;killed;Shadow;P-51D;50
+11/27/15 21:41:49;=UKS=THRUST;takeoff from;Anapa-Vityazevo
+11/27/15 21:41:59;-=Крылатый=-;crashed
+11/27/15 21:43:39;-=Крылатый=-;takeoff from;Novorossiysk
+11/27/15 21:43:48;amazing;entered the game;7044a0d9b204d09b5e8dfde19f39ad41
+11/27/15 21:43:49;gin;killed;Dry-cargo ship-1;SC-500;5
+11/27/15 21:43:59;amazing;joined RED;Su-33
+11/27/15 21:44:06;=UKS=DEST;landed at;Anapa-Vityazevo
+11/27/15 21:44:12;mugen;landed at;Anapa-Vityazevo
+11/27/15 21:44:16;=UKS=DEST;dead
+11/27/15 21:44:51;mugen;joined SPECTATORS
+11/27/15 21:44:52;mugen;joined RED;Su-33
+11/27/15 21:45:04;=UKS=DEST;crashed
+11/27/15 21:46:03;amazing;takeoff from;Anapa-Vityazevo
+11/27/15 21:47:20;=UKS=DEST;takeoff from;Novorossiysk
+11/27/15 21:48:48;mugen;takeoff from;Anapa-Vityazevo
+11/27/15 21:51:01;gin;landed at;Anapa-Vityazevo
+11/27/15 21:51:54;=UKS=THRUST;killed;ZU-23 Emplacement Closed;;5
+11/27/15 21:52:53;gin;entered the game;1f6b233c2a4c3c44c5acef09f9311e70
+11/27/15 21:53:17;=UKS=THRUST;killed;ZU-23 Emplacement Closed;;5
+11/27/15 21:53:18;ACG_Fenris;entered the game;db79f2667a65320169faa3302d1f8b36
+11/27/15 21:53:35;mugen;landed at;Anapa-Vityazevo
+11/27/15 21:54:04;=UKS=THRUST;landed at;Novorossiysk
+11/27/15 21:54:04;=UKS=DEST;killed;=UKS=THRUST;;50
+11/27/15 21:54:04;=UKS=THRUST;crashed
+11/27/15 21:54:05;=UKS=DEST;dead
+11/27/15 21:54:05;=UKS=DEST;crashed
+11/27/15 21:54:37;ACG_Fenris;joined BLUE;Su-33
+11/27/15 21:54:38;mugen;joined SPECTATORS
+11/27/15 21:54:45;mugen;joined RED;Su-33
+11/27/15 21:56:15;-=Крылатый=-;dead
+11/27/15 21:56:15;-=Крылатый=-;crashed
+11/27/15 21:58:05;mugen;takeoff from;Anapa-Vityazevo
+11/27/15 21:58:06;mark sawtell;landed at;Novorossiysk
+11/27/15 21:59:07;mark sawtell;joined RED;Su-33
+11/27/15 21:59:08;mark sawtell;joined RED;Su-33
+11/27/15 22:01:52;=UKS=DEST;takeoff from;Novorossiysk
+11/27/15 22:10:24;=UKS=DEST;dead
+11/27/15 22:10:24;=UKS=DEST;crashed
+11/27/15 22:10:31;=UKS=THRUST;joined SPECTATORS
+11/27/15 22:10:32;=UKS=THRUST;joined RED;Su-33
+11/27/15 22:11:25;=UKS=DEST;entered the game;3432bb6a1188d647efa4e3e5ae3c4763
+11/27/15 22:11:35;=UKS=DEST;joined RED;Su-33
+11/27/15 22:14:05;=UKS=THRUST;takeoff from;Anapa-Vityazevo
+11/27/15 22:14:28;=UKS=DEST;takeoff from;Anapa-Vityazevo
+11/27/15 22:16:46;mugen;landed at;Anapa-Vityazevo
+11/27/15 22:18:44;Popeye;entered the game;98cfc8a7c0a11c6c207dec64d2dd627b
+11/27/15 22:19:12;Popeye;joined BLUE;Su-33
+11/27/15 22:19:37;BlitzPuppet;entered the game;56602485daadc26b2be2c204186c9da9
+11/27/15 22:24:15;=UKS=DEST;crashed
+11/27/15 22:24:26;Popeye;takeoff from;Novorossiysk
+11/27/15 22:25:00;=UKS=THRUST;killed;Dry-cargo ship-1;;5
+11/27/15 22:25:02;=UKS=THRUST;dead
+11/27/15 22:25:02;=UKS=THRUST;crashed
+11/27/15 22:28:03;ACG_Fenris;entered the game;db79f2667a65320169faa3302d1f8b36
+11/27/15 22:28:30;Popeye;dead
+11/27/15 22:28:31;Popeye;crashed
+11/27/15 22:31:11;ACG_Fenris;joined BLUE;Su-33
+11/27/15 22:33:39;ACG_Fenris;entered the game;db79f2667a65320169faa3302d1f8b36
+11/27/15 22:33:46;ACG_Fenris;joined RED;Su-33
+11/27/15 23:04:40;sahemych;entered the game;24e7a10dfb8c04fc7ece379ad2c6386d
+11/27/15 23:04:41;jesterreborn;entered the game;609eda023837356998bbfbc7270f8474
+11/27/15 23:04:48;sahemych;joined RED;Su-33
+11/27/15 23:04:51;sahemych;joined RED;Su-33
+11/27/15 23:04:54;jesterreborn;joined RED;Su-33
+11/27/15 23:08:24;jesterreborn;dead
+11/27/15 23:08:24;jesterreborn;crashed
+11/27/15 23:08:39;jesterreborn;joined RED;Su-33
+11/27/15 23:08:39;jesterreborn;joined RED;Su-33
+11/27/15 23:09:45;sahemych;joined RED;Su-33
+11/27/15 23:10:58;Flapjack;entered the game;34313d87e3d692d15a6f68a4c04214d5
+11/27/15 23:10:58;jesterreborn;joined RED;Su-33
+11/27/15 23:10:59;jesterreborn;joined RED;Su-33
+11/27/15 23:11:06;Flapjack;joined BLUE;Su-33
+11/27/15 23:11:56;sahemych;joined RED;Su-33
+11/27/15 23:14:00;jesterreborn;takeoff from;Anapa-Vityazevo
+11/27/15 23:15:19;Flapjack;takeoff from;Novorossiysk
+11/27/15 23:16:39;dolt;entered the game;af42d5c78157dffc8bd962c583dcc15b
+11/27/15 23:21:30;sahemych;takeoff from;Anapa-Vityazevo
+11/27/15 23:21:32;sahemych;landed at;Anapa-Vityazevo
+11/27/15 23:21:35;sahemych;joined RED;Su-33
+11/27/15 23:22:11;dolt;takeoff from;Novorossiysk
+11/27/15 23:23:38;jesterreborn;dead
+11/27/15 23:23:38;jesterreborn;crashed
+11/27/15 23:23:45;jesterreborn;joined RED;Su-33
+11/27/15 23:23:46;jesterreborn;joined RED;Su-33
+11/27/15 23:25:12;sahemych;takeoff from;Anapa-Vityazevo
+11/27/15 23:25:55;jesterreborn;joined RED;Su-33
+11/27/15 23:32:16;MegOhm;entered the game;33a753de8f46e07cd9412e78852586d3
+11/27/15 23:32:31;MegOhm;joined BLUE;Su-33
+11/27/15 23:40:11;MegOhm;takeoff from;Novorossiysk
+11/27/15 23:40:15;dolt;killed;sahemych;;50
+11/27/15 23:41:58;sahemych;entered the game;24e7a10dfb8c04fc7ece379ad2c6386d
+11/27/15 23:42:02;sahemych;joined RED;Su-33
+11/27/15 23:44:55;Flapjack;landed at;Novorossiysk
+11/27/15 23:45:01;Flapjack;dead
+11/27/15 23:45:03;Flapjack;crashed
+11/27/15 23:46:38;sahemych;takeoff from;Anapa-Vityazevo
+11/27/15 23:48:39;dolt;landed at;Novorossiysk
+11/27/15 23:51:20;dolt;joined SPECTATORS
+11/27/15 23:53:02;MegOhm;landed at;Anapa-Vityazevo
+11/27/15 23:53:02;MegOhm;crashed
+11/28/15 00:00:03;jesterreborn;joined SPECTATORS
+11/28/15 00:01:13;sahemych;dead
+11/28/15 00:01:13;sahemych;landed at;Anapa-Vityazevo
+11/28/15 00:07:47;welsCH!;entered the game;4bd299cef531d649f851ff5462389737
+11/28/15 00:08:03;welsCH!;joined RED;Su-33
+11/28/15 00:48:55;jesterreborn;entered the game;609eda023837356998bbfbc7270f8474
+11/28/15 00:49:09;jesterreborn;joined RED;Su-33
+11/28/15 01:02:49;=VNVV=Steata;entered the game;60d945369d97c5b540bbddae9135f856
+11/28/15 01:03:03;=VNVV=Steata;joined BLUE;Su-33
+11/27/15 13:38:52;Server;Stop

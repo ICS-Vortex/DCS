@@ -26,11 +26,9 @@
     <div class="row">
         <div class="col-md-4 col-md-offset-4" style="margin-top:25%;">
             <h1>Очистка БД</h1>
-            <form method="post" action="<?=base_url();?>statistics/empty_db">
                 <label for="password"><h3>Введите пароль</h3></label>
                 <input type="password" class="form-control" id="pass" name="password" value="" /><br>
                 <input type="button" id="clear_db" class="btn btn-danger" value="Очистить">
-            </form>
         </div>
     </div>
 </div><!-- ./wrapper -->

@@ -9,7 +9,7 @@ class Statistics_model extends Model
         parent::Model();
     }
     /***********������� ��������*********/
-
+    // Полная очистка статистики!
     function clear_db()
     {
         $this->db->query("TRUNCATE dcs_blueteam");
@@ -28,7 +28,7 @@ class Statistics_model extends Model
         $this->db->query("TRUNCATE pilots_takeoffs");
 
     }
-
+    // Текущие полёты - список ников.
     function main_get_current_flights()
     {
         $query = $this->db->query("
@@ -40,6 +40,7 @@ class Statistics_model extends Model
         return $query->result_array();
     }
 
+    //Список пилотов онлайн.
     function main_pilots_online()
     {
         $query = $this->db->query("
@@ -51,10 +52,9 @@ class Statistics_model extends Model
         return $query->result_array();
     }
 
+    // Выборка статистики на главную страницу
     function main_get_all_flights()
-
     {
-
         $query = $this->db->query("
                 SELECT pilots.nickname AS nickname,
                   pilots.id AS id,
@@ -91,314 +91,217 @@ class Statistics_model extends Model
                 )AS dogfights ON dogfights.pilot_id=pilots.id
                 ORDER BY pilots.nickname ASC
             ");
-
         return $query->result_array();
-
     }
 
-    /*��������� ������ ��������*/
-
+    // Получение зрителей
     function get_spectators()
-
     {
-
         $query = $this->db->query("
-
-                SELECT dcs_spectators.pilot_id AS id, 
-
-                        pilots.nickname AS nickname
-
-                FROM dcs_spectators
-
-                JOIN pilots ON pilots.id=dcs_spectators.pilot_id
-
-            
-
+            SELECT dcs_spectators.pilot_id AS id,
+                    pilots.nickname AS nickname
+            FROM dcs_spectators
+            JOIN pilots ON pilots.id=dcs_spectators.pilot_id
             ");
-
         return $query->result_array();
-
     }
 
-
-    /*��������� ������ ������� �������*/
-
+    //Список Красной команды
     function get_redteam()
-
     {
-
         $query = $this->db->query("
-
-                SELECT dcs_redteam.pilot_id AS id, 
-
-                        pilots.nickname AS nickname,
-
-                        dcs_redteam.plane AS plane
-
-                FROM dcs_redteam
-
-                JOIN pilots ON pilots.id=dcs_redteam.pilot_id
-
-            
-
+            SELECT dcs_redteam.pilot_id AS id,
+                    pilots.nickname AS nickname,
+                    dcs_redteam.plane AS plane
+            FROM dcs_redteam
+            JOIN pilots ON pilots.id=dcs_redteam.pilot_id
             ");
-
         return $query->result_array();
-
     }
 
-    /*��������� ������ ����� �������*/
-
+    //Получение списка Синей команды
     function get_blueteam()
-
     {
-
         $query = $this->db->query("
-
-                SELECT dcs_blueteam.pilot_id AS id, 
-
-                        pilots.nickname AS nickname,
-
-                        dcs_blueteam.plane AS plane
-
-                FROM dcs_blueteam
-
-                JOIN pilots ON pilots.id=dcs_blueteam.pilot_id
-
-            
-
+            SELECT dcs_blueteam.pilot_id AS id,
+                    pilots.nickname AS nickname,
+                    dcs_blueteam.plane AS plane
+            FROM dcs_blueteam
+            JOIN pilots ON pilots.id=dcs_blueteam.pilot_id
             ");
-
         return $query->result_array();
-
     }
 
-    /*�������� ���� ������ � ����*/
-
+    //Проверка пилота по UID
     function check_nick($hash)
     {
         $query = $this->db->query("SELECT * FROM pilots WHERE hash='{$hash}'");
         return $query->num_rows();
     }
 
-    /*add pilot to base*/
-
+    //Добавление пилота в базу данных
     function add_pilot($data)
     {
         $this->db->insert('pilots', $data);
     }
 
-    /*��������� ID ������*/
-
+    //Проверка пилота по Никнейму
     function get_pilot_id($nickname)
     {
         $query = $this->db->query("SELECT id FROM pilots WHERE nickname='$nickname'");
         return $query->row_array();
     }
+
+    //Получение пилота по UID
     function get_pilot_id_with_hash($hash){
         $query = $this->db->query("SELECT * FROM pilots WHERE hash='{$hash}'");
         return $query->row_array();
     }
 
+    //Проверка жертвы по UID
     function check_victim_by_hash($hash){
         $query = $this->db->query("SELECT * FROM pilots WHERE hash='{$hash}'");
         return $query->row_array();
     }
 
-    /*�������� ������ �����*/
-
+    //Добавление нового полёта
     function add_new_flight($id, $time)
     {
         $this->db->query("INSERT INTO flights(pilot_id,flight) VALUES($id,'$time')");
     }
 
-    /*��������� ���� ������ �������� �����*/
-
+    //Получение полёта по ID юзера.
     function get_start_flight($id)
     {
         $query = $this->db->query("SELECT flight AS last_flight FROM flights WHERE pilot_id=$id ORDER BY flight DESC LIMIT 1");
         return $query->row_array();
     }
 
-    /*����� ����� - �� ������, �������, ������...*/
-
+    //Добавление налёта в базу
     function add_total_flight($data)
-
     {
-
         $this->db->insert('flight_hours', $data);
-
     }
 
+    //Очистка полёта по ID юзера.
     function clear_flights($id)
     {
         $this->db->query("DELETE FROM flights WHERE pilot_id=$id");
     }
 
-    /*����� ������� ������ � ��*/
-
+    //Получение жертвы по Никнейму.
     function find_victim($nickname)
-
     {
-
         $query = $this->db->query("SELECT nickname AS victim,id FROM pilots WHERE nickname='$nickname'");
-
         return $query->row_array();
-
     }
 
-    /*�������*/
-
+    // Получение тимкила TODO Старая функция.
     function get_teamkill($id, $victim_id)
-
     {
-
         $query = $this->db->query("SELECT * FROM dcs_redteam WHERE pilot_id='$id' OR pilot_id=$victim_id");
-
         return $query->num_rows();
-
     }
 
-    /*���������� ������ �� */
-
+    //Добавление нового Креша (уничтожение ЛА)
     function add_fail_crash($id, $time)
-
     {
-
         $this->db->query("INSERT INTO fail_flights(pilot_id,data) VALUES($id,'$time')");
-
     }
 
-    /*���������� ����� ��������*/
-
+    //Добавление убития игрока TODO Ненужная функция
     function add_victim($id, $victim, $time, $friendly)
-
     {
-
         $this->db->query("INSERT INTO pilots_dogfights(pilot_id,victim,data,friendly) VALUES ($id,'$victim','$time',$friendly)");
-
     }
 
-    /*������ �������� ������*/
-
+    //Добавление убития игрока
     function add_new_kill($data)
     {
         $this->db->insert('pilots_kills', $data);
     }
 
-    /* ������� �������� ������ �� �������� �������*/
-
+    //Получение всех текущих полётов.
     function get_all_current_flights()
     {
         $query = $this->db->query("SELECT * FROM flights");
         return $query->result_array();
     }
 
-    /*������� ������ ������ ��� �������� �������*/
-
+    //Получение списка пилотов онлайн.
     function get_online_all()
-
     {
-
         $query = $this->db->query("SELECT * FROM dcs_online");
-
         return $query->result_array();
-
     }
 
-    /*���������� ����� ������� ������ ��� �������� �������*/
-
+    //Добавление налёта всех незаконченных вылетов (событие Server Stop)
     function add_not_ended_flights($values)
-
     {
-
         $this->db->query("INSERT INTO flight_hours (pilot_id,start_flight,end_flight,total) VALUES $values");
-
     }
 
-    /*������� ���� ������� ������ ����� �������� �������*/
-
+    //Удаление полёта по ID пилота
     function delete_all_flights($id)
-
     {
-
         $this->db->query("DELETE FROM flights WHERE pilot_id=$id");
-
     }
 
-    /*���������� ������ ������ ��� ������������*/
-
+    //Добавление смерти
     function add_death($data)
     {
         $this->db->insert('pilots_death', $data);
     }
 
-    /*������� ����� ��� ���������� ������*/
-
+    // Взлёт
     function add_takeoff($id, $time)
     {
         $this->db->query("INSERT INTO pilots_takeoffs(pilot_id,data) VALUES($id,'$time')");
     }
 
-    /*������� ������� ��� ���������� �������*/
-
+    // Посадка
     function add_landing($id, $time)
     {
         $this->db->query("INSERT INTO pilots_lands(pilot_id,data) VALUES ($id,'$time')");
     }
 
-    /*���������� � �������*/
-
+    //Добавление зрителя
     function add_spectator($id, $time)
-
     {
-
         $this->db->query("INSERT INTO dcs_spectators (pilot_id,data) VALUES ($id,'$time')");
-
     }
 
-    /*�������� ������ � ��������*/
-
+    // Проверка зрителя по ID
     function check_spectator($id)
-
     {
-
         $query = $this->db->query("SELECT * FROM dcs_spectators WHERE pilot_id=$id");
-
         return $query->result_array();
-
     }
 
-    /*��������� ������ �������� ��� ��������*/
-
+    //Получение списка всех зрителей
     function get_all_spectators()
-
     {
-
         $query = $this->db->query("SELECT * FROM dcs_spectators");
-
         return $query->result_array();
-
     }
 
+    //Удаление из списка зрителей по ID пилота
     function delete_from_spectators($id)
     {
         $this->db->query("DELETE FROM dcs_spectators WHERE pilot_id={$id}");
     }
 
-    /*���� � ������� �������*/
-
+    //Запись пилота в таблицу Красной команды
     function join_red($id, $time, $plane)
     {
         $this->db->query("
-          INSERT INTO dcs_redteam(pilot_id,data,plane) VALUES ($id,'$time','$plane')
-          ON DUPLICATE KEY UPDATE pilot_id=VALUES(plane) AND data=VALUES(data);
+            INSERT INTO dcs_redteam(pilot_id,data,plane) VALUES ($id,'$time','$plane')
+            ON DUPLICATE KEY UPDATE pilot_id=VALUES(plane) AND data=VALUES(data);
 
         ");
     }
 
-    /*���� � ������� ����� */
-
+    //Запись пилота в таблицу Синей команды
     function join_blue($id, $time, $plane)
     {
         $this->db->query("
@@ -408,48 +311,30 @@ class Statistics_model extends Model
         ");
     }
 
-    /*������ ������� ������ �������*/
-
+    //обновление ЛА в таблице Красной команды TODO Старая функция
     function update_red_pilot_plane($id, $plane)
-
     {
-
         $this->db->query("UPDATE dcs_redteam SET plane='$plane' WHERE pilot_id=$id");
-
     }
 
-    /*������ ������� ������ �����*/
-
+    //обновление ЛА в таблице Синей команды TODO Старая функция
     function update_blue_pilot_plane($id, $plane)
-
     {
-
         $this->db->query("UPDATE dcs_blueteam SET plane='$plane' WHERE pilot_id=$id");
-
     }
 
-    /*����� �� ������� �������*/
-
+    // Игрок покинул Красную команду
     function left_red($id)
-
     {
-
         $this->db->where('pilot_id', $id);
-
         $this->db->delete('dcs_redteam');
-
     }
 
-    /*����� �� ������� �����*/
-
+    // Игрок покинул Синюю команду
     function left_blue($id)
-
     {
-
         $this->db->where('pilot_id', $id);
-
         $this->db->delete('dcs_blueteam');
-
     }
 
     /*�������� ������� � ������� �����*/

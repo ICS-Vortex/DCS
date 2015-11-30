@@ -56,13 +56,13 @@ class Statistics extends Controller
         $data['total_count'] = $this->statistics_model->get_total_count($id);
         $data['statistics'] = $this->statistics_model->flight_statistic($id);
         $data['dogfights'] = $this->statistics_model->get_dogfights_by_id($id);
-        $data['total_points'] = $this->statistics_model->get_total_points_by_id($id);
-        $points = $data['total_points']['points'];
-        if(!empty($data['total_points']['points']) && $points > 0){
-            $data['medals'] = $this->statistics_model->get_medals_by_points($data['total_points']['points']);
-            //print_r($data['medals']);exit;
+        $kill_points = $this->statistics_model->get_total_points_by_id($id);
+        $dogfight_points = $this->statistics_model->get_points_for_dogfights($id);
+        $points = $kill_points['points'] + $dogfight_points['points'];
+        $data['total_points'] = $points;
+        if(!empty($kill_points) && !empty($dogfight_points) && $points > 0){
+            $data['medals'] = $this->statistics_model->get_medals_by_points($points);
         }
-        //print_r($data['dogfights']);exit();       
         $this->load->view('statistics/pilot_stat_view', $data);
     }
 

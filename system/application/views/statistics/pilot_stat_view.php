@@ -53,7 +53,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 col-sm-12 pull-right">
-                <h3>Общее количество очков - <b><? echo $total_points['points'];?></b>.</h3>
+                <h3>Общее количество очков - <b><? echo $total_points;?></b>.</h3>
             </div>
         </div>
         <div class="row">

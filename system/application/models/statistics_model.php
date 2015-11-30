@@ -534,6 +534,12 @@ class Statistics_model extends Model
         return $query->row_array();
     }
 
+    //Выборка очков за воздушные победы
+    function get_points_for_dogfights($id){
+        $query = $this->db->query("SELECT SUM(points) AS points FROM pilots_dogfights WHERE pilot_id={$id} ");
+        return $query->row_array();
+    }
+
     //Получение медалей по очкам
     function get_medals_by_points($points){
         $query = $this->db->query("

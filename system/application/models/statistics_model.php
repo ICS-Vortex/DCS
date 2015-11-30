@@ -557,21 +557,20 @@ class Statistics_model extends Model
     function get_pilot_kills_by_category($id)
     {
         $query = $this->db->query("
-
                 SELECT dcs_categories.title AS title,
-
                        COUNT(pilots_kills.unit_id) AS count_kills
-
                 FROM pilots_kills
-
-                LEFT JOIN (SELECT DISTINCT name,category FROM dcs_units) AS units ON units.id=pilots_kills.unit_id
-
+                LEFT JOIN (
+                          SELECT
+                            DISTINCT name,
+                            id,
+                            category
+                            FROM dcs_units
+                          )
+                          AS units ON units.id=pilots_kills.unit_id
                 LEFT JOIN dcs_categories ON dcs_categories.id=units.category
-
                 WHERE pilots_kills.pilot_id=$id
-
-                GROUP BY dcs_categories.title    
-
+                GROUP BY dcs_categories.title
             ");
         return $query->result_array();
     }
@@ -580,7 +579,12 @@ class Statistics_model extends Model
 
     function get_total_count($id)
     {
-        $query = $this->db->query("SELECT COUNT(object) as total_count FROM pilots_kills WHERE pilot_id=$id");
+        $query = $this->db->query("
+          SELECT
+            COUNT(unit_id) as total_count
+            FROM pilots_kills
+            WHERE pilot_id=$id
+         ");
         return $query->row_array();
     }
 
@@ -623,12 +627,36 @@ class Statistics_model extends Model
                 killed.counts_kills,
                 dead.counts_death_kills
             FROM pilots
-            JOIN (SELECT COUNT(pilot_id) AS counts_kills,pilot_id FROM pilots_dogfights WHERE pilot_id=$id) AS killed ON killed.pilot_id=$id
-            LEFT JOIN (SELECT COUNT(victim) AS counts_death_kills,victim FROM pilots_dogfights GROUP BY victim) AS dead ON dead.victim=pilots.nickname
+            INNER JOIN (SELECT
+                    COUNT(pilot_id) AS counts_kills,
+                    pilot_id
+                  FROM pilots_dogfights
+                  WHERE pilot_id=$id
+                  )
+                AS killed ON killed.pilot_id=$id
+            LEFT JOIN (SELECT
+                          COUNT(victim_id) AS counts_death_kills,
+                          victim_id
+                        FROM pilots_dogfights GROUP BY victim_id) AS dead ON dead.victim_id=pilots.id
             WHERE pilots.id=$id
             ");
         return $query->row_array();
     }
+
+    // Общее количество очков по ID пилота
+    function get_total_points_by_id($id){
+        $query = $this->db->query("SELECT SUM(points) AS points FROM pilots_kills WHERE pilot_id={$id}");
+        return $query->row_array();
+    }
+
+    //Получение медалей по очкам
+    function get_medals_by_points($points){
+        $query = $this->db->query("
+            SELECT * FROM dcs_awards WHERE points <= {$points}
+        ");
+        return $query->result_array();
+    }
+
 
     function insert_dogfight($dogfight){
         $this->db->insert('pilots_dogfights',$dogfight);
@@ -638,6 +666,8 @@ class Statistics_model extends Model
         $query = $this->db->query("SELECT * from dcs_units WHERE name='{$check_unit_type_temp}'");
         return $query->row_array();
     }
+
+
 
 }
 

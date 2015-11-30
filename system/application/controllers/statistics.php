@@ -56,6 +56,12 @@ class Statistics extends Controller
         $data['total_count'] = $this->statistics_model->get_total_count($id);
         $data['statistics'] = $this->statistics_model->flight_statistic($id);
         $data['dogfights'] = $this->statistics_model->get_dogfights_by_id($id);
+        $data['total_points'] = $this->statistics_model->get_total_points_by_id($id);
+        $points = $data['total_points']['points'];
+        if(!empty($data['total_points']['points']) && $points > 0){
+            $data['medals'] = $this->statistics_model->get_medals_by_points($data['total_points']['points']);
+            //print_r($data['medals']);exit;
+        }
         //print_r($data['dogfights']);exit();       
         $this->load->view('statistics/pilot_stat_view', $data);
     }
@@ -495,40 +501,6 @@ class Statistics extends Controller
             unlink($file);
             echo 1;
         }
-    }
-
-    function test(){
-        $hash = '4a1f11d5feabb05dceb5feb330f73951';
-        $nickname = 'Pacman';
-        $time = date('Y-m-d H:i:s');
-        $check_nickname = $this->statistics_model->get_pilot_id($nickname);
-        //print_r($check_nickname);exit;
-        if(!empty($check_nickname)){
-            $id = $check_nickname['id'];
-        }else{
-            exit;
-        }
-        $start_flight = $this->statistics_model->get_start_flight($id);
-
-        if (!empty($start_flight)) {
-            //echo "Пилот $nickname тупо потратил время техников и своё!<br />";
-            $this->statistics_model->add_fail_crash($id, $time);
-            $start_flight = $this->statistics_model->get_start_flight($id);
-            $start = $start_flight['last_flight'];
-            $hours = strtotime($time) - strtotime($start);
-            $total = array();
-            $total['pilot_id'] = $id;
-            $total['start_flight'] = $start;
-            $total['end_flight'] = $time;
-            $total['total'] = $hours;
-            $flight = $this->statistics_model->add_total_flight($total);
-            $this->statistics_model->clear_flights($id);
-        }
-        $this->statistics_model->delete_from_spectators(3);
-        $this->statistics_model->delete_online(3);
-        $this->statistics_model->left_blue(3);
-        $this->statistics_model->left_red(3);
-
     }
 }
 

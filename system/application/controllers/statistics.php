@@ -345,6 +345,28 @@ class Statistics extends Controller
 //                $this->statistics_model->add_takeoff($id, $time);
 //                break;
 //
+
+                    case 'dead':
+                        $start_flight = $this->statistics_model->get_start_flight($id);
+                        if (!empty($start_flight)) {
+                            $start = $start_flight['last_flight'];
+                            $hours = strtotime($time) - strtotime($start);
+                            $total = array();
+                            $total['pilot_id'] = $id;
+                            $total['start_flight'] = $start;
+                            $total['end_flight'] = $time;
+                            $total['total'] = $hours;
+                            $flight = $this->statistics_model->add_total_flight($total);
+                            $this->statistics_model->clear_flights($id);
+                            $this->statistics_model->add_fail_crash($id, $time);
+                            //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
+                        }
+                        $death = array(
+                            'pilot_id' => $id,
+                            'death' => $time,
+                        );
+                        $dead = $this->statistics_model->add_death($death);
+                        break;
                     case 'landed at':/*Событие посадки*/
                         //echo 'Игрок '.$nickname.' сел на аэродром '.$object.' в '.$time.'<br>';
                         $start_flight = $this->statistics_model->get_start_flight($id);
@@ -413,7 +435,6 @@ class Statistics extends Controller
                         break;
                     case 'crashed': /*Событие потери ЛА*/
                         //echo 'Игрок '.$nickname.' разбил свой ЛА в '.$time.'<br>';
-
                         $start_flight = $this->statistics_model->get_start_flight($id);
                         if (!empty($start_flight)) {
                             $start = $start_flight['last_flight'];
@@ -427,7 +448,6 @@ class Statistics extends Controller
                             $this->statistics_model->clear_flights($id);
                             $this->statistics_model->add_fail_crash($id, $time);
                             //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
-                            $this->statistics_model->add_fail_crash($id, $time);
                         }
                         break;
                     case 'joined SPECTATORS':/*Событие входа Пилота в зрители*/

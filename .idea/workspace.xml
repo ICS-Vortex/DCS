@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f35238b7-3bc6-4702-bd3a-237752de1428" name="Default" comment="git ignore">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/application/controllers/statistics.php" afterPath="$PROJECT_DIR$/system/application/controllers/statistics.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/application/models/statistics_model.php" afterPath="$PROJECT_DIR$/system/application/models/statistics_model.php" />
     </list>
     <ignored path="statistics.loc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,155 +25,120 @@
     <favorites_list name="statistics.loc" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/application/controllers/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.518518">
-              <caret line="499" column="58" selection-start-line="499" selection-start-column="58" selection-end-line="499" selection-end-column="58" />
+            <state vertical-scroll-proportion="-1.4444444">
+              <caret line="348" column="32" selection-start-line="348" selection-start-column="32" selection-end-line="348" selection-end-column="32" />
               <folding>
-                <element signature="e#3535#27636#0#PHP" expanded="false" />
                 <element signature="e#5721#10627#0#PHP" expanded="false" />
                 <element signature="e#11743#12247#0#PHP" expanded="false" />
+                <element signature="e#12268#15058#0#PHP" expanded="false" />
                 <element signature="e#15079#17936#0#PHP" expanded="false" />
                 <element signature="e#17957#18484#0#PHP" expanded="false" />
-                <element signature="e#18485#18539#0#PHP" expanded="false" />
-                <element signature="e#18966#20077#0#PHP" expanded="false" />
-                <element signature="e#20098#21951#0#PHP" expanded="false" />
-                <element signature="e#21972#23172#0#PHP" expanded="false" />
-                <element signature="e#23193#24387#0#PHP" expanded="false" />
-                <element signature="e#24408#25855#0#PHP" expanded="false" />
-                <marker date="1448867901689" expanded="true" signature="693:703" placeholder="..." />
-                <marker date="1448867901689" expanded="true" signature="868:880" placeholder="..." />
-                <marker date="1448867901689" expanded="true" signature="12369:12379" placeholder="..." />
-                <marker date="1448867901689" expanded="true" signature="13729:13739" placeholder="..." />
-                <marker date="1448867901689" expanded="true" signature="15181:15192" placeholder="..." />
-                <marker date="1448867901689" expanded="true" signature="16607:16617" placeholder="..." />
-                <marker date="1448867901689" expanded="true" signature="17937:18484" placeholder="..." />
+                <element signature="e#20226#21337#0#PHP" expanded="false" />
+                <element signature="e#21358#23211#0#PHP" expanded="false" />
+                <element signature="e#23232#24432#0#PHP" expanded="false" />
+                <element signature="e#25586#27033#0#PHP" expanded="false" />
+                <element signature="e#27054#28717#0#PHP" expanded="false" />
+                <marker date="1448877037859" expanded="true" signature="693:703" placeholder="..." />
+                <marker date="1448877037859" expanded="true" signature="868:880" placeholder="..." />
+                <marker date="1448877037859" expanded="true" signature="12369:12379" placeholder="..." />
+                <marker date="1448877037859" expanded="true" signature="13729:13739" placeholder="..." />
+                <marker date="1448877037859" expanded="true" signature="15181:15192" placeholder="..." />
+                <marker date="1448877037859" expanded="true" signature="16607:16617" placeholder="..." />
+                <marker date="1448877037859" expanded="true" signature="17937:18484" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pilot_stat_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/application/views/statistics/pilot_stat_view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-              <folding>
-                <marker date="1448867911726" expanded="true" signature="2432:2478" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="statistics_model.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="statistics_model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/system/application/models/statistics_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="656" column="38" selection-start-line="656" selection-start-column="38" selection-end-line="656" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.2650376">
+              <caret line="330" column="30" selection-start-line="330" selection-start-column="30" selection-end-line="330" selection-end-column="30" />
               <folding>
-                <marker date="1448867918154" expanded="true" signature="1072:1236" placeholder="SELECT fligh..flights..." />
-                <marker date="1448867918154" expanded="true" signature="1387:1548" placeholder="SELECT dcs_o..dcs_online..." />
-                <marker date="1448867918154" expanded="true" signature="1706:3392" placeholder="SELECT pilot..pilots..." />
-                <marker date="1448867918154" expanded="true" signature="2123:2219" placeholder="SELECT pilot..flight_hours..." />
-                <marker date="1448867918154" expanded="true" signature="2357:2482" placeholder="SELECT pilot..pilots_kills..." />
-                <marker date="1448867918154" expanded="true" signature="2642:2783" placeholder="SELECT pilot..pilots_death..." />
-                <marker date="1448867918154" expanded="true" signature="2885:3030" placeholder="SELECT pilot..fail_flights..." />
-                <marker date="1448867918154" expanded="true" signature="3146:3162" placeholder="SELECT pilot..." />
-                <marker date="1448867918154" expanded="true" signature="3146:3181" placeholder="SELECT pilot..." />
-                <marker date="1448867918154" expanded="true" signature="3146:3189" placeholder="SELECT pilot..." />
-                <marker date="1448867918154" expanded="true" signature="3146:3285" placeholder="SELECT pilot..dcs_dogfights..." />
-                <marker date="1448867918154" expanded="true" signature="3583:3777" placeholder="SELECT dcs_s..dcs_spectators..." />
-                <marker date="1448867918154" expanded="true" signature="3988:4226" placeholder="SELECT dcs_r..dcs_redteam..." />
-                <marker date="1448867918154" expanded="true" signature="4435:4677" placeholder="SELECT dcs_b..dcs_blueteam..." />
-                <marker date="1448867918154" expanded="true" signature="4866:4893" placeholder="SELECT COUNT..pilots..." />
-                <marker date="1448867918154" expanded="true" signature="4866:4907" placeholder="SELECT * FRO..pilots..." />
-                <marker date="1448867918154" expanded="true" signature="5174:5222" placeholder="SELECT id FR..pilots..." />
-                <marker date="1448867918154" expanded="true" signature="5347:5374" placeholder="SELECT id FR..pilots..." />
-                <marker date="1448867918154" expanded="true" signature="5347:5388" placeholder="SELECT id FR..pilots..." />
-                <marker date="1448867918154" expanded="true" signature="5512:5553" placeholder="SELECT * FRO..pilots..." />
-                <marker date="1448867918154" expanded="true" signature="5703:5759" placeholder="INSERT INTO flights..." />
-                <marker date="1448867918154" expanded="true" signature="5892:5981" placeholder="SELECT fligh..flights..." />
-                <marker date="1448867918154" expanded="true" signature="6248:6283" placeholder="DELETE FROM ..." />
-                <marker date="1448867918154" expanded="true" signature="6411:6478" placeholder="SELECT nickn..pilots..." />
-                <marker date="1448867918154" expanded="true" signature="6630:6689" placeholder="SELECT * FRO..dcs_redteam..." />
-                <marker date="1448867918154" expanded="true" signature="6852:6911" placeholder="INSERT INTO fail_flights..." />
-                <marker date="1448867918154" expanded="true" signature="7048:7148" placeholder="INSERT INTO pilots_dogfights..." />
-                <marker date="1448867918154" expanded="true" signature="7422:7443" placeholder="SELECT * FRO..flights..." />
-                <marker date="1448867918154" expanded="true" signature="7618:7642" placeholder="SELECT * FRO..dcs_online..." />
-                <marker date="1448867918154" expanded="true" signature="7834:7907" placeholder="INSERT INTO flight_hours..." />
-                <marker date="1448867918154" expanded="true" signature="8057:8092" placeholder="DELETE FROM ..." />
-                <marker date="1448867918154" expanded="true" signature="8365:8427" placeholder="INSERT INTO pilots_takeoffs..." />
-                <marker date="1448867918154" expanded="true" signature="8555:8615" placeholder="INSERT INTO pilots_lands..." />
-                <marker date="1448867918154" expanded="true" signature="8729:8792" placeholder="INSERT INTO dcs_spectators..." />
-                <marker date="1448867918154" expanded="true" signature="8917:8961" placeholder="SELECT * FRO..dcs_spectators..." />
-                <marker date="1448867918154" expanded="true" signature="9141:9169" placeholder="SELECT * FRO..dcs_spectators..." />
-                <marker date="1448867918154" expanded="true" signature="9294:9335" placeholder="DELETE FROM ..." />
-                <marker date="1448867918154" expanded="true" signature="9294:9336" placeholder="DELETE FROM ..." />
-                <marker date="1448867918154" expanded="true" signature="9294:9343" placeholder="DELETE FROM ..." />
-                <marker date="1448867918154" expanded="true" signature="9356:9382" placeholder="/*���� � ���..." />
-                <marker date="1448867918154" expanded="true" signature="9469:9543" placeholder="INSERT INTO dcs_redteam..." />
-                <marker date="1448867918154" expanded="true" signature="9469:9570" placeholder="INSERT INTO dcs_redteam..." />
-                <marker date="1448867918154" expanded="true" signature="9571:9586" placeholder="UPDATE pilot..." />
-                <marker date="1448867918154" expanded="true" signature="9571:9600" placeholder="UPDATE pilot..." />
-                <marker date="1448867918154" expanded="true" signature="9571:9610" placeholder="UPDATE pilot..." />
-                <marker date="1448867918154" expanded="true" signature="9571:9622" placeholder="UPDATE pilot..." />
-                <marker date="1448867918154" expanded="true" signature="9761:9836" placeholder="INSERT INTO dcs_blueteam..." />
-                <marker date="1448867918154" expanded="true" signature="9761:9863" placeholder="INSERT INTO dcs_blueteam..." />
-                <marker date="1448867918154" expanded="true" signature="9864:9893" placeholder="UPDATE pilot..." />
-                <marker date="1448867918154" expanded="true" signature="9864:9915" placeholder="UPDATE pilot..." />
-                <marker date="1448867918154" expanded="true" signature="10059:10112" placeholder="UPDATE dcs_r..." />
-                <marker date="1448867918154" expanded="true" signature="10248:10302" placeholder="UPDATE dcs_b..." />
-                <marker date="1448867918154" expanded="true" signature="11185:11210" placeholder="SELECT * FRO..dcs_redteam..." />
-                <marker date="1448867918154" expanded="true" signature="11371:11397" placeholder="SELECT * FRO..dcs_blueteam..." />
-                <marker date="1448867918154" expanded="true" signature="11606:11658" placeholder="UPDATE serve..." />
-                <marker date="1448867918154" expanded="true" signature="11730:11782" placeholder="UPDATE serve..." />
-                <marker date="1448867918154" expanded="true" signature="12191:12243" placeholder="SELECT statu..server..." />
-                <marker date="1448867918154" expanded="true" signature="12358:12416" placeholder="INSERT INTO dcs_online..." />
-                <marker date="1448867918154" expanded="true" signature="12490:12528" placeholder="DELETE FROM ..." />
-                <marker date="1448867918154" expanded="true" signature="13004:13624" placeholder="SELECT dcs_c..pilots_kills..." />
-                <marker date="1448867918154" expanded="true" signature="13196:13357" placeholder="SELECT DISTI..dcs_units..." />
-                <marker date="1448867918154" expanded="true" signature="13831:13937" placeholder="SELECT COUNT..pilots_kills..." />
-                <marker date="1448867918154" expanded="true" signature="14116:14177" placeholder="INSERT INTO pilots_ejects..." />
-                <marker date="1448867918154" expanded="true" signature="14281:15404" placeholder="SELECT pilot..pilots..." />
-                <marker date="1448867918154" expanded="true" signature="14596:14676" placeholder="SELECT pilot..pilots_death..." />
-                <marker date="1448867918154" expanded="true" signature="14762:14843" placeholder="SELECT pilot..pilots_ejects..." />
-                <marker date="1448867918154" expanded="true" signature="14934:15014" placeholder="SELECT pilot..pilots_lands..." />
-                <marker date="1448867918154" expanded="true" signature="15083:15169" placeholder="SELECT pilot..pilots_takeoffs..." />
-                <marker date="1448867918154" expanded="true" signature="15244:15326" placeholder="SELECT pilot..fail_flights..." />
-                <marker date="1448867918154" expanded="true" signature="15606:16268" placeholder="SELECT pilot..pilots..." />
-                <marker date="1448867918154" expanded="true" signature="15771:15933" placeholder="SELECT COUNT..pilots_dogfights..." />
-                <marker date="1448867918154" expanded="true" signature="16029:16202" placeholder="SELECT COUNT..pilots_dogfights..." />
-                <marker date="1448867918154" expanded="true" signature="16451:16503" placeholder="SELECT SUMM(..pilots_kills..." />
-                <marker date="1448867918154" expanded="true" signature="16451:16513" placeholder="SELECT SUMM(..pilots_kills..." />
-                <marker date="1448867918154" expanded="true" signature="16690:16714" placeholder="SELECT * FRO..dcs_awards..." />
-                <marker date="1448867918154" expanded="true" signature="16690:16730" placeholder="SELECT * FRO..dcs_awards..." />
-                <marker date="1448867918154" expanded="true" signature="16690:16731" placeholder="SELECT * FRO..dcs_awards..." />
-                <marker date="1448867918154" expanded="true" signature="16993:17053" placeholder="SELECT * fro..dcs_units..." />
+                <marker date="1448877038063" expanded="true" signature="1072:1236" placeholder="SELECT fligh..flights..." />
+                <marker date="1448877038063" expanded="true" signature="1387:1548" placeholder="SELECT dcs_o..dcs_online..." />
+                <marker date="1448877038063" expanded="true" signature="1706:3392" placeholder="SELECT pilot..pilots..." />
+                <marker date="1448877038063" expanded="true" signature="2123:2219" placeholder="SELECT pilot..flight_hours..." />
+                <marker date="1448877038063" expanded="true" signature="2357:2482" placeholder="SELECT pilot..pilots_kills..." />
+                <marker date="1448877038063" expanded="true" signature="2642:2783" placeholder="SELECT pilot..pilots_death..." />
+                <marker date="1448877038063" expanded="true" signature="2885:3030" placeholder="SELECT pilot..fail_flights..." />
+                <marker date="1448877038063" expanded="true" signature="3146:3162" placeholder="SELECT pilot..." />
+                <marker date="1448877038063" expanded="true" signature="3146:3181" placeholder="SELECT pilot..." />
+                <marker date="1448877038063" expanded="true" signature="3146:3189" placeholder="SELECT pilot..." />
+                <marker date="1448877038063" expanded="true" signature="3146:3285" placeholder="SELECT pilot..dcs_dogfights..." />
+                <marker date="1448877038063" expanded="true" signature="3583:3777" placeholder="SELECT dcs_s..dcs_spectators..." />
+                <marker date="1448877038063" expanded="true" signature="3988:4226" placeholder="SELECT dcs_r..dcs_redteam..." />
+                <marker date="1448877038063" expanded="true" signature="4435:4677" placeholder="SELECT dcs_b..dcs_blueteam..." />
+                <marker date="1448877038063" expanded="true" signature="4866:4893" placeholder="SELECT COUNT..pilots..." />
+                <marker date="1448877038063" expanded="true" signature="4866:4907" placeholder="SELECT * FRO..pilots..." />
+                <marker date="1448877038063" expanded="true" signature="5174:5222" placeholder="SELECT id FR..pilots..." />
+                <marker date="1448877038063" expanded="true" signature="5347:5374" placeholder="SELECT id FR..pilots..." />
+                <marker date="1448877038063" expanded="true" signature="5347:5388" placeholder="SELECT id FR..pilots..." />
+                <marker date="1448877038063" expanded="true" signature="5512:5553" placeholder="SELECT * FRO..pilots..." />
+                <marker date="1448877038063" expanded="true" signature="5703:5759" placeholder="INSERT INTO flights..." />
+                <marker date="1448877038063" expanded="true" signature="5892:5981" placeholder="SELECT fligh..flights..." />
+                <marker date="1448877038063" expanded="true" signature="6248:6283" placeholder="DELETE FROM ..." />
+                <marker date="1448877038063" expanded="true" signature="6411:6478" placeholder="SELECT nickn..pilots..." />
+                <marker date="1448877038063" expanded="true" signature="6630:6689" placeholder="SELECT * FRO..dcs_redteam..." />
+                <marker date="1448877038063" expanded="true" signature="6852:6911" placeholder="INSERT INTO fail_flights..." />
+                <marker date="1448877038063" expanded="true" signature="7048:7148" placeholder="INSERT INTO pilots_dogfights..." />
+                <marker date="1448877038063" expanded="true" signature="7422:7443" placeholder="SELECT * FRO..flights..." />
+                <marker date="1448877038063" expanded="true" signature="7618:7642" placeholder="SELECT * FRO..dcs_online..." />
+                <marker date="1448877038063" expanded="true" signature="7834:7907" placeholder="INSERT INTO flight_hours..." />
+                <marker date="1448877038063" expanded="true" signature="8057:8092" placeholder="DELETE FROM ..." />
+                <marker date="1448877038063" expanded="true" signature="8366:8428" placeholder="INSERT INTO pilots_takeoffs..." />
+                <marker date="1448877038063" expanded="true" signature="8556:8616" placeholder="INSERT INTO pilots_lands..." />
+                <marker date="1448877038063" expanded="true" signature="8730:8793" placeholder="INSERT INTO dcs_spectators..." />
+                <marker date="1448877038063" expanded="true" signature="8918:8962" placeholder="SELECT * FRO..dcs_spectators..." />
+                <marker date="1448877038063" expanded="true" signature="9142:9170" placeholder="SELECT * FRO..dcs_spectators..." />
+                <marker date="1448877038063" expanded="true" signature="9295:9336" placeholder="DELETE FROM ..." />
+                <marker date="1448877038063" expanded="true" signature="9295:9337" placeholder="DELETE FROM ..." />
+                <marker date="1448877038063" expanded="true" signature="9295:9344" placeholder="DELETE FROM ..." />
+                <marker date="1448877038063" expanded="true" signature="9357:9383" placeholder="/*���� � ���..." />
+                <marker date="1448877038063" expanded="true" signature="9470:9544" placeholder="INSERT INTO dcs_redteam..." />
+                <marker date="1448877038063" expanded="true" signature="9470:9571" placeholder="INSERT INTO dcs_redteam..." />
+                <marker date="1448877038063" expanded="true" signature="9572:9587" placeholder="UPDATE pilot..." />
+                <marker date="1448877038063" expanded="true" signature="9572:9601" placeholder="UPDATE pilot..." />
+                <marker date="1448877038063" expanded="true" signature="9572:9611" placeholder="UPDATE pilot..." />
+                <marker date="1448877038063" expanded="true" signature="9572:9623" placeholder="UPDATE pilot..." />
+                <marker date="1448877038063" expanded="true" signature="9762:9837" placeholder="INSERT INTO dcs_blueteam..." />
+                <marker date="1448877038063" expanded="true" signature="9762:9864" placeholder="INSERT INTO dcs_blueteam..." />
+                <marker date="1448877038063" expanded="true" signature="9865:9894" placeholder="UPDATE pilot..." />
+                <marker date="1448877038063" expanded="true" signature="9865:9916" placeholder="UPDATE pilot..." />
+                <marker date="1448877038063" expanded="true" signature="10060:10113" placeholder="UPDATE dcs_r..." />
+                <marker date="1448877038063" expanded="true" signature="10249:10303" placeholder="UPDATE dcs_b..." />
+                <marker date="1448877038063" expanded="true" signature="11186:11211" placeholder="SELECT * FRO..dcs_redteam..." />
+                <marker date="1448877038063" expanded="true" signature="11372:11398" placeholder="SELECT * FRO..dcs_blueteam..." />
+                <marker date="1448877038063" expanded="true" signature="11607:11659" placeholder="UPDATE serve..." />
+                <marker date="1448877038063" expanded="true" signature="11731:11783" placeholder="UPDATE serve..." />
+                <marker date="1448877038063" expanded="true" signature="12192:12244" placeholder="SELECT statu..server..." />
+                <marker date="1448877038063" expanded="true" signature="12359:12417" placeholder="INSERT INTO dcs_online..." />
+                <marker date="1448877038063" expanded="true" signature="12491:12529" placeholder="DELETE FROM ..." />
+                <marker date="1448877038063" expanded="true" signature="13005:13625" placeholder="SELECT dcs_c..pilots_kills..." />
+                <marker date="1448877038063" expanded="true" signature="13197:13358" placeholder="SELECT DISTI..dcs_units..." />
+                <marker date="1448877038063" expanded="true" signature="13832:13938" placeholder="SELECT COUNT..pilots_kills..." />
+                <marker date="1448877038063" expanded="true" signature="14117:14178" placeholder="INSERT INTO pilots_ejects..." />
+                <marker date="1448877038063" expanded="true" signature="14282:15405" placeholder="SELECT pilot..pilots..." />
+                <marker date="1448877038063" expanded="true" signature="14597:14677" placeholder="SELECT pilot..pilots_death..." />
+                <marker date="1448877038063" expanded="true" signature="14763:14844" placeholder="SELECT pilot..pilots_ejects..." />
+                <marker date="1448877038063" expanded="true" signature="14935:15015" placeholder="SELECT pilot..pilots_lands..." />
+                <marker date="1448877038063" expanded="true" signature="15084:15170" placeholder="SELECT pilot..pilots_takeoffs..." />
+                <marker date="1448877038063" expanded="true" signature="15245:15327" placeholder="SELECT pilot..fail_flights..." />
+                <marker date="1448877038063" expanded="true" signature="15607:16269" placeholder="SELECT pilot..pilots..." />
+                <marker date="1448877038063" expanded="true" signature="15772:15934" placeholder="SELECT COUNT..pilots_dogfights..." />
+                <marker date="1448877038063" expanded="true" signature="16030:16203" placeholder="SELECT COUNT..pilots_dogfights..." />
+                <marker date="1448877038063" expanded="true" signature="16452:16504" placeholder="SELECT SUMM(..pilots_kills..." />
+                <marker date="1448877038063" expanded="true" signature="16452:16514" placeholder="SELECT SUMM(..pilots_kills..." />
+                <marker date="1448877038063" expanded="true" signature="16691:16715" placeholder="SELECT * FRO..dcs_awards..." />
+                <marker date="1448877038063" expanded="true" signature="16691:16731" placeholder="SELECT * FRO..dcs_awards..." />
+                <marker date="1448877038063" expanded="true" signature="16691:16732" placeholder="SELECT * FRO..dcs_awards..." />
+                <marker date="1448877038063" expanded="true" signature="16994:17054" placeholder="SELECT * fro..dcs_units..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="patch_awards.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_db/patch_awards.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
-              <folding>
-                <marker date="1448867933514" expanded="true" signature="29:89" placeholder="ALTER TABLE `dcs_awards`..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.030508475">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -204,11 +170,11 @@
         <option value="$PROJECT_DIR$/_db/patch_dcs_units.sql" />
         <option value="$PROJECT_DIR$/system/application/views/statistics/mainpage_view.php" />
         <option value="$PROJECT_DIR$/_db/patch_dcs_red_blue_team.sql" />
-        <option value="$PROJECT_DIR$/system/application/controllers/statistics.php" />
         <option value="$PROJECT_DIR$/system/application/views/statistics/pilot_stat_view.php" />
-        <option value="$PROJECT_DIR$/system/application/models/statistics_model.php" />
         <option value="$PROJECT_DIR$/_db/patch_awards.sql" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/system/application/controllers/statistics.php" />
+        <option value="$PROJECT_DIR$/system/application/models/statistics_model.php" />
       </list>
     </option>
   </component>
@@ -253,7 +219,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,6 +234,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="statistics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uploads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,8 +279,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,7 +464,19 @@
       <option name="project" value="LOCAL" />
       <updated>1448867962520</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="git ignore">
+      <created>1448868719493</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1448868719493</updated>
+    </task>
+    <task id="LOCAL-00016" summary="git ignore">
+      <created>1448869988489</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1448869988489</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -438,16 +492,16 @@
     <frame x="1345" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17096774" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24893071" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22868526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23665339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17096774" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30674848" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -509,7 +563,8 @@
     <MESSAGE value="Патчи для таблиц, рефакторинг парсера, ридми." />
     <MESSAGE value="Патч для таблиц Ред, Блу, рефактор кода." />
     <MESSAGE value="Первая Рабочая Версия Статистики!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Первая Рабочая Версия Статистики!!!!" />
+    <MESSAGE value="git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="git ignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -523,24 +578,23 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
-            <element signature="e#3535#27636#0#PHP" expanded="false" />
             <element signature="e#5721#10627#0#PHP" expanded="false" />
             <element signature="e#11743#12247#0#PHP" expanded="false" />
+            <element signature="e#12268#15058#0#PHP" expanded="false" />
             <element signature="e#15079#17936#0#PHP" expanded="false" />
             <element signature="e#17957#18484#0#PHP" expanded="false" />
-            <element signature="e#18485#18539#0#PHP" expanded="false" />
-            <element signature="e#18966#20077#0#PHP" expanded="false" />
-            <element signature="e#20098#21951#0#PHP" expanded="false" />
-            <element signature="e#21972#23172#0#PHP" expanded="false" />
-            <element signature="e#23193#24387#0#PHP" expanded="false" />
-            <element signature="e#24408#25855#0#PHP" expanded="false" />
-            <marker date="1448867901689" expanded="true" signature="693:703" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="868:880" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="12369:12379" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="13729:13739" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="15181:15192" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="16607:16617" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="17937:18484" placeholder="..." />
+            <element signature="e#20226#21337#0#PHP" expanded="false" />
+            <element signature="e#21358#23211#0#PHP" expanded="false" />
+            <element signature="e#23232#24432#0#PHP" expanded="false" />
+            <element signature="e#25586#27033#0#PHP" expanded="false" />
+            <element signature="e#27054#28717#0#PHP" expanded="false" />
+            <marker date="1448877037859" expanded="true" signature="693:703" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="868:880" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="12369:12379" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="13729:13739" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="15181:15192" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="16607:16617" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="17937:18484" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -585,24 +639,23 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="463" column="55" selection-start-line="463" selection-start-column="55" selection-end-line="463" selection-end-column="55" />
           <folding>
-            <element signature="e#3535#27636#0#PHP" expanded="false" />
             <element signature="e#5721#10627#0#PHP" expanded="false" />
             <element signature="e#11743#12247#0#PHP" expanded="false" />
+            <element signature="e#12268#15058#0#PHP" expanded="false" />
             <element signature="e#15079#17936#0#PHP" expanded="false" />
             <element signature="e#17957#18484#0#PHP" expanded="false" />
-            <element signature="e#18485#18539#0#PHP" expanded="false" />
-            <element signature="e#18966#20077#0#PHP" expanded="false" />
-            <element signature="e#20098#21951#0#PHP" expanded="false" />
-            <element signature="e#21972#23172#0#PHP" expanded="false" />
-            <element signature="e#23193#24387#0#PHP" expanded="false" />
-            <element signature="e#24408#25855#0#PHP" expanded="false" />
-            <marker date="1448867901689" expanded="true" signature="693:703" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="868:880" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="12369:12379" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="13729:13739" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="15181:15192" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="16607:16617" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="17937:18484" placeholder="..." />
+            <element signature="e#20226#21337#0#PHP" expanded="false" />
+            <element signature="e#21358#23211#0#PHP" expanded="false" />
+            <element signature="e#23232#24432#0#PHP" expanded="false" />
+            <element signature="e#25586#27033#0#PHP" expanded="false" />
+            <element signature="e#27054#28717#0#PHP" expanded="false" />
+            <marker date="1448877037859" expanded="true" signature="693:703" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="868:880" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="12369:12379" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="13729:13739" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="15181:15192" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="16607:16617" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="17937:18484" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -654,24 +707,23 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="463" column="55" selection-start-line="463" selection-start-column="55" selection-end-line="463" selection-end-column="55" />
           <folding>
-            <element signature="e#3535#27636#0#PHP" expanded="false" />
             <element signature="e#5721#10627#0#PHP" expanded="false" />
             <element signature="e#11743#12247#0#PHP" expanded="false" />
+            <element signature="e#12268#15058#0#PHP" expanded="false" />
             <element signature="e#15079#17936#0#PHP" expanded="false" />
             <element signature="e#17957#18484#0#PHP" expanded="false" />
-            <element signature="e#18485#18539#0#PHP" expanded="false" />
-            <element signature="e#18966#20077#0#PHP" expanded="false" />
-            <element signature="e#20098#21951#0#PHP" expanded="false" />
-            <element signature="e#21972#23172#0#PHP" expanded="false" />
-            <element signature="e#23193#24387#0#PHP" expanded="false" />
-            <element signature="e#24408#25855#0#PHP" expanded="false" />
-            <marker date="1448867901689" expanded="true" signature="693:703" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="868:880" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="12369:12379" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="13729:13739" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="15181:15192" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="16607:16617" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="17937:18484" placeholder="..." />
+            <element signature="e#20226#21337#0#PHP" expanded="false" />
+            <element signature="e#21358#23211#0#PHP" expanded="false" />
+            <element signature="e#23232#24432#0#PHP" expanded="false" />
+            <element signature="e#25586#27033#0#PHP" expanded="false" />
+            <element signature="e#27054#28717#0#PHP" expanded="false" />
+            <marker date="1448877037859" expanded="true" signature="693:703" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="868:880" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="12369:12379" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="13729:13739" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="15181:15192" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="16607:16617" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="17937:18484" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -716,24 +768,23 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3535#27636#0#PHP" expanded="false" />
             <element signature="e#5721#10627#0#PHP" expanded="false" />
             <element signature="e#11743#12247#0#PHP" expanded="false" />
+            <element signature="e#12268#15058#0#PHP" expanded="false" />
             <element signature="e#15079#17936#0#PHP" expanded="false" />
             <element signature="e#17957#18484#0#PHP" expanded="false" />
-            <element signature="e#18485#18539#0#PHP" expanded="false" />
-            <element signature="e#18966#20077#0#PHP" expanded="false" />
-            <element signature="e#20098#21951#0#PHP" expanded="false" />
-            <element signature="e#21972#23172#0#PHP" expanded="false" />
-            <element signature="e#23193#24387#0#PHP" expanded="false" />
-            <element signature="e#24408#25855#0#PHP" expanded="false" />
-            <marker date="1448867901689" expanded="true" signature="693:703" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="868:880" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="12369:12379" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="13729:13739" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="15181:15192" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="16607:16617" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="17937:18484" placeholder="..." />
+            <element signature="e#20226#21337#0#PHP" expanded="false" />
+            <element signature="e#21358#23211#0#PHP" expanded="false" />
+            <element signature="e#23232#24432#0#PHP" expanded="false" />
+            <element signature="e#25586#27033#0#PHP" expanded="false" />
+            <element signature="e#27054#28717#0#PHP" expanded="false" />
+            <marker date="1448877037859" expanded="true" signature="693:703" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="868:880" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="12369:12379" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="13729:13739" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="15181:15192" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="16607:16617" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="17937:18484" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -750,24 +801,23 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="456" selection-end-column="60" />
           <folding>
-            <element signature="e#3535#27636#0#PHP" expanded="false" />
             <element signature="e#5721#10627#0#PHP" expanded="false" />
             <element signature="e#11743#12247#0#PHP" expanded="false" />
+            <element signature="e#12268#15058#0#PHP" expanded="false" />
             <element signature="e#15079#17936#0#PHP" expanded="false" />
             <element signature="e#17957#18484#0#PHP" expanded="false" />
-            <element signature="e#18485#18539#0#PHP" expanded="false" />
-            <element signature="e#18966#20077#0#PHP" expanded="false" />
-            <element signature="e#20098#21951#0#PHP" expanded="false" />
-            <element signature="e#21972#23172#0#PHP" expanded="false" />
-            <element signature="e#23193#24387#0#PHP" expanded="false" />
-            <element signature="e#24408#25855#0#PHP" expanded="false" />
-            <marker date="1448867901689" expanded="true" signature="693:703" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="868:880" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="12369:12379" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="13729:13739" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="15181:15192" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="16607:16617" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="17937:18484" placeholder="..." />
+            <element signature="e#20226#21337#0#PHP" expanded="false" />
+            <element signature="e#21358#23211#0#PHP" expanded="false" />
+            <element signature="e#23232#24432#0#PHP" expanded="false" />
+            <element signature="e#25586#27033#0#PHP" expanded="false" />
+            <element signature="e#27054#28717#0#PHP" expanded="false" />
+            <marker date="1448877037859" expanded="true" signature="693:703" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="868:880" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="12369:12379" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="13729:13739" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="15181:15192" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="16607:16617" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="17937:18484" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -940,106 +990,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/pilot_stat_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-          <folding>
-            <marker date="1448867911726" expanded="true" signature="2432:2478" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/models/statistics_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="656" column="38" selection-start-line="656" selection-start-column="38" selection-end-line="656" selection-end-column="38" />
-          <folding>
-            <marker date="1448867918154" expanded="true" signature="1072:1236" placeholder="SELECT fligh..flights..." />
-            <marker date="1448867918154" expanded="true" signature="1387:1548" placeholder="SELECT dcs_o..dcs_online..." />
-            <marker date="1448867918154" expanded="true" signature="1706:3392" placeholder="SELECT pilot..pilots..." />
-            <marker date="1448867918154" expanded="true" signature="2123:2219" placeholder="SELECT pilot..flight_hours..." />
-            <marker date="1448867918154" expanded="true" signature="2357:2482" placeholder="SELECT pilot..pilots_kills..." />
-            <marker date="1448867918154" expanded="true" signature="2642:2783" placeholder="SELECT pilot..pilots_death..." />
-            <marker date="1448867918154" expanded="true" signature="2885:3030" placeholder="SELECT pilot..fail_flights..." />
-            <marker date="1448867918154" expanded="true" signature="3146:3162" placeholder="SELECT pilot..." />
-            <marker date="1448867918154" expanded="true" signature="3146:3181" placeholder="SELECT pilot..." />
-            <marker date="1448867918154" expanded="true" signature="3146:3189" placeholder="SELECT pilot..." />
-            <marker date="1448867918154" expanded="true" signature="3146:3285" placeholder="SELECT pilot..dcs_dogfights..." />
-            <marker date="1448867918154" expanded="true" signature="3583:3777" placeholder="SELECT dcs_s..dcs_spectators..." />
-            <marker date="1448867918154" expanded="true" signature="3988:4226" placeholder="SELECT dcs_r..dcs_redteam..." />
-            <marker date="1448867918154" expanded="true" signature="4435:4677" placeholder="SELECT dcs_b..dcs_blueteam..." />
-            <marker date="1448867918154" expanded="true" signature="4866:4893" placeholder="SELECT COUNT..pilots..." />
-            <marker date="1448867918154" expanded="true" signature="4866:4907" placeholder="SELECT * FRO..pilots..." />
-            <marker date="1448867918154" expanded="true" signature="5174:5222" placeholder="SELECT id FR..pilots..." />
-            <marker date="1448867918154" expanded="true" signature="5347:5374" placeholder="SELECT id FR..pilots..." />
-            <marker date="1448867918154" expanded="true" signature="5347:5388" placeholder="SELECT id FR..pilots..." />
-            <marker date="1448867918154" expanded="true" signature="5512:5553" placeholder="SELECT * FRO..pilots..." />
-            <marker date="1448867918154" expanded="true" signature="5703:5759" placeholder="INSERT INTO flights..." />
-            <marker date="1448867918154" expanded="true" signature="5892:5981" placeholder="SELECT fligh..flights..." />
-            <marker date="1448867918154" expanded="true" signature="6248:6283" placeholder="DELETE FROM ..." />
-            <marker date="1448867918154" expanded="true" signature="6411:6478" placeholder="SELECT nickn..pilots..." />
-            <marker date="1448867918154" expanded="true" signature="6630:6689" placeholder="SELECT * FRO..dcs_redteam..." />
-            <marker date="1448867918154" expanded="true" signature="6852:6911" placeholder="INSERT INTO fail_flights..." />
-            <marker date="1448867918154" expanded="true" signature="7048:7148" placeholder="INSERT INTO pilots_dogfights..." />
-            <marker date="1448867918154" expanded="true" signature="7422:7443" placeholder="SELECT * FRO..flights..." />
-            <marker date="1448867918154" expanded="true" signature="7618:7642" placeholder="SELECT * FRO..dcs_online..." />
-            <marker date="1448867918154" expanded="true" signature="7834:7907" placeholder="INSERT INTO flight_hours..." />
-            <marker date="1448867918154" expanded="true" signature="8057:8092" placeholder="DELETE FROM ..." />
-            <marker date="1448867918154" expanded="true" signature="8365:8427" placeholder="INSERT INTO pilots_takeoffs..." />
-            <marker date="1448867918154" expanded="true" signature="8555:8615" placeholder="INSERT INTO pilots_lands..." />
-            <marker date="1448867918154" expanded="true" signature="8729:8792" placeholder="INSERT INTO dcs_spectators..." />
-            <marker date="1448867918154" expanded="true" signature="8917:8961" placeholder="SELECT * FRO..dcs_spectators..." />
-            <marker date="1448867918154" expanded="true" signature="9141:9169" placeholder="SELECT * FRO..dcs_spectators..." />
-            <marker date="1448867918154" expanded="true" signature="9294:9335" placeholder="DELETE FROM ..." />
-            <marker date="1448867918154" expanded="true" signature="9294:9336" placeholder="DELETE FROM ..." />
-            <marker date="1448867918154" expanded="true" signature="9294:9343" placeholder="DELETE FROM ..." />
-            <marker date="1448867918154" expanded="true" signature="9356:9382" placeholder="/*���� � ���..." />
-            <marker date="1448867918154" expanded="true" signature="9469:9543" placeholder="INSERT INTO dcs_redteam..." />
-            <marker date="1448867918154" expanded="true" signature="9469:9570" placeholder="INSERT INTO dcs_redteam..." />
-            <marker date="1448867918154" expanded="true" signature="9571:9586" placeholder="UPDATE pilot..." />
-            <marker date="1448867918154" expanded="true" signature="9571:9600" placeholder="UPDATE pilot..." />
-            <marker date="1448867918154" expanded="true" signature="9571:9610" placeholder="UPDATE pilot..." />
-            <marker date="1448867918154" expanded="true" signature="9571:9622" placeholder="UPDATE pilot..." />
-            <marker date="1448867918154" expanded="true" signature="9761:9836" placeholder="INSERT INTO dcs_blueteam..." />
-            <marker date="1448867918154" expanded="true" signature="9761:9863" placeholder="INSERT INTO dcs_blueteam..." />
-            <marker date="1448867918154" expanded="true" signature="9864:9893" placeholder="UPDATE pilot..." />
-            <marker date="1448867918154" expanded="true" signature="9864:9915" placeholder="UPDATE pilot..." />
-            <marker date="1448867918154" expanded="true" signature="10059:10112" placeholder="UPDATE dcs_r..." />
-            <marker date="1448867918154" expanded="true" signature="10248:10302" placeholder="UPDATE dcs_b..." />
-            <marker date="1448867918154" expanded="true" signature="11185:11210" placeholder="SELECT * FRO..dcs_redteam..." />
-            <marker date="1448867918154" expanded="true" signature="11371:11397" placeholder="SELECT * FRO..dcs_blueteam..." />
-            <marker date="1448867918154" expanded="true" signature="11606:11658" placeholder="UPDATE serve..." />
-            <marker date="1448867918154" expanded="true" signature="11730:11782" placeholder="UPDATE serve..." />
-            <marker date="1448867918154" expanded="true" signature="12191:12243" placeholder="SELECT statu..server..." />
-            <marker date="1448867918154" expanded="true" signature="12358:12416" placeholder="INSERT INTO dcs_online..." />
-            <marker date="1448867918154" expanded="true" signature="12490:12528" placeholder="DELETE FROM ..." />
-            <marker date="1448867918154" expanded="true" signature="13004:13624" placeholder="SELECT dcs_c..pilots_kills..." />
-            <marker date="1448867918154" expanded="true" signature="13196:13357" placeholder="SELECT DISTI..dcs_units..." />
-            <marker date="1448867918154" expanded="true" signature="13831:13937" placeholder="SELECT COUNT..pilots_kills..." />
-            <marker date="1448867918154" expanded="true" signature="14116:14177" placeholder="INSERT INTO pilots_ejects..." />
-            <marker date="1448867918154" expanded="true" signature="14281:15404" placeholder="SELECT pilot..pilots..." />
-            <marker date="1448867918154" expanded="true" signature="14596:14676" placeholder="SELECT pilot..pilots_death..." />
-            <marker date="1448867918154" expanded="true" signature="14762:14843" placeholder="SELECT pilot..pilots_ejects..." />
-            <marker date="1448867918154" expanded="true" signature="14934:15014" placeholder="SELECT pilot..pilots_lands..." />
-            <marker date="1448867918154" expanded="true" signature="15083:15169" placeholder="SELECT pilot..pilots_takeoffs..." />
-            <marker date="1448867918154" expanded="true" signature="15244:15326" placeholder="SELECT pilot..fail_flights..." />
-            <marker date="1448867918154" expanded="true" signature="15606:16268" placeholder="SELECT pilot..pilots..." />
-            <marker date="1448867918154" expanded="true" signature="15771:15933" placeholder="SELECT COUNT..pilots_dogfights..." />
-            <marker date="1448867918154" expanded="true" signature="16029:16202" placeholder="SELECT COUNT..pilots_dogfights..." />
-            <marker date="1448867918154" expanded="true" signature="16451:16503" placeholder="SELECT SUMM(..pilots_kills..." />
-            <marker date="1448867918154" expanded="true" signature="16451:16513" placeholder="SELECT SUMM(..pilots_kills..." />
-            <marker date="1448867918154" expanded="true" signature="16690:16714" placeholder="SELECT * FRO..dcs_awards..." />
-            <marker date="1448867918154" expanded="true" signature="16690:16730" placeholder="SELECT * FRO..dcs_awards..." />
-            <marker date="1448867918154" expanded="true" signature="16690:16731" placeholder="SELECT * FRO..dcs_awards..." />
-            <marker date="1448867918154" expanded="true" signature="16993:17053" placeholder="SELECT * fro..dcs_units..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_db/patch_awards.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.030508475">
           <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
           <folding>
             <marker date="1448867933514" expanded="true" signature="29:89" placeholder="ALTER TABLE `dcs_awards`..." />
@@ -1047,38 +1000,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/controllers/statistics.php">
+    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/pilot_stat_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.518518">
-          <caret line="499" column="58" selection-start-line="499" selection-start-column="58" selection-end-line="499" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.03197158">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
           <folding>
-            <element signature="e#3535#27636#0#PHP" expanded="false" />
-            <element signature="e#5721#10627#0#PHP" expanded="false" />
-            <element signature="e#11743#12247#0#PHP" expanded="false" />
-            <element signature="e#15079#17936#0#PHP" expanded="false" />
-            <element signature="e#17957#18484#0#PHP" expanded="false" />
-            <element signature="e#18485#18539#0#PHP" expanded="false" />
-            <element signature="e#18966#20077#0#PHP" expanded="false" />
-            <element signature="e#20098#21951#0#PHP" expanded="false" />
-            <element signature="e#21972#23172#0#PHP" expanded="false" />
-            <element signature="e#23193#24387#0#PHP" expanded="false" />
-            <element signature="e#24408#25855#0#PHP" expanded="false" />
-            <marker date="1448867901689" expanded="true" signature="693:703" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="868:880" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="12369:12379" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="13729:13739" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="15181:15192" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="16607:16617" placeholder="..." />
-            <marker date="1448867901689" expanded="true" signature="17937:18484" placeholder="..." />
+            <marker date="1448867911726" expanded="true" signature="2432:2478" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030508475">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.09152542">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/application/controllers/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4444444">
+          <caret line="348" column="32" selection-start-line="348" selection-start-column="32" selection-end-line="348" selection-end-column="32" />
+          <folding>
+            <element signature="e#5721#10627#0#PHP" expanded="false" />
+            <element signature="e#11743#12247#0#PHP" expanded="false" />
+            <element signature="e#12268#15058#0#PHP" expanded="false" />
+            <element signature="e#15079#17936#0#PHP" expanded="false" />
+            <element signature="e#17957#18484#0#PHP" expanded="false" />
+            <element signature="e#20226#21337#0#PHP" expanded="false" />
+            <element signature="e#21358#23211#0#PHP" expanded="false" />
+            <element signature="e#23232#24432#0#PHP" expanded="false" />
+            <element signature="e#25586#27033#0#PHP" expanded="false" />
+            <element signature="e#27054#28717#0#PHP" expanded="false" />
+            <marker date="1448877037859" expanded="true" signature="693:703" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="868:880" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="12369:12379" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="13729:13739" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="15181:15192" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="16607:16617" placeholder="..." />
+            <marker date="1448877037859" expanded="true" signature="17937:18484" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/application/models/statistics_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2650376">
+          <caret line="330" column="30" selection-start-line="330" selection-start-column="30" selection-end-line="330" selection-end-column="30" />
+          <folding>
+            <marker date="1448877038063" expanded="true" signature="1072:1236" placeholder="SELECT fligh..flights..." />
+            <marker date="1448877038063" expanded="true" signature="1387:1548" placeholder="SELECT dcs_o..dcs_online..." />
+            <marker date="1448877038063" expanded="true" signature="1706:3392" placeholder="SELECT pilot..pilots..." />
+            <marker date="1448877038063" expanded="true" signature="2123:2219" placeholder="SELECT pilot..flight_hours..." />
+            <marker date="1448877038063" expanded="true" signature="2357:2482" placeholder="SELECT pilot..pilots_kills..." />
+            <marker date="1448877038063" expanded="true" signature="2642:2783" placeholder="SELECT pilot..pilots_death..." />
+            <marker date="1448877038063" expanded="true" signature="2885:3030" placeholder="SELECT pilot..fail_flights..." />
+            <marker date="1448877038063" expanded="true" signature="3146:3162" placeholder="SELECT pilot..." />
+            <marker date="1448877038063" expanded="true" signature="3146:3181" placeholder="SELECT pilot..." />
+            <marker date="1448877038063" expanded="true" signature="3146:3189" placeholder="SELECT pilot..." />
+            <marker date="1448877038063" expanded="true" signature="3146:3285" placeholder="SELECT pilot..dcs_dogfights..." />
+            <marker date="1448877038063" expanded="true" signature="3583:3777" placeholder="SELECT dcs_s..dcs_spectators..." />
+            <marker date="1448877038063" expanded="true" signature="3988:4226" placeholder="SELECT dcs_r..dcs_redteam..." />
+            <marker date="1448877038063" expanded="true" signature="4435:4677" placeholder="SELECT dcs_b..dcs_blueteam..." />
+            <marker date="1448877038063" expanded="true" signature="4866:4893" placeholder="SELECT COUNT..pilots..." />
+            <marker date="1448877038063" expanded="true" signature="4866:4907" placeholder="SELECT * FRO..pilots..." />
+            <marker date="1448877038063" expanded="true" signature="5174:5222" placeholder="SELECT id FR..pilots..." />
+            <marker date="1448877038063" expanded="true" signature="5347:5374" placeholder="SELECT id FR..pilots..." />
+            <marker date="1448877038063" expanded="true" signature="5347:5388" placeholder="SELECT id FR..pilots..." />
+            <marker date="1448877038063" expanded="true" signature="5512:5553" placeholder="SELECT * FRO..pilots..." />
+            <marker date="1448877038063" expanded="true" signature="5703:5759" placeholder="INSERT INTO flights..." />
+            <marker date="1448877038063" expanded="true" signature="5892:5981" placeholder="SELECT fligh..flights..." />
+            <marker date="1448877038063" expanded="true" signature="6248:6283" placeholder="DELETE FROM ..." />
+            <marker date="1448877038063" expanded="true" signature="6411:6478" placeholder="SELECT nickn..pilots..." />
+            <marker date="1448877038063" expanded="true" signature="6630:6689" placeholder="SELECT * FRO..dcs_redteam..." />
+            <marker date="1448877038063" expanded="true" signature="6852:6911" placeholder="INSERT INTO fail_flights..." />
+            <marker date="1448877038063" expanded="true" signature="7048:7148" placeholder="INSERT INTO pilots_dogfights..." />
+            <marker date="1448877038063" expanded="true" signature="7422:7443" placeholder="SELECT * FRO..flights..." />
+            <marker date="1448877038063" expanded="true" signature="7618:7642" placeholder="SELECT * FRO..dcs_online..." />
+            <marker date="1448877038063" expanded="true" signature="7834:7907" placeholder="INSERT INTO flight_hours..." />
+            <marker date="1448877038063" expanded="true" signature="8057:8092" placeholder="DELETE FROM ..." />
+            <marker date="1448877038063" expanded="true" signature="8366:8428" placeholder="INSERT INTO pilots_takeoffs..." />
+            <marker date="1448877038063" expanded="true" signature="8556:8616" placeholder="INSERT INTO pilots_lands..." />
+            <marker date="1448877038063" expanded="true" signature="8730:8793" placeholder="INSERT INTO dcs_spectators..." />
+            <marker date="1448877038063" expanded="true" signature="8918:8962" placeholder="SELECT * FRO..dcs_spectators..." />
+            <marker date="1448877038063" expanded="true" signature="9142:9170" placeholder="SELECT * FRO..dcs_spectators..." />
+            <marker date="1448877038063" expanded="true" signature="9295:9336" placeholder="DELETE FROM ..." />
+            <marker date="1448877038063" expanded="true" signature="9295:9337" placeholder="DELETE FROM ..." />
+            <marker date="1448877038063" expanded="true" signature="9295:9344" placeholder="DELETE FROM ..." />
+            <marker date="1448877038063" expanded="true" signature="9357:9383" placeholder="/*���� � ���..." />
+            <marker date="1448877038063" expanded="true" signature="9470:9544" placeholder="INSERT INTO dcs_redteam..." />
+            <marker date="1448877038063" expanded="true" signature="9470:9571" placeholder="INSERT INTO dcs_redteam..." />
+            <marker date="1448877038063" expanded="true" signature="9572:9587" placeholder="UPDATE pilot..." />
+            <marker date="1448877038063" expanded="true" signature="9572:9601" placeholder="UPDATE pilot..." />
+            <marker date="1448877038063" expanded="true" signature="9572:9611" placeholder="UPDATE pilot..." />
+            <marker date="1448877038063" expanded="true" signature="9572:9623" placeholder="UPDATE pilot..." />
+            <marker date="1448877038063" expanded="true" signature="9762:9837" placeholder="INSERT INTO dcs_blueteam..." />
+            <marker date="1448877038063" expanded="true" signature="9762:9864" placeholder="INSERT INTO dcs_blueteam..." />
+            <marker date="1448877038063" expanded="true" signature="9865:9894" placeholder="UPDATE pilot..." />
+            <marker date="1448877038063" expanded="true" signature="9865:9916" placeholder="UPDATE pilot..." />
+            <marker date="1448877038063" expanded="true" signature="10060:10113" placeholder="UPDATE dcs_r..." />
+            <marker date="1448877038063" expanded="true" signature="10249:10303" placeholder="UPDATE dcs_b..." />
+            <marker date="1448877038063" expanded="true" signature="11186:11211" placeholder="SELECT * FRO..dcs_redteam..." />
+            <marker date="1448877038063" expanded="true" signature="11372:11398" placeholder="SELECT * FRO..dcs_blueteam..." />
+            <marker date="1448877038063" expanded="true" signature="11607:11659" placeholder="UPDATE serve..." />
+            <marker date="1448877038063" expanded="true" signature="11731:11783" placeholder="UPDATE serve..." />
+            <marker date="1448877038063" expanded="true" signature="12192:12244" placeholder="SELECT statu..server..." />
+            <marker date="1448877038063" expanded="true" signature="12359:12417" placeholder="INSERT INTO dcs_online..." />
+            <marker date="1448877038063" expanded="true" signature="12491:12529" placeholder="DELETE FROM ..." />
+            <marker date="1448877038063" expanded="true" signature="13005:13625" placeholder="SELECT dcs_c..pilots_kills..." />
+            <marker date="1448877038063" expanded="true" signature="13197:13358" placeholder="SELECT DISTI..dcs_units..." />
+            <marker date="1448877038063" expanded="true" signature="13832:13938" placeholder="SELECT COUNT..pilots_kills..." />
+            <marker date="1448877038063" expanded="true" signature="14117:14178" placeholder="INSERT INTO pilots_ejects..." />
+            <marker date="1448877038063" expanded="true" signature="14282:15405" placeholder="SELECT pilot..pilots..." />
+            <marker date="1448877038063" expanded="true" signature="14597:14677" placeholder="SELECT pilot..pilots_death..." />
+            <marker date="1448877038063" expanded="true" signature="14763:14844" placeholder="SELECT pilot..pilots_ejects..." />
+            <marker date="1448877038063" expanded="true" signature="14935:15015" placeholder="SELECT pilot..pilots_lands..." />
+            <marker date="1448877038063" expanded="true" signature="15084:15170" placeholder="SELECT pilot..pilots_takeoffs..." />
+            <marker date="1448877038063" expanded="true" signature="15245:15327" placeholder="SELECT pilot..fail_flights..." />
+            <marker date="1448877038063" expanded="true" signature="15607:16269" placeholder="SELECT pilot..pilots..." />
+            <marker date="1448877038063" expanded="true" signature="15772:15934" placeholder="SELECT COUNT..pilots_dogfights..." />
+            <marker date="1448877038063" expanded="true" signature="16030:16203" placeholder="SELECT COUNT..pilots_dogfights..." />
+            <marker date="1448877038063" expanded="true" signature="16452:16504" placeholder="SELECT SUMM(..pilots_kills..." />
+            <marker date="1448877038063" expanded="true" signature="16452:16514" placeholder="SELECT SUMM(..pilots_kills..." />
+            <marker date="1448877038063" expanded="true" signature="16691:16715" placeholder="SELECT * FRO..dcs_awards..." />
+            <marker date="1448877038063" expanded="true" signature="16691:16731" placeholder="SELECT * FRO..dcs_awards..." />
+            <marker date="1448877038063" expanded="true" signature="16691:16732" placeholder="SELECT * FRO..dcs_awards..." />
+            <marker date="1448877038063" expanded="true" signature="16994:17054" placeholder="SELECT * fro..dcs_units..." />
+          </folding>
         </state>
       </provider>
     </entry>

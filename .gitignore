@@ -1,3 +1,4 @@
 /.idea
-/system/application/config/
-/tmp
+/.idea/workspace.xml
+/system/application/config
+

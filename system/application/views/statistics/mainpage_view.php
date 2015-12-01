@@ -216,7 +216,13 @@
                                 ?>
                             </td>
                             <td>
-
+                                <?
+                                    if(!empty($players['points'])){
+                                        echo $players['points'];
+                                    }else{
+                                        echo 0;
+                                    }
+                                ?>
                             </td>
                         </tr>
                     <? endforeach; ?>

@@ -62,7 +62,8 @@ class Statistics_model extends Model
                   total_kills.total_kill AS total_kills,
                   count_death.death AS count_death,
                   fails_flights.fails AS total_fail,
-                  dogfights.victims AS total_victims
+                  dogfights.victims AS total_victims,
+                  (total_air_points.air_points+total_ground_points.ground_points) AS points
                 FROM pilots
                 LEFT JOIN
                      (SELECT pilot_id, SUM(total) AS total FROM flight_hours
@@ -89,6 +90,10 @@ class Statistics_model extends Model
                             FROM pilots_dogfights
                             GROUP BY pilot_id
                 )AS dogfights ON dogfights.pilot_id=pilots.id
+                LEFT JOIN (SELECT pilot_id,SUM(points) AS ground_points FROM pilots_kills GROUP BY pilot_id)
+                  AS total_ground_points ON total_ground_points.pilot_id=pilots.id
+                LEFT JOIN (SELECT pilot_id,SUM(points) AS air_points FROM pilots_dogfights GROUP BY pilot_id)
+                  AS total_air_points ON total_air_points.pilot_id=pilots.id
                 ORDER BY pilots.nickname ASC
             ");
         return $query->result_array();

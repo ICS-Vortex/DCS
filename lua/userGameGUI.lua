@@ -157,7 +157,10 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 		local _killer_player_name = net.get_player_info(arg1, 'name')
 		local _killer_player_ucid = net.get_player_info(arg1, 'ucid')
 		local _killed_target_type = arg5
-		local _killed_target_category = "AI"--DCS.getUnitProperty(arg4, DCS.UNIT_CATEGORY)
+		--переменная для определения категории
+		local _attributeName = "category"
+		--опрделяем категорию при помощи функции DCS.getUnitTypeAttribute(unitType, attrName)
+		local _killed_target_category = DCS.getUnitTypeAttribute(arg5, _attributeName) --"AI"
 			--если игрока убил не бот и передалось имя вооружения
 			if _killer_player_name ~= nil and _weapon_name ~= nil and _killed_player_name ~= nil then
 				--отправляем запись об убийстве на сервер статистики

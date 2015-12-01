@@ -563,6 +563,35 @@ class Statistics_model extends Model
         return $query->row_array();
     }
 
+    //Получение текущего стрика
+    function get_temporary_streak($id){
+        $query = $this->db->query("SELECT COUNT(streak) AS now_streak FROM dcs_temporary_streaks WHERE pilot_id={$id}");
+        return $query->row_array();
+    }
+
+    // Получение максимального стрика
+    function get_best_streak($id){
+        $query = $this->db->query("SELECT * FROM dcs_best_streaks WHERE pilot_id={$id}");
+        return $query->row_array();
+    }
+
+    function add_temporary_streak($id){
+        $this->db->query("INSERT INTO dcs_temporary_streaks(pilot_id) VALUES({$id})");
+    }
+
+    //Добавление наилучшего стрика.
+    function insert_best_streak($id,$streak){
+        $query = $this->db->query("
+            INSERT INTO dcs_best_streaks(pilot_id,streak) VALUES ({$id},{$streak})
+            ON DUPLICATE KEY UPDATE streak=VALUES(streak)
+        ");
+    }
+
+    //Очистка временных стриков
+    function clear_temp_streaks($id){
+        $query = $this->db->query("DELETE FROM dcs_temporary_streaks WHERE pilot_id={$id} ");
+    }
+
 
 
 }

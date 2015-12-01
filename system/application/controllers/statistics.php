@@ -57,6 +57,8 @@ class Statistics extends Controller
         $data['total_count'] = $this->statistics_model->get_total_count($id);
         $data['statistics'] = $this->statistics_model->flight_statistic($id);
         $data['dogfights'] = $this->statistics_model->get_dogfights_by_id($id);
+        $data['now_streak'] = $this->statistics_model->get_temporary_streak($id);
+        $data['best_streak'] = $this->statistics_model->get_best_streak($id);
         $kill_points = $this->statistics_model->get_total_points_by_id($id);
         $dogfight_points = $this->statistics_model->get_points_for_dogfights($id);
         $points = $kill_points['points'] + $dogfight_points['points'];
@@ -367,6 +369,19 @@ class Statistics extends Controller
                             'death' => $time,
                         );
                         $dead = $this->statistics_model->add_death($death);
+                        $count_temp_streaks = $this->statistics_model->get_temporary_streak($id);
+                        $best_streak = $this->statistics_model->get_best_streak($id);
+                        if(!empty($best_streak)){
+                            if($best_streak['streak'] > $count_temp_streaks){
+                                $streak = $best_streak['streak'];
+                            }else{
+                                $streak = $count_temp_streaks;
+                            }
+                        }else{
+                            $streak = $count_temp_streaks;
+                        }
+                        $insert_streak = $this->statistics_model->insert_best_streak($id,$streak);
+                        $clear_temp_streaks = $this->statistics_model->clear_temp_streaks($id);
                         break;
                     case 'landed at':/*Событие посадки*/
                         //echo 'Игрок '.$nickname.' сел на аэродром '.$object.' в '.$time.'<br>';
@@ -397,6 +412,7 @@ class Statistics extends Controller
                             $dogfight['friendly'] = 0;
                             $dogfight['points'] = $data[6];
                             $insert = $this->statistics_model->insert_dogfight($dogfight);
+                            $streak = $this->statistics_model->add_temporary_streak($id);
                         }else{
                             //echo 'Игрок '.$nickname.' уничтожил '.$object.' с помощью '.$ammunition.' в '.$time.'<br>';//exit();
                             $check_unit_type_temp = $data[5];
@@ -413,6 +429,7 @@ class Statistics extends Controller
                                 $kill['points'] = $points;
                                 $this->statistics_model->add_new_kill($kill);
                             }else{
+
                             }
                         }
                         break;

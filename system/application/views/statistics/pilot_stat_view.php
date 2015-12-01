@@ -159,17 +159,24 @@
                         <tr>
                             <td style="color: green;"><b>Победы (Сбил)</b></td>
                             <td>
-                            <? if(!empty($dogfights)){?>
-                                <?if ($dogfights['counts_kills']==null){echo 0;}
-                                else {echo $dogfights['counts_kills'];}}?>
+                            <?
+                                if ($dogfights['kills']==null){
+                                    echo 0;
+                                }else {
+                                    echo $dogfights['kills'];
+                                }
+                            ?>
                             </td>
                         </tr>
                         <tr>
                             <td style="color: red;"><b>Поражения (Сбит)</b></td>
                             <td>
-                                 <? if(!empty($dogfights)){?>
-                                <?if ($dogfights['counts_death_kills']==null){echo 0;}
-                                else {echo $dogfights['counts_death_kills'];}}?>
+                                 <? if(!empty($dogfights['death'])){
+                                     echo $dogfights['death'];
+                                 }else{
+                                     echo 0;
+                                 }
+                                 ?>
                             </td>
                         </tr>
                     </tbody>

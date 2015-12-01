@@ -48,10 +48,11 @@ class Statistics extends Controller
 
     public function show($id)
     {
-        //echo 'ok';
         $this->load->model('statistics_model');
+        $id = (int)$id;
         $data = array();
         $data['pilot'] = $this->statistics_model->get_pilot_name($id);
+        if(empty($data['pilot']))die("Can't find pilot with ID$id");
         $data['unit_types'] = $this->statistics_model->get_pilot_kills_by_category($id);
         $data['total_count'] = $this->statistics_model->get_total_count($id);
         $data['statistics'] = $this->statistics_model->flight_statistic($id);
@@ -506,9 +507,11 @@ class Statistics extends Controller
 //        fclose($handle);
 
     }
+
     function empty_stat(){
         $this->display_lib->empty_stat();
     }
+
     function empty_db(){
         $this->dcs_lib->isPost();
         $file = './tmp/stat.txt';

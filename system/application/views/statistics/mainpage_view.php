@@ -152,6 +152,7 @@
                     <th>Смертей</th>
                     <th>Уничтожил техники</th>
                     <th>Воздушных побед</th>
+                    <th>Очки</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -214,10 +215,14 @@
                                     else{echo $players['total_victims'];}
                                 ?>
                             </td>
+                            <td>
+
+                            </td>
                         </tr>
                     <? endforeach; ?>
                 <? } else { ?>
                     <tr>
+                        <td>...</td>
                         <td>...</td>
                         <td>...</td>
                         <td>...</td>

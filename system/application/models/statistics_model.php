@@ -508,11 +508,11 @@ class Statistics_model extends Model
     function get_dogfights_by_id($id)
     {
         $query = $this->db->query("SELECT
-                pilots.nickname,
-                killed.counts_kills,
-                dead.counts_death_kills
+                pilots.nickname AS nickname,
+                killed.counts_kills AS kills,
+                dead.counts_death_kills as death
             FROM pilots
-            INNER JOIN (SELECT
+            LEFT JOIN (SELECT
                     COUNT(pilot_id) AS counts_kills,
                     pilot_id
                   FROM pilots_dogfights

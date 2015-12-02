@@ -163,7 +163,7 @@
                                             if(!empty($best_streak['streak'])){
                                                 echo $best_streak['streak'];
                                             }else{
-                                                echo 0;
+                                                echo $now_streak['now_streak'];
                                             }
                                         ?>
                                     </th>

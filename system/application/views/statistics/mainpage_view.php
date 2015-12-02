@@ -147,11 +147,11 @@
                 <tr>
                     <th>Ник</th>
                     <th>Общий налёт</th>
-
                     <th>Уничтожил техники</th>
                     <th>Воздушных побед</th>
+                    <th>Текущий стрик</th>
                     <th>K/L</th>
-                    <th>Очки</th>
+                    <th>Количество очков</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -198,6 +198,15 @@
                             </td>
                             <td>
                                 <?
+                                    if(!empty($players['last_streak'])){
+                                        echo $players['last_streak'];
+                                    }else{
+                                        echo 0;
+                                    }
+                                ?>
+                            </td>
+                            <td>
+                                <?
                                     if(!empty($players['total_fail'])){
                                         if(!empty($players['total_victims'])){
                                             $kl = $players['total_victims']/$players['total_fail'];
@@ -230,6 +239,7 @@
                         <td>...</td>
                         <td>...</td>
                         <td>...</td>
+                        <td>...</td>
                     </tr>
                 <? } ?>
                 </tbody>
@@ -249,20 +259,19 @@
 <script src="/assets/dist/js/demo.js" type="text/javascript"></script>
 <!-- page script -->
 <script type="text/javascript">
-          $(function () {
-                $("#example1").DataTable({
-                    "paging": true,
-                      "lengthChange": false,
-                      "searching": false,
-                      "ordering": true,
-                      "info": true,
-                      "autoWidth": false,
-                      "order": [[ 5, "desc" ]]
-                });
-                $('#example2').DataTable({
-
-                });
-          });
+$(function () {
+    $("#example2").DataTable();
+    $("#example1").DataTable({
+        "paging": true,
+          "lengthChange": false,
+          "searching": true,
+          "bFilter":true,
+          "ordering": true,
+          "info": true,
+          "autoWidth": false,
+          "order": [[ 6, "desc" ]]
+    });
+});
 </script>
 </body>
 </html>

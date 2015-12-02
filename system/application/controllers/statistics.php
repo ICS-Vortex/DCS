@@ -484,6 +484,10 @@ class Statistics extends Controller
                             $flight = $this->statistics_model->add_total_flight($total);
                             $this->statistics_model->clear_flights($id);
                         } else {
+                            $death = array();
+                            $death['pilot_id'] = $id;
+                            $death['death'] = $time;
+                            $this->statistics_model->add_death($death);
                             //echo "Пилот $nickname присоединился к зрителям сервера!<br />";
                         }
                         $this->statistics_model->left_blue($id);

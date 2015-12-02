@@ -63,7 +63,8 @@ class Statistics_model extends Model
                   count_death.death AS count_death,
                   fails_flights.fails AS total_fail,
                   dogfights.victims AS total_victims,
-                  (IFNULL(total_air_points.air_points,0)+IFNULL(total_ground_points.ground_points,0)) AS points
+                  (IFNULL(total_air_points.air_points,0)+IFNULL(total_ground_points.ground_points,0)) AS points,
+                  last_streak.streak AS last_streak
                 FROM pilots
                 LEFT JOIN
                      (SELECT pilot_id, SUM(total) AS total FROM flight_hours
@@ -90,6 +91,8 @@ class Statistics_model extends Model
                             FROM pilots_dogfights
                             GROUP BY pilot_id
                 )AS dogfights ON dogfights.pilot_id=pilots.id
+                LEFT JOIN (SELECT pilot_id,COUNT(streak) as streak FROM dcs_temporary_streaks GROUP BY pilot_id) AS last_streak
+                  ON last_streak.pilot_id=pilots.id
                 LEFT JOIN (SELECT pilot_id,SUM(points) AS ground_points FROM pilots_kills GROUP BY pilot_id)
                   AS total_ground_points ON total_ground_points.pilot_id=pilots.id
                 LEFT JOIN (SELECT pilot_id,SUM(points) AS air_points FROM pilots_dogfights GROUP BY pilot_id)

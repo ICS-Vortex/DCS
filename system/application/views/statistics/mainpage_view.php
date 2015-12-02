@@ -17,9 +17,8 @@
     <link href="/assets/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css"/>
     <script src="/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="/assets/fancybox/jquery.fancybox.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="/assets/js/stat.js"></script>
+    <!--<script src="/assets/js/stat.js"></script>-->
 </head>
 <body class="skin-blue">
 <div class="container">
@@ -148,10 +147,10 @@
                 <tr>
                     <th>Ник</th>
                     <th>Общий налёт</th>
-                    <th>Потерь ЛА</th>
-                    <th>Смертей</th>
+
                     <th>Уничтожил техники</th>
                     <th>Воздушных побед</th>
+                    <th>K/L</th>
                     <th>Очки</th>
                 </tr>
                 </thead>
@@ -185,24 +184,6 @@
                             </td>
                             <td>
                                 <?
-                                if ($players['total_fail'] == null) {
-                                    echo 0;
-                                } else {
-                                    echo $players['total_fail'];
-                                }
-                                ?>
-                            </td>
-                            <td>
-                                <?
-                                if ($players['count_death'] == null) {
-                                    echo 0;
-                                } else {
-                                    echo $players['count_death'];
-                                }
-                                ?>
-                            </td>
-                            <td>
-                                <?
                                 if ($players['total_kills'] == null) {
                                     echo 0;
                                 } else {
@@ -213,6 +194,21 @@
                             <td>
                                 <? if(empty($players['total_victims'])){echo 0;}
                                     else{echo $players['total_victims'];}
+                                ?>
+                            </td>
+                            <td>
+                                <?
+                                    if(!empty($players['total_fail'])){
+                                        if(!empty($players['total_victims'])){
+                                            $kl = $players['total_victims']/$players['total_fail'];
+                                            $KL = round($kl, 2);
+                                            echo number_format($KL,2,',',' ');
+                                        }else{
+                                            echo number_format(0,2,',',' ');
+                                        }
+                                    }else{
+                                        echo number_format($players['total_victims'],2,',',' ');
+                                    }
                                 ?>
                             </td>
                             <td>
@@ -228,7 +224,6 @@
                     <? endforeach; ?>
                 <? } else { ?>
                     <tr>
-                        <td>...</td>
                         <td>...</td>
                         <td>...</td>
                         <td>...</td>
@@ -255,30 +250,19 @@
 <!-- page script -->
 <script type="text/javascript">
           $(function () {
-            $("#example1").DataTable();
-            $('#example2').DataTable({
-              "paging": true,
-              "lengthChange": false,
-              "searching": false,
-              "ordering": true,
-              "info": true,
-              "autoWidth": false
-            });
+                $("#example1").DataTable({
+                    "paging": true,
+                      "lengthChange": false,
+                      "searching": false,
+                      "ordering": true,
+                      "info": true,
+                      "autoWidth": false,
+                      "order": [[ 5, "desc" ]]
+                });
+                $('#example2').DataTable({
+
+                });
           });
-</script>
-<script src="/assets/jmosaicflow/jquery.mosaicflow.min.js"></script>
-<script src="/assets/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-            jQuery(document).ready(function() {
-              jQuery("a.fancyimage").fancybox();
-            });
-</script>
-<script src="/assets/jmosaicflow/jquery.mosaicflow.min.js"></script>
-<script type="text/javascript" src="/assets/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-      jQuery("a.fancyimage").fancybox();
-    });
 </script>
 </body>
 </html>

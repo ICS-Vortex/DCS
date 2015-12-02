@@ -63,7 +63,7 @@ class Statistics_model extends Model
                   count_death.death AS count_death,
                   fails_flights.fails AS total_fail,
                   dogfights.victims AS total_victims,
-                  (total_air_points.air_points+total_ground_points.ground_points) AS points
+                  (IFNULL(total_air_points.air_points,0)+IFNULL(total_ground_points.ground_points,0)) AS points
                 FROM pilots
                 LEFT JOIN
                      (SELECT pilot_id, SUM(total) AS total FROM flight_hours

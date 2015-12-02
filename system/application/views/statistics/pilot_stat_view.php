@@ -131,7 +131,7 @@
                                     <th>
                                         <?
                                             if(empty($statistics[0]['count_crashes'])){
-                                                echo 1;
+                                                echo 0;
                                             }else{
                                                 if(!empty($dogfights['kills'])){
                                                     $kl = $dogfights['kills'] / $statistics[0]['count_crashes'];

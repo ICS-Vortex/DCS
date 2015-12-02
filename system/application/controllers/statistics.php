@@ -95,8 +95,6 @@ class Statistics extends Controller
     function record()
     {
         header("Cache-Control: no-store, no-cache, must-revalidate");
-
-        //header('Content-Type: text/html; charset=utf-8');
         $string = trim($this->input->post('postname'));
         if (empty($string) || $string == '') {
             exit();
@@ -231,7 +229,7 @@ class Statistics extends Controller
                 //echo "Нет. Это не Server.Ищем пилота в базе данных(его ID).<br>";
                 if($hash != 'server'){
                     $check_nick = $this->statistics_model->check_nick($hash);
-                    if ($check_nick == 0) {
+                    if (empty($check_nick)) {
                         //echo "Игрока $nickname нету в базе данных.<br>";
                         $nick = array();
                         $nick['nickname'] = $nickname;
@@ -242,6 +240,9 @@ class Statistics extends Controller
                     $nick_id = $this->statistics_model->get_pilot_id_with_hash($hash);
                     if(!empty($nick_id)){
                         $id = $nick_id['id'];
+                        if($check_nick['nickname'] != $nickname){
+                            $this->statistics_model->update_nickname($id,$nickname);
+                        }
                         //echo "Пилот $nickname найден. ID = $id.<br>";
                     }else{
                         exit;
@@ -340,15 +341,13 @@ class Statistics extends Controller
                         $this->statistics_model->add_new_flight($id, $time);
                         $this->statistics_model->add_takeoff($id, $time);
                         break;
-//            case 'takeoff': /*Событие взлёта с ППБ*/
-//                //echo 'Игрок '.$nickname.' взлетел на вертолёте в '.$time.'<br>';
-//                $nick_id = $this->statistics_model->get_pilot_id($nickname);
-//                $id = $nick_id['id'];//echo 'ID пилота = '.$id.'<br />';
-//                $this->statistics_model->add_new_flight($id, $time);
-//                $this->statistics_model->add_takeoff($id, $time);
-//                break;
-//
-
+    //            case 'takeoff': /*Событие взлёта с ППБ*/
+    //                //echo 'Игрок '.$nickname.' взлетел на вертолёте в '.$time.'<br>';
+    //                $nick_id = $this->statistics_model->get_pilot_id($nickname);
+    //                $id = $nick_id['id'];//echo 'ID пилота = '.$id.'<br />';
+    //                $this->statistics_model->add_new_flight($id, $time);
+    //                $this->statistics_model->add_takeoff($id, $time);
+    //                break;
                     case 'dead':
                         $start_flight = $this->statistics_model->get_start_flight($id);
                         if (!empty($start_flight)) {
@@ -372,13 +371,13 @@ class Statistics extends Controller
                         $count_temp_streaks = $this->statistics_model->get_temporary_streak($id);
                         $best_streak = $this->statistics_model->get_best_streak($id);
                         if(!empty($best_streak)){
-                            if($best_streak['streak'] > $count_temp_streaks){
+                            if($best_streak['streak'] > $count_temp_streaks['now_streak']){
                                 $streak = $best_streak['streak'];
                             }else{
-                                $streak = $count_temp_streaks;
+                                $streak = $count_temp_streaks['now_streak'];
                             }
                         }else{
-                            $streak = $count_temp_streaks;
+                            $streak = $count_temp_streaks['now_streak'];
                         }
                         $insert_streak = $this->statistics_model->insert_best_streak($id,$streak);
                         $clear_temp_streaks = $this->statistics_model->clear_temp_streaks($id);
@@ -483,11 +482,12 @@ class Statistics extends Controller
                             $total['total'] = $hours;
                             $flight = $this->statistics_model->add_total_flight($total);
                             $this->statistics_model->clear_flights($id);
+                            $this->statistics_model->add_fail_crash($id, $time);
                         } else {
                             $death = array();
                             $death['pilot_id'] = $id;
                             $death['death'] = $time;
-                            $this->statistics_model->add_death($death);
+                            //$this->statistics_model->add_death($death);
                             //echo "Пилот $nickname присоединился к зрителям сервера!<br />";
                         }
                         $this->statistics_model->left_blue($id);

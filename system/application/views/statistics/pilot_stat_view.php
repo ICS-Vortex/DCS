@@ -127,7 +127,7 @@
                         <table  class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>K/L</th>
+                                    <th>W/L</th>
                                     <th>
                                         <?
                                             if(empty($statistics[0]['count_crashes'])){

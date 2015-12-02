@@ -145,19 +145,22 @@
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
+                    <th>Позиция</th>
                     <th>Ник</th>
                     <th>Общий налёт</th>
                     <th>Уничтожил техники</th>
                     <th>Воздушных побед</th>
                     <th>Текущий стрик</th>
-                    <th>K/L</th>
+                    <th>W/L</th>
                     <th>Количество очков</th>
                 </tr>
                 </thead>
                 <tbody>
+                <? $counter = 1;?>
                 <? if (!empty($flight_players)) { ?>
                     <? foreach ($flight_players as $players): ?>
                         <tr>
+                            <td><?=$counter;?></td>
                             <td>
                                 <a class="" id="nicks" style="color: blue;" href="<?= base_url(); ?>statistics/show/<?= $players['id']; ?>"><b><?= $players['nickname']; ?></b></a>
                             </td>
@@ -230,6 +233,7 @@
                                 ?>
                             </td>
                         </tr>
+                        <?$counter++;?>
                     <? endforeach; ?>
                 <? } else { ?>
                     <tr>
@@ -269,7 +273,7 @@ $(function () {
           "ordering": true,
           "info": true,
           "autoWidth": false,
-          "order": [[ 6, "desc" ]]
+          "order": [[ 7, "desc" ]]
     });
 });
 </script>

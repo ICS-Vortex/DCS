@@ -97,7 +97,7 @@ class Statistics_model extends Model
                   AS total_ground_points ON total_ground_points.pilot_id=pilots.id
                 LEFT JOIN (SELECT pilot_id,SUM(points) AS air_points FROM pilots_dogfights GROUP BY pilot_id)
                   AS total_air_points ON total_air_points.pilot_id=pilots.id
-                ORDER BY pilots.nickname ASC
+                ORDER BY points DESC
             ");
         return $query->result_array();
     }
@@ -144,7 +144,12 @@ class Statistics_model extends Model
     function check_nick($hash)
     {
         $query = $this->db->query("SELECT * FROM pilots WHERE hash='{$hash}'");
-        return $query->num_rows();
+        return $query->row_array();
+    }
+
+    //Обновление никнейма пилота
+    function update_nickname($id,$nickname){
+        $this->db->query("UPDATE pilots SET nickname='{$nickname}' WHERE id={$id}");
     }
 
     //Добавление пилота в базу данных
@@ -592,7 +597,7 @@ class Statistics_model extends Model
 
     //Очистка временных стриков
     function clear_temp_streaks($id){
-        $query = $this->db->query("DELETE FROM dcs_temporary_streaks WHERE pilot_id={$id} ");
+        $this->db->query("DELETE FROM dcs_temporary_streaks WHERE pilot_id={$id} ");
     }
 
 

@@ -52,9 +52,13 @@
 <div class="container">
     <div class="jumbotron">
         <h2 style="display: block;" class="text-center" >Регистрация</h2>
-        <div class="form-group">
-            <input type="text" class="form-control" id="nickname" placeholder="Введите свой игровой никнейм"><br>
-            <div class="alert alert-danger" role="alert" id="not_found" style="display: none;">Пользователь не найден </div>
+        <div class="form-group" id="find_form">
+            <p> Никнейм</p>
+            <input type="text" class="form-control" name="nick" id="nickname" placeholder="Введите свой игровой никнейм"><br>
+            <div class="alert alert-danger alert-dismissible" role="alert" id="not_found" style="display: none;">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                Пилот не найден
+            </div>
         </div>
         <div class="form-group" id="response"></div>
 

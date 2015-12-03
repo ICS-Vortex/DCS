@@ -257,6 +257,14 @@ class Statistics extends Controller
                         //echo "Добавление пилота $nickname в таблицу 'Online'.<br>";
                         $this->statistics_model->add_spectator($id, $time);
                         //echo "Добавление пилота $nickname в таблицу 'Зрители'.<br>";
+                        $check_registrations = $this->statistics_model->check_registration_tickets($id);
+                        if(!empty($check_registrations)){
+                            $deadline = $check_registrations['deadline'];
+                            if(strtotime($time) <= strtotime($deadline)){
+                                $this->statistics_model->confirm_pilot_registration($id);
+                                $this->statistics_model->delete_pilot_tickets($id);
+                            }
+                        }
                         break;
                     case 'joined RED':
                         //echo "Игрок $nickname присоединился в команду <b style='color:red;'>Красных</b><br />";

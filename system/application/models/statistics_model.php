@@ -613,6 +613,22 @@ class Statistics_model extends Model
         $this->db->query("DELETE FROM dcs_temporary_streaks WHERE pilot_id={$id} ");
     }
 
+    function check_registration_tickets($id){
+        $query = $this->db->query("
+            SELECT * FROM dcs_registration_tickets
+            WHERE pilot_id={$id}
+            ORDER BY deadline DESC LIMIT 1
+        ");
+        return $query->row_array();
+    }
+
+    function confirm_pilot_registration($id){
+        $this->db->query("UPDATE pilots SET checked=1 WHERE id={$id}");
+    }
+
+    function delete_pilot_tickets($id){
+        $this->db->query("DELETE FROM dcs_registration_tickets WHERE pilot_id={$id}");
+    }
 
 
 }

@@ -67,11 +67,10 @@ background: rgb(204, 204, 204) none repeat
             </div>
         <div class="text-center col-xs-12" >
             <div>
-
                 <form method="post" action="<?=base_url();?>registration/preparing" class="" style="display: inline-block;" >
                     <label for="check_conditions">Я согласен</label>
                     <input type="checkbox" id="check_conditions" name="check_conditions" aria-label="Я согласен">
-                    <button type="submit" id="reg" class="btn btn-google-plus">Регистрация</button>
+                    <button type="submit" id="reg" class="btn btn-google-plus">Продолжить</button>
                 </form>
             </div>
         </div>

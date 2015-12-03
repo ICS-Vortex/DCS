@@ -183,6 +183,11 @@ class Statistics_model extends Model
         $this->db->query("INSERT INTO flights(pilot_id,flight) VALUES($id,'$time')");
     }
 
+    //Новая ункция добавления полёта.
+    function new_flight($flight){
+        $this->db->insert('flights',$flight);
+    }
+
     //Получение полёта по ID юзера.
     function get_start_flight($id)
     {
@@ -251,7 +256,7 @@ class Statistics_model extends Model
     //Добавление налёта всех незаконченных вылетов (событие Server Stop)
     function add_not_ended_flights($values)
     {
-        $this->db->query("INSERT INTO flight_hours (pilot_id,start_flight,end_flight,total) VALUES $values");
+        $this->db->query("INSERT INTO flight_hours (pilot_id,start_flight,end_flight,total,takeoff_from) VALUES $values");
     }
 
     //Удаление полёта по ID пилота

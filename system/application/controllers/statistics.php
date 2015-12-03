@@ -158,10 +158,12 @@ class Statistics extends Controller
                                 //echo "Время начала полёта #$fl - $start.<br>";
                                 $end = $time;
                                 //echo "Время окончания полёта #$fl - $end.<br>";
+                                $takeoff_from = $endflight['takeoff_from'];
+                                $landed_at = null;
                                 $hours = strtotime($end) - strtotime($start);
                                 if($hours < 0){$hours = $hours*(-1);}
                                 //echo "Время полёта #$fl - $hours сек.<br>";
-                                $values = $values . "(" . $endflight['pilot_id'] . ",'" . $start . "','" . $end . "'," . $hours . "),";
+                                $values = $values . "(" . $endflight['pilot_id'] . ",'" . $start . "','" . $end . "'," . $hours . ",'".$takeoff_from."'),";
                                 $flight_id = $endflight['pilot_id'];
                                 //echo "Удаляем полёт # $fl.<br>";
                                 $this->statistics_model->delete_all_flights($flight_id);
@@ -285,6 +287,9 @@ class Statistics extends Controller
                             $total['start_flight'] = $start;
                             $total['end_flight'] = $time;
                             $total['total'] = $hours;
+                            $from = $start_flight['takeoff_from'];
+                            $total['takeoff_from'] = $from;
+                            $total['landed_at'] = null;
                             //echo "Запись полёта в таблицу flights_hours.<br>";
                             $flight = $this->statistics_model->add_total_flight($total);
                             //echo "Очистка таблицы текущих полётов.<br>";
@@ -324,6 +329,9 @@ class Statistics extends Controller
                             $total['start_flight'] = $start;
                             $total['end_flight'] = $time;
                             $total['total'] = $hours;
+                            $from = $start_flight['takeoff_from'];
+                            $total['takeoff_from'] = $from;
+                            $total['landed_at'] = null;
                             //echo "Запись полёта в таблицу flights_hours.<br>";
                             $flight = $this->statistics_model->add_total_flight($total);
                             //echo "Очистка таблицы текущих полётов.<br>";
@@ -336,9 +344,18 @@ class Statistics extends Controller
                         break;
                     case 'takeoff from':/*Событие взлёта самолёта/вертолёта с аэродрома/корабля*/
                         //echo 'Игрок '.$nickname.' взлетел с аэродрома '.$object.' в '.$time.'<br>';
-                        $nick_id = $this->statistics_model->get_pilot_id($nickname);
-                        $id = $nick_id['id'];//echo 'ID пилота = '.$id.'<br />';
-                        $this->statistics_model->add_new_flight($id, $time);
+                        $flight = array();
+
+                        //$nick_id = $this->statistics_model->get_pilot_id($nickname);
+                        //$id = $nick_id['id'];//echo 'ID пилота = '.$id.'<br />';
+                        $flight['pilot_id'] = $id;
+                        $flight['flight'] = $time;
+                        $takeoff_from = $data[4];
+                        $flight['takeoff_from'] = $takeoff_from;
+                        $this->statistics_model->new_flight($flight);
+
+                        //$this->statistics_model->add_new_flight($id, $time);
+
                         $this->statistics_model->add_takeoff($id, $time);
                         break;
     //            case 'takeoff': /*Событие взлёта с ППБ*/
@@ -358,6 +375,9 @@ class Statistics extends Controller
                             $total['start_flight'] = $start;
                             $total['end_flight'] = $time;
                             $total['total'] = $hours;
+                            $from = $start_flight['takeoff_from'];
+                            $total['takeoff_from'] = $from;
+                            $total['landed_at'] = null;
                             $flight = $this->statistics_model->add_total_flight($total);
                             $this->statistics_model->clear_flights($id);
                             $this->statistics_model->add_fail_crash($id, $time);
@@ -393,6 +413,9 @@ class Statistics extends Controller
                             $total['start_flight'] = $start;
                             $total['end_flight'] = $time;
                             $total['total'] = $hours;
+                            $from = $start_flight['takeoff_from'];
+                            $total['takeoff_from'] = $from;
+                            $total['landed_at'] = $data[4];
                             $flight = $this->statistics_model->add_total_flight($total);
                             $this->statistics_model->add_landing($id, $time);
                         }
@@ -443,6 +466,9 @@ class Statistics extends Controller
                             $total['start_flight'] = $start;
                             $total['end_flight'] = $time;
                             $total['total'] = $hours;
+                            $from = $start_flight['takeoff_from'];
+                            $total['takeoff_from'] = $from;
+                            $total['landed_at'] = null;
                             $flight = $this->statistics_model->add_total_flight($total);
                             $this->statistics_model->clear_flights($id);
                             //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - " . date("H:i:s", $hours) . "</p><br />";
@@ -461,6 +487,9 @@ class Statistics extends Controller
                             $total['start_flight'] = $start;
                             $total['end_flight'] = $time;
                             $total['total'] = $hours;
+                            $from = $start_flight['takeoff_from'];
+                            $total['takeoff_from'] = $from;
+                            $total['landed_at'] = null;
                             $flight = $this->statistics_model->add_total_flight($total);
                             $this->statistics_model->clear_flights($id);
                             $this->statistics_model->add_fail_crash($id, $time);
@@ -480,6 +509,9 @@ class Statistics extends Controller
                             $total['start_flight'] = $start;
                             $total['end_flight'] = $time;
                             $total['total'] = $hours;
+                            $from = $start_flight['takeoff_from'];
+                            $total['takeoff_from'] = $from;
+                            $total['landed_at'] = null;
                             $flight = $this->statistics_model->add_total_flight($total);
                             $this->statistics_model->clear_flights($id);
                             $this->statistics_model->add_fail_crash($id, $time);
@@ -513,6 +545,9 @@ class Statistics extends Controller
                             $total['start_flight'] = $start;
                             $total['end_flight'] = $time;
                             $total['total'] = $hours;
+                            $from = $start_flight['takeoff_from'];
+                            $total['takeoff_from'] = $from;
+                            $total['landed_at'] = null;
                             $flight = $this->statistics_model->add_total_flight($total);
                             $this->statistics_model->clear_flights($id);
                         }

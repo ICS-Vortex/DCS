@@ -267,13 +267,14 @@ $(function () {
     $("#example2").DataTable();
     $("#example1").DataTable({
         "paging": true,
-          "lengthChange": false,
+          "lengthChange": true,
           "searching": true,
           "bFilter":true,
           "ordering": true,
           "info": true,
           "autoWidth": false,
-          "order": [[ 7, "desc" ]]
+          "order": [[ 7, "desc" ]],
+          "pageLength" : 25,
     });
 });
 </script>

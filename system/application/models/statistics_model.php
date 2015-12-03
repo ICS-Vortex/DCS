@@ -191,7 +191,15 @@ class Statistics_model extends Model
     //Получение полёта по ID юзера.
     function get_start_flight($id)
     {
-        $query = $this->db->query("SELECT flight AS last_flight FROM flights WHERE pilot_id=$id ORDER BY flight DESC LIMIT 1");
+        $query = $this->db->query("
+        SELECT
+          flight AS last_flight,
+          takeoff_from
+        FROM flights
+        WHERE pilot_id=$id
+        ORDER BY flight DESC LIMIT 1
+
+        ");
         return $query->row_array();
     }
 

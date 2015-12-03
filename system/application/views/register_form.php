@@ -7,7 +7,20 @@
     </div>
     <button class="btn btn-success" id="email_button">Отправить</button>
 </div>
-<div id="tickets_response"></div>
+<div id="tickets_response">
+    <div id="success" style="display:none;">
+        <h3>Тикет регистрации создан успешно.</h3>
+        <div class="alert alert-success alert-dismissible" >
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <p>Для подтверждения регистрации выполните вход на игровой сервер в течении <b>24 часов</b></p>
+        </div>
+        <p>
+            <a class="btn btn-success" href="<?=base_url();?>">Главная</a>
+        </p>
+    </div>
+</div>
 <script>
     $('#email').on('keyup change blur',function(){
         var email = $('#email').val();
@@ -32,7 +45,7 @@
                 $('#tickets_response').html('<div class="alert alert-danger alert-dismissible">ID никнейма не обнаружен в базе данных!</div>');
             }
             if(data == 1){
-                $('#tickets_response').html('gg');
+                $('#success').show(200);
             }
         });
     });

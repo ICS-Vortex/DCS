@@ -465,23 +465,23 @@ class Statistics extends Controller
                         break;
                     case 'ejected': /*Событие катапультирования*/
                         //echo 'Игрок '.$nickname.' катапультировался в '.$time.'<br>';
-                        $start_flight = $this->statistics_model->get_start_flight($id);
-                        if (!empty($start_flight)) {
-                            $start = $start_flight['last_flight'];
-                            $hours = strtotime($time) - strtotime($start);
-                            $total = array();
-                            $total['pilot_id'] = $id;
-                            $total['start_flight'] = $start;
-                            $total['end_flight'] = $time;
-                            $total['total'] = $hours;
-                            $from = $start_flight['takeoff_from'];
-                            $total['takeoff_from'] = $from;
-                            $total['landed_at'] = null;
-                            $flight = $this->statistics_model->add_total_flight($total);
-                            $this->statistics_model->clear_flights($id);
-                            //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - " . date("H:i:s", $hours) . "</p><br />";
-                            $this->statistics_model->add_fail_crash($id, $time);
-                        }
+//                        $start_flight = $this->statistics_model->get_start_flight($id);
+//                        if (!empty($start_flight)) {
+//                            $start = $start_flight['last_flight'];
+//                            $hours = strtotime($time) - strtotime($start);
+//                            $total = array();
+//                            $total['pilot_id'] = $id;
+//                            $total['start_flight'] = $start;
+//                            $total['end_flight'] = $time;
+//                            $total['total'] = $hours;
+//                            $from = $start_flight['takeoff_from'];
+//                            $total['takeoff_from'] = $from;
+//                            $total['landed_at'] = null;
+//                            $flight = $this->statistics_model->add_total_flight($total);
+//                            $this->statistics_model->clear_flights($id);
+//                            //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - " . date("H:i:s", $hours) . "</p><br />";
+//                            $this->statistics_model->add_fail_crash($id, $time);
+//                        }
                         $this->statistics_model->add_eject($id, $time);
                         break;
                     case 'crashed': /*Событие потери ЛА*/
@@ -500,9 +500,10 @@ class Statistics extends Controller
                             $total['landed_at'] = null;
                             $flight = $this->statistics_model->add_total_flight($total);
                             $this->statistics_model->clear_flights($id);
-                            $this->statistics_model->add_fail_crash($id, $time);
+
                             //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
                         }
+                        $this->statistics_model->add_fail_crash($id, $time);
                         break;
                     case 'joined SPECTATORS':/*Событие входа Пилота в зрители*/
                         $start_flight = $this->statistics_model->get_start_flight($id);

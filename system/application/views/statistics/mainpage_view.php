@@ -18,9 +18,41 @@
     <script src="/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').focus();
+        })
+    </script>
     <!--<script src="/assets/js/stat.js"></script>-->
 </head>
 <body class="skin-blue">
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Вход на сайт</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" value="" placeholder="email" />
+                    <div id="check_email"></div>
+                    <label for="password">Пароль</label>
+                    <input type="password" class="form-control" id="password" value="" name="password" placeholder="Пароль">
+                    <script language="JavaScript" src="/assets/js/mainpage.js"></script>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary" id="enter_button">Войти</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container">
     <nav id="navbar" class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -41,6 +73,7 @@
                     <li class=""><a href="http://digitalcombatsimulator.com" target="_blank"><b>DCS Site</b></a></li>
                     <li class=""><a href="http://forums.eagle.ru/forumdisplay.php?f=54" target="_blank"><b>Русский ED форум</b></a></li>
                     <li class=""><a href="https://www.facebook.com/burningskieswwii/" target="_blank"><b>Facebook</b></a></li>
+                    <li class=""><a href="https://www.facebook.com/burningskieswwii/" target="_blank" class="btn-lg" data-toggle="modal" data-target="#myModal"><b>Вход</b></a></li>
 
 
                 </ul>
@@ -250,6 +283,7 @@
             </table>
         </div>
     </div>
+
 </div><!-- ./wrapper -->
 <script src="/assets/plugins/datatables/jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="/assets/plugins/datatables/dataTables.bootstrap.min.js" type="text/javascript"></script>

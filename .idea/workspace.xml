@@ -1,651 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f35238b7-3bc6-4702-bd3a-237752de1428" name="Default" comment="Production Alpha Version 1.0">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/1-RHC_EHM1_DRAGON.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/10-armed-helo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/10-plane-captain.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/100_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/101FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/101abdiv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/103FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/104FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/104FW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/107FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/10TFW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/10_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/10escuadrilla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/10mtndiv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/10ª escuadrilla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/11-Filo-Panter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/110FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/111sq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/114FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/11_P_AA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/11_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/11sq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/122FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/122FW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/123FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/12FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/12_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/131FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/131FW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/13sq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/141.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/142.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/142fw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/14_IAP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/14stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/151-Filo-Tuns.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/159FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/159_IAP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/15stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/161-Filo-Yarasa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/163FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/175Wg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/177_IAP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/184FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/186FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/18OG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/18TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/18Wg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/191-Filo-Kobra.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/192-Filo-Kaplan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/199FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/19FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/1FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/1FW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/1_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/1aircav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/1ciaBHELAI-tigre.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/1ciaBHELAI.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/1sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/1st_Aviation_Regiment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/202-Filo-Sark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/20SOS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/22FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/23Wg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/23tfw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/25FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/27FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/27th_FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/285_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/288-OVP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/28_IAP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/292_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/298_Squadron_Master.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/298sqn_Soesterberg_Netherlands.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/299-OShAP-Saki.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/2FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/2_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/2stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/302ABWingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/303ABWingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/303FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/304ABWingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/306sq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/30_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/311sq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/312sq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/313sq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/315sq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/318FIS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/31sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/31stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/32TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/32_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/332-OGVP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/332b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/332c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/332sq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/333sq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/334b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/334c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/336FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/33FW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/33_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/349sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/34_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/350sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/354FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/355FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/357FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/358FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/35_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/36_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/36stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/37_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/37stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/38_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/390FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/395ExSupRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/3Wg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/3_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/3_op_AA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/3ciaBHELAI.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/3escuadrilla-gatoconbotas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/3escuadrilla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/3ª escuadrilla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/406_Helicopter_Squadron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/410sqn-Cougars.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/41WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/41stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/425sqn-Alouette.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/427_Tactical_Helicopter_Squadron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/42WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/430_Tactical_Helicopter_Squadron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/433WS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/433sqn-Porcupine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/438_Tactical_Helicopter_Squadron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/439sqn-Sabretooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/43FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/440-OVP_MVO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/441sqn-SylverFox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/44FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/44WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/45-OVP_MVO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/450_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/453_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/455_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/460_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/461_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/463_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/464_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/476FG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/47FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/47TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/482_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/486_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/48AEW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/48FIS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/490-OVP_MVO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/492_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/493FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/49tfw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/4escuadrilla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/4stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/501WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/503WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/509TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/50_YEARS_EUROCOPTER.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/510FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/510TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/511TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/51stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/525FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/52FW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/53FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/54FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/57FIS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/58FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/58th_FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/59FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/59th_FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/5FIS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/5_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/5escuadrilla-csar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/5escuadrilla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/5stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/5th_Aviation_Regiment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/5ª escuadrilla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/60FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/60th_FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/611_IAP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/61stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/65AGRS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/65AGRS_Ru.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/66WPS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/67FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/689_IAP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/6_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/6escuadrilla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/6stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/6th_Aviation_Regiment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/70stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/71FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/71th_FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/726sqn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/727.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/727sqn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/72stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/730 Fighter Squadron BIRDSONG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/730sqn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/74FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/75FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/75_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/762-OBS_MVO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/76FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/76_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/77_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/78TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/78WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/79_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/7FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/7TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/7_B_AA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/81FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/81TFW.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/81WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/82WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/84WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/865-BRV_MVO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/86WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/87_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/8FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/8TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/8escuadrilla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/91TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/92TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/92WingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/94FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/94th_FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/95FS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/9TFS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/9_SQN_RAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/9cazayataque.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/9escuadrilla-cobra.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/9escuadrilla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/9stormo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/A-109_BA_Hirundo_Military_Helicopter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/AA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ABH-01-Bravery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ABH-02-Leon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ABH-03-Glory-III.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ABH-04-Hero.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/AGA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/AH-64_Apache_Helicopter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/AIR_FORCE_HELICOPTER_SQUADRON.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/AIR_RAIDERS_K_CO_158tH_AVN_SUPT_SDDN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ATWingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/AUS01_Victoria_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/AUS02_Cross_of_Valour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/AUS03_The_Star_of_Gallantry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/AUS04_Star_of_Courage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/AUS05_Distinguished_Service_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Airforce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Armeiskaya_Aviatsiya.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Army_CH-47_Chinook_Helicopter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Australian_Aviation_Corp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Aviatsia_MVO_upravlenie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Aviatsiya_sukhoputnikh_voisk_BVP_Razan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Aviatsiya_sukhoputnykh_voisk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BEL-01-Officer_of_the_Order_of_Leopold-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BEL-02-Officer_of_the_Order_of_the_Crown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BEL-03-Officer_of_the_Order_of_Leopold-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BEL-04-Knight_of_the_Order_of_Leopold.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BEL-05-Military_Cross_1st_Class.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BEL-06-Military_Cross_2nd_Class.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BEL-07-Military_Cross_for_Foreign_Service.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BEL-08-Medal_for_Military_Merit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BHELAI-1995-.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BHELAI-19xx-1995.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BHELEMEII-sahara.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BHELMAII-92-94.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BHELMAII-nc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BHELMAII-sahara.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BHELMAII-sqp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BHELMAIII.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/BHELMAIV.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Bell_AH-1_Cobra_Attack_Helicopter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Berkuty.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CA_01_Medal_of_Bravery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CA_02_Medal_of_Military_Valour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CA_03_Meritorious_Service_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CA_04_Star_of_Courage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CA_05_Star_of_Military_Valour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CA_06_The_Order_of_Military_Merit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CA_07_The_Order_of_Canada.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CA_08_Cross_of_Valour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CH-53A_HELICOPTER_SQUADRON_AIR_FORCE_IAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CVW1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CVW11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CVW14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CVW2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CVW3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CVW5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CVW7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/CVW9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Canada.tar.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Cote_d'Argent.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DE-01-Ehrenmedaille-Honor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DE-02-Ehrenkreuze.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DE-03-Silbernekreuze.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DE-04-Goldenekreuze.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DE-05-Bundesverdienstmedaille.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DE-06-Bundesverdienstkreuz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DEFENSE_HELICOPTER_FLYING_SCHOOL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DEN-01-Distinguished_Flying_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DEN-02-Silver_Cross_of_the_Order_of_Dannebrog.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DEN-03-Order_of_Denneborg_Knight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DEN-04-Order_of_Danneburg_Knight_1st_Degree.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DEN-05-Air_Force_Long_Service_Medal-25_years.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DEN-06-Medal_of_the_Defence.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DEN-07-Order_of_Danneburg_Commander_1st_Degree_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/DEN-08-Medal_for_Heroic_Deeds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Distinguished_Service_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/EUROCOPTER_BETREUUNG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Eagle_Driver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/F14_anytime.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/F15-Knights_of_the_Twin_Tail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/F15-The_2nd_F-15_Squadron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/F15SE_Driver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/F16-The_First_Jet_Squadron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/F16-The_Valley_Squadron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/F4-The_One_Squadron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/FAMET.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/FR-01-Cross_of_Valour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/FR-02-Medal_Militaire.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/FR-03-Merit_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/FR-04-Combatant_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/FR-05-Army_National_Defence_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/FR-06-Merit_Order.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/FR-07-Liberty_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/FR-08-Legion_of_Honor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Flying_Tigers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/GR-01-Medal_for_the_Service_in_Battle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/GR-02-Medal_for_Military_Courage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/GR-03-Order_of_Vakhtang_Gorgasali_III.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/GR-04-Order_of_Vakhtang_Gorgasali_II.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/GR-05-Order_of_Vakhtang_Gorgasali_I.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/GR-06-Order_of_Honour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/GR-07-Medal_of_Valour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/GR-08-Order_of_the_Gold_Fleece.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Gallantry_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HAL3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HAL5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HELICOPTER_5-RHC_EHM2_COUGAR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HH1K.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HH1_HC16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HML765.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HML767.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HML767_ca.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HML770.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HML771.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HML776.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HMLA167.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HMLA169.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HMLA267.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HMLA367.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HMLA369.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HMLA775.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/HSWingRAAF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Heeresflieger RGT 16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Helicopter_Attack_Batallion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Herresflieger RGT 16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Hog_Driver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/IDF_1st_HELICOPTER_GUNSHIPS_AH-1_SQUADRON.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/IT-01-Commemorative_Medal_of_Peace_Operations.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/IT-02-Honor_Decoration_Interforce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/IT-03-NATO_Medal_for_Merits.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/IT-04-Bronze_Medal_for_Military_Valour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/IT-05-Silver_Medal_for_Military_Valor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/IT-06-Cross_of_Aeronautical_Merit_Bronze.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/IT-07-Silver_Cross_of_Merit_Air_Force.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/IT-8-Gold_Cros_of_Merit_Aeronautical.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/JG71.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/JG73.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/JaboG32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/KIAP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Light_Aviation_Helicopter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Mig-29.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Mig29-Fighting Fulcrum.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/MilitaryForces.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NED-01-Aviators_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NED-02-Hasselt_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NED-03-Lion_III_Class.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NED-04-Long_Service_Decoration_Bronze.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NED-05-Long_Service_Decoration_Silver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NED-06-Military_Order_of_William_Knight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NED-07-Order_of_the_House_of_Nassau.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NED-08-Order_of_the_House_of_Nassau-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NOR-01-AirForceServiceMedal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NOR-02-Armed_Forces_medal_for_international_operations.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NOR-03-Armed_Forces_medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NOR-04-Armed_Forces_medal_with_Laureat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NOR-05-War_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NOR-06-StOlaf_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NOR-07-War_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/NOR-08-StOlaf_Knight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/OCU.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RAF_7th_Squadron_helicopter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RK.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RSD_4_MAINTENA_C_BASIS_KOKSIJDE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RUS-01-CourageOrder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RUS-02-MeritMedal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RUS-03-NesterovMedal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RUS-04-MilitaryServe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RUS-05-GeorgyCross-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RUS-06-ForMeritToFatherland-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RUS-07-GeorgyCross-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/RUS-08-HeroStar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Royal_Nederland_Air_Force(RNAF)Master.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Rus-Airforce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Russian-Knights.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/SOS-01-Defenders_of_the_Fatherland.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/SOS-02-Uatsamonga.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/SP-01-Aeronautical_Merit_Cross_with_Blue_Ribbon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/SP-02-Aeronautical_Merit_Cross_with_Red_Ribbon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/SP-03-War_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/SP-04-Individual_Military_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/SP-05-Laureate_Cross_of_Saint_Ferdinand.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/SPA-162-Tigre.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/SPA-166-Aigle_noir_sur_disque_jaune.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Skrydstrup Fighter Wing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Squadron-USA-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Squadron-USA-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Squadron-USA-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Stripes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Swifts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/TAM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/TUR-01-Liakat_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/TUR-02-Succes_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/TUR-03-Superior_Service.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/TUR-04-Superior_Braveness_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/TUR-05-Service_and_Praise_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/TUR-06-Honour_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Test_pilot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Tomcat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/TsBP_Torzhok.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UH-1_HELICOPTER_BATTALION.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UH-60_Black_Hawk_Helicopter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UH1_Huey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UH1_USMC.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UHELII.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UK-01-British_Empire_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UK-02-Air_Force_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UK-03-Distinguished_Flying_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UK-04-Military_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UK-05-Distiguished_Conduct_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UK-06-Air_Force_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UK-07-Distinguished_Flying_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UK-08-Military_Cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UKR-01-ForDefenderOfFatherland.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UKR-02-ForMerit-III.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UKR-03-ForMerit-II.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UKR-04-ForMerit-I.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UKR-05-ForMerit-Star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UKR-06-ForMilitaryService.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UKR-07-OrderForCourage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UKR-08-GoldStar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/UN_UNPROFOR_BELL_4_2_SP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-01-AirMedal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-02-PurpleHeart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-03-BronzeStar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-04-AirmansMedal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-05-DistinguishedFlyingCross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-06-SilverStar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-07-AirForceCross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-08-AirForceMedalOfHonour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-A10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-A10_CP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/US-F15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/USAFE.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/USSR-Airforce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Ukraine-Airforce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Ukrainian-Falcons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Upravlenie_armeiskoy_aviatsii.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VA147.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF101.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF102.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF111.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF124.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF154.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF191.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF194.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF1_tg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF201.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF202.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF211.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF213.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF24_F14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF24_Last_Rage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF301.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF302.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF33.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF51.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF71.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VF84.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA102.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA105.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA106.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA113.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA115.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA122.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA125.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA131.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA132.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA136.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA137.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA146.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA147.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA151.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA154.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA161.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA192.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA192_wf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA195.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA201.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA203.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA204.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA211.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA213.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA27.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA303.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA34.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA37.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA82.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA86.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA87.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA94.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VFA97.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VMFA112.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VMFA115.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VMFA121.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VMFA122.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VMFA122_W.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VMFAAW121.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VMFAAW322.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/VMFAT101.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Valmy_Helicopter_Squadron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Valor_Medal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/Werft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/YGBSM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/a10_des.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/a10_nvg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/a10_sub.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/a10_wpsmc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ala11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ala12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ala14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ala15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ala23.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ala31.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/ala46.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/armada.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/bheltraV-1cia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/cas_patch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/coronel-mate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/cvw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/cvw17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/cvw8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/escuadron111.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/escuadron113.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/escuadron121.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/escuadron122.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/escuadron151.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/escuadron152.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/escuadron153.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/f14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/f15_fw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/f15_uwant.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/fa18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/flags-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/harrierII.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/hawgsmoke2012.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/hml367.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/insurgents.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/patrulla_aguila.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/piloto-ataque-bhela1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/piloto_UH-1N_y_UH-1H.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/spanishairforce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/stripes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/tripulante_BHELMAVI.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/usaf_f15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/va34.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf103.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf103_60.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf103_ori.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf114.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf1285.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf1285_f14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf142.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf211_50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf31_lastcat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vf41.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vfa103.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vfa11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vfa127.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vfa143.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vfa15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vfa305.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vfa31.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vfa41.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vfa81.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vfa83.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa134.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa142.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa212.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa232.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa235.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa251.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa312.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa314.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa321.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa323.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa333.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfa531.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfaaw224.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfaaw225.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfaaw242.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmfaaw533.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmo2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmo3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/medals/Countries/awards/vmo6.png" />
-    </list>
-    <list id="648582c7-fd4b-4a5f-a3b2-a7841ff5fbf3" name="New changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="f35238b7-3bc6-4702-bd3a-237752de1428" name="Default" comment="Production Alpha Version 1.0" />
+    <list id="648582c7-fd4b-4a5f-a3b2-a7841ff5fbf3" name="New changelist" comment="" />
     <ignored path="statistics.loc.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -665,12 +22,12 @@
     <favorites_list name="statistics.loc" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pilot_stat_view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/application/views/statistics/pilot_stat_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -679,8 +36,8 @@
       <file leaf-file-name="mainpage_view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/system/application/views/statistics/mainpage_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90250695">
-              <caret line="75" column="74" selection-start-line="75" selection-start-column="74" selection-end-line="75" selection-end-column="74" />
+            <state vertical-scroll-proportion="1.4178272">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -776,8 +133,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -929,116 +286,6 @@
   </component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/lua/userGameGUI.lua</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -1269,22 +516,22 @@
     <frame x="1345" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16129032" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24893071" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39203188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39920318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3435484" sideWeight="0.502994" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13225806" sideWeight="0.497006" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16129032" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30674848" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1310,9 +557,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23695466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1362,17 +609,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/pilot_stat_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/mainpage_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/empty_stat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="71" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -1502,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/views/statistics/empty_stat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44262296">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_db/patch_dogfights.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1">
@@ -1607,20 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/plugins/datatables/jquery.dataTables.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33186814">
-          <caret line="77" column="282" selection-start-line="77" selection-start-column="282" selection-end-line="77" selection-end-column="282" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/reg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21355931">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/application/libraries/dcs_lib.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5435169">
@@ -1635,13 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/registration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3508772">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/application/controllers/registration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2983539">
@@ -1649,38 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/models/register_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7037037">
-          <caret line="19" column="78" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/views/conditions_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2962963">
-          <caret line="72" column="98" selection-start-line="72" selection-start-column="98" selection-end-line="72" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_db/dcs_registration_tickets.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/mainpage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/views/reg_form_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.703704">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1698,25 +898,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/application/views/register_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57478994">
-          <caret line="31" column="91" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/application/views/statistics/pilot_stat_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/application/views/statistics/mainpage_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90250695">
-          <caret line="75" column="74" selection-start-line="75" selection-start-column="74" selection-end-line="75" selection-end-column="74" />
+        <state vertical-scroll-proportion="1.4178272">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>

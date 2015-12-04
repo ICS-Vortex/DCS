@@ -158,9 +158,16 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 		local _killer_player_ucid = net.get_player_info(arg1, 'ucid')
 		local _killed_target_type = arg5
 		--переменная для определения категории
-		local _attributeName = "category"
+		local _attributeName_cat = "category"
+		--переменная для определения количества очков за убитую цель
+		local _attributeName_score = "Rate"
 		--опрделяем категорию при помощи функции DCS.getUnitTypeAttribute(unitType, attrName)
-		local _killed_target_category = DCS.getUnitTypeAttribute(arg5, _attributeName) --"AI"
+		local _killed_target_category = DCS.getUnitTypeAttribute(arg5, _attributeName_cat) --"AI"
+		--это временный if, пока не научимся брать категорию у кораблей и других неназемных юнитов
+		if _killed_target_category == nil then
+			_killed_target_category = "Ship"
+		end
+		local _kill_score = DCS.getUnitTypeAttribute(arg5, _attributeName_score)
 			--если игрока убил не бот и передалось имя вооружения
 			if _killer_player_name ~= nil and _weapon_name ~= nil and _killed_player_name ~= nil then
 				--отправляем запись об убийстве на сервер статистики
@@ -176,15 +183,15 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 			--если игрок убил бота и оружие известно
 			elseif _killer_player_name ~= nil and _weapon_name ~= nil and _killed_player_name == nil then
 				--отправляем запись об убийстве на сервер статистики
-				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";"..5)
+				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
-				net.log(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";"..5)
+				net.log(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
 			--если игрок убил бота и оружие не известно
 			elseif _killer_player_name ~= nil and _weapon_name == nil and _killed_player_name == nil then
 				--отправляем запись об убийстве на сервер статистики
-				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";"..5)
+				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
-				net.log(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";"..5)
+				net.log(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
 			--если игрока убил бот
 			elseif _killer_player_name == nil and _killed_player_name ~= nil then
 				--отправляем запись о смерти на сервер статистики

@@ -157,6 +157,9 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 		local _killer_player_name = net.get_player_info(arg1, 'name')
 		local _killer_player_ucid = net.get_player_info(arg1, 'ucid')
 		local _killed_target_type = arg5
+		--записываем стороны убийцы и убитого
+		local _killed_target_side = arg6
+		local _killer_player_side = arg3
 		--переменная для определения категории
 		local _attributeName_cat = "category"
 		--переменная для определения количества очков за убитую цель
@@ -168,6 +171,8 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 			_killed_target_category = "Ship"
 		end
 		local _kill_score = DCS.getUnitTypeAttribute(arg5, _attributeName_score)
+		--здесь делаем проверку чтобы стороны убийцы и убитого отличались, чтобы избежать записи очков за убийство своих ботов
+		if _killed_target_side ~= _killer_player_side then
 			--если игрока убил не бот и передалось имя вооружения
 			if _killer_player_name ~= nil and _weapon_name ~= nil and _killed_player_name ~= nil then
 				--отправляем запись об убийстве на сервер статистики
@@ -199,6 +204,7 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
 				net.log(_killed_player_name..";dead;".._killed_player_ucid)
 			end
+		end
     --при самоубийстве игрока, например от собственной бомбы
     elseif eventName == "self_kill" then 
     	local _player_name = net.get_player_info(arg1, 'name')

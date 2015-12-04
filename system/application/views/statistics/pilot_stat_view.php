@@ -43,7 +43,7 @@
                 <div class="row text-center medals">
                     <? if(isset($medals) && !empty($medals)):?>
                         <? foreach ($medals as $medal):?>
-                            <? $file = base_url().'images/medals/Countries/USA/Awards/'.$medal['image_url']; ?>
+                            <? $file = base_url().'images/medals/Countries/awards/'.$medal['image_url']; ?>
                             <div class="col-md-2 col-sm-4 col-xs-6">
                                 <img src="<?=$file;?>"
                                      title="<?=$medal['name'];?>"/>

@@ -73,7 +73,9 @@
                     <li class=""><a href="http://digitalcombatsimulator.com" target="_blank"><b>DCS Site</b></a></li>
                     <li class=""><a href="http://forums.eagle.ru/forumdisplay.php?f=54" target="_blank"><b>Русский ED форум</b></a></li>
                     <li class=""><a href="https://www.facebook.com/burningskieswwii/" target="_blank"><b>Facebook</b></a></li>
-                    <li class=""><a href="https://www.facebook.com/burningskieswwii/" target="_blank" class="btn-lg" data-toggle="modal" data-target="#myModal"><b>Вход</b></a></li>
+                    <li class="" style="position:absolute;right: 50%;top:30%"><b>ALPHA version</b></li>
+
+                    <!--<li class=""><a href="https://www.facebook.com/burningskieswwii/" target="_blank" class="btn-lg" data-toggle="modal" data-target="#myModal"><b>Вход</b></a></li>-->
 
 
                 </ul>

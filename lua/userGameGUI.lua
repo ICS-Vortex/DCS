@@ -198,11 +198,13 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
 				net.log(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
 			--если игрока убил бот
+			--[[
 			elseif _killer_player_name == nil and _killed_player_name ~= nil then
 				--отправляем запись о смерти на сервер статистики
 				save_stat(_killed_player_name..";dead;".._killed_player_ucid)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
 				net.log(_killed_player_name..";dead;".._killed_player_ucid)
+			--]]
 			end
 		end
     --при самоубийстве игрока, например от собственной бомбы

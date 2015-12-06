@@ -153,7 +153,7 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
     elseif eventName == "kill" then   --onGameEvent(kill,idPlayer1,typeP1,coalition1, idP2,typeP2, coalition2, weapon)
     	local _killed_player_name = net.get_player_info(arg4, 'name')
     	local _killed_player_ucid = net.get_player_info(arg4, 'ucid')
-		local _weapon_name = arg7
+		--local _weapon_name = arg7
 		local _killer_player_name = net.get_player_info(arg1, 'name')
 		local _killer_player_ucid = net.get_player_info(arg1, 'ucid')
 		local _killed_target_type = arg5
@@ -172,7 +172,7 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 		end
 		local _kill_score = DCS.getUnitTypeAttribute(arg5, _attributeName_score)
 		--здесь делаем проверку чтобы стороны убийцы и убитого отличались, чтобы избежать записи очков за убийство своих ботов
-		if _killed_target_side ~= _killer_player_side then
+		--if _killed_target_side ~= _killer_player_side then
 			--если игрока убил другой игрок
 			if _killer_player_name ~= nil and _killed_player_name ~= nil then
 				--отправляем запись об убийстве на сервер статистики
@@ -220,7 +220,7 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 				net.log(_killed_player_name..";dead;".._killed_player_ucid)
 			--]]
 			end
-		end
+		--end
     --при самоубийстве игрока, например от собственной бомбы
     elseif eventName == "self_kill" then 
     	local _player_name = net.get_player_info(arg1, 'name')

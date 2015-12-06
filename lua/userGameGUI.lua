@@ -173,6 +173,19 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 		local _kill_score = DCS.getUnitTypeAttribute(arg5, _attributeName_score)
 		--здесь делаем проверку чтобы стороны убийцы и убитого отличались, чтобы избежать записи очков за убийство своих ботов
 		if _killed_target_side ~= _killer_player_side then
+			--если игрока убил другой игрок
+			if _killer_player_name ~= nil and _killed_player_name ~= nil then
+				--отправляем запись об убийстве на сервер статистики
+				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_player_name..";".._killed_player_ucid..";"..50)
+				--вспомогательная запись в лог. (можно удалить или закомментить)
+				net.log(_killer_target_side..";".._killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_side..";".._killed_player_name..";".._killed_player_ucid..";"..50)
+			--если игрок убил бота
+			elseif _killer_player_name ~= nil and _killed_player_name == nil then
+				--отправляем запись об убийстве на сервер статистики
+				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
+				--вспомогательная запись в лог. (можно удалить или закомментить)
+				net.log(_killer_player_side..";".._killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
+			--[[ данная часть учитывает вооружение, мы пока вооружение не передаем, поэтому закомментировано 
 			--если игрока убил не бот и передалось имя вооружения
 			if _killer_player_name ~= nil and _weapon_name ~= nil and _killed_player_name ~= nil then
 				--отправляем запись об убийстве на сервер статистики
@@ -197,6 +210,7 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
 				net.log(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
+			--]]
 			--если игрока убил бот
 			--[[
 			elseif _killer_player_name == nil and _killed_player_name ~= nil then

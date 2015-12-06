@@ -180,7 +180,7 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
 				net.log(_killer_target_side..";".._killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_side..";".._killed_player_name..";".._killed_player_ucid..";"..50)
 			--если игрок убил бота
-			elseif _killer_player_name ~= nil and _killed_player_name == nil then
+			elseif _killer_player_name ~= nil and _killed_player_name == nil and _killed_target_side ~= _killer_player_side then
 				--отправляем запись об убийстве на сервер статистики
 				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
 				--вспомогательная запись в лог. (можно удалить или закомментить)

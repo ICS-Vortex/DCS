@@ -26,7 +26,9 @@ class Statistics_model extends Model
         $this->db->query("TRUNCATE pilots_kills");
         $this->db->query("TRUNCATE pilots_lands");
         $this->db->query("TRUNCATE pilots_takeoffs");
-
+        $this->db->query("TRUNCATE dcs_temporary_streaks");
+        $this->db->query("TRUNCATE dcs_best_streaks");
+        $this->db->query("TRUNCATE dcs_registration_tickets");
     }
     // Текущие полёты - список ников.
     function main_get_current_flights()
@@ -294,7 +296,7 @@ class Statistics_model extends Model
     //Добавление зрителя
     function add_spectator($id, $time)
     {
-        $this->db->query("INSERT INTO dcs_spectators (pilot_id,data) VALUES ($id,'$time')");
+        $this->db->query("INSERT IGNORE INTO dcs_spectators (pilot_id,data) VALUES ($id,'$time')");
     }
 
     // Проверка зрителя по ID

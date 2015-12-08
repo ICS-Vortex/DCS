@@ -68,89 +68,91 @@ class Debug extends Controller
             switch($nickname){
                 //Server
                 case 'Server':
-                    echo "Да, єто Server. Операция с сервером!<br>";
+                    //echo "Да, єто Server. Операция с сервером!<br>";
                     switch ($event){
                         case 'Start':
-                            echo "Старт сервера в $time<br/>";
+                            //echo "Старт сервера в $time<br/>";
                             $this->statistics_model->server_online();
-                            echo "Очистка всех таблиц для веб-статистики(Команды, Зрители...).<br>";
+                            //echo "Очистка всех таблиц для веб-статистики(Команды, Зрители...).<br>";
                             $this->statistics_model->empty_web_tables();
                             break;
                         case 'Stop':
-                            echo "Остановка сервера в $time<br />";
+                            //echo "Остановка сервера в $time<br />";
                             $this->statistics_model->server_offline();
-                            echo "Ищем активные полёты в базе данных.<br>";
+                            //echo "Ищем активные полёты в базе данных.<br>";
                             $flights = $this->statistics_model->get_all_current_flights();
                             if (!empty($flights)) {
-                                echo "Найдено ".count($flights). " активных полётов.Начинаем процедуру сохранения полётов.<br>";
+                                //echo "Найдено ".count($flights). " активных полётов.Начинаем процедуру сохранения полётов.<br>";
                                 $values = '';
                                 $fl = 1;//Маркер для дебага
+                                //print_r($flights);exit;
                                 foreach ($flights as $endflight) {
                                     $start = $endflight['flight'];
-                                    echo "Время начала полёта #$fl - $start.<br>";
+                                    //echo "Время начала полёта #$fl - $start.<br>";
                                     $end = $time;
-                                    echo "Время окончания полёта #$fl - $end.<br>";
+                                    //echo "Время окончания полёта #$fl - $end.<br>";
                                     $takeoff_from = $endflight['takeoff_from'];
                                     $landed_at = null;
                                     $hours = strtotime($end) - strtotime($start);
                                     if($hours < 0){$hours = $hours*(-1);}
-                                    echo "Время полёта #$fl - $hours сек.<br>";
+                                    //echo "Время полёта #$fl - $hours сек.<br>";
                                     $values = $values . "(" . $endflight['pilot_id'] . ",'" . $start . "','" . $end . "'," . $hours . ",'".$takeoff_from."'),";
                                     $flight_id = $endflight['pilot_id'];
-                                    echo "Удаляем полёт # $fl.<br>";
+                                    //echo "Удаляем полёт # $fl.<br>";
                                     $this->statistics_model->delete_all_flights($flight_id);
                                     $fl++;// Добавление маркера дебага
                                 }
                                 $values = substr($values, 0, -1);
-                                echo "Добавление записей в общий налёт(flight_hours).<br>";
+                                //echo $values;exit;
+                                //echo "Добавление записей в общий налёт(flight_hours).<br>";
                                 $this->statistics_model->add_not_ended_flights($values);
                             }
-                            echo "Активных полётов не обнаружено.<br>";
-                            echo "Получаем список пользователей онлайн.<br>";
+                            //echo "Активных полётов не обнаружено.<br>";
+                            //echo "Получаем список пользователей онлайн.<br>";
                             $online = $this->statistics_model->get_online_all();
-                            echo "Получаем список Зрителей.<br>";
+                            //echo "Получаем список Зрителей.<br>";
                             $spectators = $this->statistics_model->get_all_spectators();
-                            echo "Получаем список Красных.<br>";
+                            //echo "Получаем список Красных.<br>";
                             $red = $this->statistics_model->get_all_red();
-                            echo "Получаем список Синих.<br>";
+                            //echo "Получаем список Синих.<br>";
                             $blue = $this->statistics_model->get_all_blue();
                             if (!empty($online)) {
-                                echo "Таблица ONLINE не пустая. Выполняется очистка таблицы:<br>";
+                                //echo "Таблица ONLINE не пустая. Выполняется очистка таблицы:<br>";
                                 $on = 1;
                                 foreach ($online as $delete) {
                                     $id = $delete['pilot_id'];
                                     $this->statistics_model->delete_online($id);
-                                    echo "Удалена запись №$on.<br>";
+                                    //echo "Удалена запись №$on.<br>";
                                     $on++;
                                 }
-                            }echo "Таблица ONLINE пустая.<br>";
+                            }//echo "Таблица ONLINE пустая.<br>";
                             if (!empty($spectators)) {
-                                echo "Таблица Spectators не пустая. Выполняется очистка таблицы:<br>";
+                                //echo "Таблица Spectators не пустая. Выполняется очистка таблицы:<br>";
                                 $sp=1;
                                 foreach ($spectators as $spect){
                                     $id = $spect['pilot_id'];
                                     $this->statistics_model->delete_from_spectators($id);
-                                    echo "Удален зритель №$sp.<br>";
+                                    //echo "Удален зритель №$sp.<br>";
                                     $sp++;
                                 }
-                            }echo "Таблица Spectators пустая.<br>";
+                            }//echo "Таблица Spectators пустая.<br>";
                             if (!empty($red)) {
-                                echo "Таблица Красных не пустая. Выполняется очистка таблицы:<br>";
+                                //echo "Таблица Красных не пустая. Выполняется очистка таблицы:<br>";
                                 $rd = 1;
                                 foreach ($red as $member){
                                     $id = $member['pilot_id'];
                                     $this->statistics_model->left_red($id);
-                                    echo "Удален Красный игрок №$rd.<br>";
+                                    //echo "Удален Красный игрок №$rd.<br>";
                                     $rd++;
-                                }echo "Таблица Красных пустая.<br>";
+                                }//echo "Таблица Красных пустая.<br>";
                             }
                             if (!empty($blue)) {
-                                echo "Таблица Синих не пустая. Выполняется очистка таблицы:<br>";
+                                //echo "Таблица Синих не пустая. Выполняется очистка таблицы:<br>";
                                 $bl = 1;
                                 foreach ($blue as $member) {
                                     $id = $member['pilot_id'];
                                     $this->statistics_model->left_blue($id);
-                                    echo "Удален Синий игрок №$bl.<br>";
+                                    //echo "Удален Синий игрок №$bl.<br>";
                                     $bl++;
                                 }
                             }
@@ -159,29 +161,26 @@ class Debug extends Controller
                     break;
                 //Игроки
                 default:
-                    echo "Нет. Это не Server.Ищем пилота в базе данных(его ID).<br>";
+                    //echo "Нет. Это не Server.Ищем пилота в базе данных(его ID).<br>";
                     if($hash != 'server'){
                         $check_nick = $this->statistics_model->check_nick($hash);
                         if (empty($check_nick)) {
-                            echo "Игрока $nickname нету в базе данных.<br>";
+                            //echo "Игрока $nickname нету в базе данных.<br>";
                             $nick = array();
                             $nick['nickname'] = $nickname;
                             $nick['hash'] = $data[3];
                             $record = $this->statistics_model->add_pilot($nick);
-                            echo "Пилот $nickname добавлен в БД.<br>";
+                            //echo "Пилот $nickname добавлен в БД.<br>";
                         }
                         $nick_id = $this->statistics_model->get_pilot_id_with_hash($hash);
-                        //print_r($nick_id);
                         if(!empty($nick_id)){
                             $id = $nick_id['id'];
-                            echo "Пилот $nickname найден. ID = $id.<br>";
                             if($nick_id['nickname'] != $nickname){
                                 $this->statistics_model->update_nickname($id,$nickname);
                             }
-
+                            //echo "Пилот $nickname найден. ID = $id.<br>";
                         }else{
-                            echo "Пилот $nickname не найден.<br>";
-                            continue;
+                            exit;
                         }
                     }
                     switch ($event) {
@@ -203,6 +202,7 @@ class Debug extends Controller
                         case 'joined RED':
                             //echo "Игрок $nickname присоединился в команду <b style='color:red;'>Красных</b><br />";
                             $plane = $data[4];
+                            $this->statistics_model->add_favor_plane($id, $plane);
                             $this->statistics_model->delete_from_spectators($id);
                             //echo "Удаляем пилота $nickname из зрителей.<br>";
                             $check_red = $this->statistics_model->check_red($id);
@@ -233,6 +233,7 @@ class Debug extends Controller
                         case 'joined BLUE':
                             //echo "Игрок $nickname присоединился в команду <b style='color:blue;'>Синих</b><br />";
                             $plane = $data[4];
+                            $this->statistics_model->add_favor_plane($id, $plane);
                             //echo "Удаляем игрока $nickname из таблицы Зрителей, если он там был.<br>";
                             $this->statistics_model->delete_from_spectators($id);
                             //echo "Проверяем, находится ли игрок $nickname в таблице Синих.<br>";

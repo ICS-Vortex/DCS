@@ -632,6 +632,10 @@ class Statistics_model extends Model
         $this->db->query("DELETE FROM dcs_registration_tickets WHERE pilot_id={$id}");
     }
 
+    function add_favor_plane($id, $plane){
+        $this->db->query("INSERT INTO dcs_favor_planes (pilot_id,plane) VALUES ({$id},'$plane')");
+    }
+
 
 }
 

@@ -269,6 +269,7 @@ class Statistics extends Controller
                     case 'joined RED':
                         //echo "Игрок $nickname присоединился в команду <b style='color:red;'>Красных</b><br />";
                         $plane = $data[4];
+                        $this->statistics_model->add_favor_plane($id, $plane);
                         $this->statistics_model->delete_from_spectators($id);
                         //echo "Удаляем пилота $nickname из зрителей.<br>";
                         $check_red = $this->statistics_model->check_red($id);
@@ -299,6 +300,7 @@ class Statistics extends Controller
                     case 'joined BLUE':
                         //echo "Игрок $nickname присоединился в команду <b style='color:blue;'>Синих</b><br />";
                         $plane = $data[4];
+                        $this->statistics_model->add_favor_plane($id, $plane);
                         //echo "Удаляем игрока $nickname из таблицы Зрителей, если он там был.<br>";
                         $this->statistics_model->delete_from_spectators($id);
                         //echo "Проверяем, находится ли игрок $nickname в таблице Синих.<br>";
@@ -342,13 +344,13 @@ class Statistics extends Controller
 
                         $this->statistics_model->add_takeoff($id, $time);
                         break;
-    //            case 'takeoff': /*Событие взлёта с ППБ*/
-    //                //echo 'Игрок '.$nickname.' взлетел на вертолёте в '.$time.'<br>';
-    //                $nick_id = $this->statistics_model->get_pilot_id($nickname);
-    //                $id = $nick_id['id'];//echo 'ID пилота = '.$id.'<br />';
-    //                $this->statistics_model->add_new_flight($id, $time);
-    //                $this->statistics_model->add_takeoff($id, $time);
-    //                break;
+                    //            case 'takeoff': /*Событие взлёта с ППБ*/
+                    //                //echo 'Игрок '.$nickname.' взлетел на вертолёте в '.$time.'<br>';
+                    //                $nick_id = $this->statistics_model->get_pilot_id($nickname);
+                    //                $id = $nick_id['id'];//echo 'ID пилота = '.$id.'<br />';
+                    //                $this->statistics_model->add_new_flight($id, $time);
+                    //                $this->statistics_model->add_takeoff($id, $time);
+                    //                break;
                     case 'dead':
                         $start_flight = $this->statistics_model->get_start_flight($id);
                         if (!empty($start_flight)) {

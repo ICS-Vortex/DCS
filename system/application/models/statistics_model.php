@@ -145,7 +145,7 @@ class Statistics_model extends Model
     //Проверка пилота по UID
     function check_nick($hash)
     {
-        $query = $this->db->query("SELECT * FROM pilots WHERE hash='{$hash}'");
+        $query = $this->db->query("SELECT * FROM pilots WHERE licence='{$hash}'");
         return $query->row_array();
     }
 
@@ -155,9 +155,9 @@ class Statistics_model extends Model
     }
 
     //Добавление пилота в базу данных
-    function add_pilot($data)
+    function add_pilot($nickname,$hash)
     {
-        $this->db->insert('pilots', $data);
+        $this->db->query("INSERT IGNORE INTO pilots (nickname,licence) VALUES ('$nickname','$hash')");
     }
 
     //Проверка пилота по Никнейму
@@ -169,13 +169,13 @@ class Statistics_model extends Model
 
     //Получение пилота по UID
     function get_pilot_id_with_hash($hash){
-        $query = $this->db->query("SELECT * FROM pilots WHERE hash='{$hash}'");
+        $query = $this->db->query("SELECT * FROM pilots WHERE licence='{$hash}'");
         return $query->row_array();
     }
 
     //Проверка жертвы по UID
     function check_victim_by_hash($hash){
-        $query = $this->db->query("SELECT * FROM pilots WHERE hash='{$hash}'");
+        $query = $this->db->query("SELECT * FROM pilots WHERE licence='{$hash}'");
         return $query->row_array();
     }
 

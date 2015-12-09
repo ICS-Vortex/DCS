@@ -141,7 +141,6 @@ class Statistics extends Controller
                             //echo "Найдено ".count($flights). " активных полётов.Начинаем процедуру сохранения полётов.<br>";
                             $values = '';
                             $fl = 1;//Маркер для дебага
-                            //print_r($flights);exit;
                             foreach ($flights as $endflight) {
                                 $start = $endflight['flight'];
                                 //echo "Время начала полёта #$fl - $start.<br>";
@@ -217,25 +216,23 @@ class Statistics extends Controller
             //Игроки
             default:
                 //echo "Нет. Это не Server.Ищем пилота в базе данных(его ID).<br>";
-                //echo $hash;
                 if($hash != 'server'){
                     $check_nick = $this->statistics_model->check_nick($hash);
                     if (empty($check_nick)) {
-                        echo "Игрока $nickname нету в базе данных.<br>";
-                        $nick = array();
-                        $nick['nickname'] = $nickname;
-                        $nick['hash'] = $data[3];
-                        $record = $this->statistics_model->add_pilot($nick);
-                        echo "Пилот $nickname добавлен в БД.<br>";
+                        //echo "Игрока $nickname нету в базе данных.<br>";
+                        $licence = $data[3];
+                        $record = $this->statistics_model->add_pilot($nickname,$hash);
+                        //echo "Пилот $nickname добавлен в БД.<br>";
+                    }else{
+
                     }
                     $nick_id = $this->statistics_model->get_pilot_id_with_hash($hash);
-                    //print_r($nick_id);
                     if(!empty($nick_id)){
                         $id = $nick_id['id'];
                         if($nick_id['nickname'] != $nickname){
                             $this->statistics_model->update_nickname($id,$nickname);
                         }
-                        echo "Пилот $nickname найден. ID = $id.<br>";
+                        //echo "Пилот $nickname найден. ID = $id.<br>";
                     }else{
                         exit;
                     }
@@ -319,17 +316,14 @@ class Statistics extends Controller
                         }
                         break;
                     case 'takeoff from':/*Событие взлёта самолёта/вертолёта с аэродрома/корабля*/
-                        //echo 'Игрок '.$nickname.' взлетел с аэродрома '.$data[4].' в '.$time.'<br>';
+                        echo 'Игрок '.$nickname.' взлетел с аэродрома '.$data[4].' в '.$time.'<br>';
                         $flight = array();
-                        //echo 'ID пилота = '.$id.'<br />';
+                        echo 'ID пилота = '.$id.'<br />';
                         $flight['pilot_id'] = $id;
                         $flight['flight'] = $time;
                         $takeoff_from = $data[4];
                         $flight['takeoff_from'] = $takeoff_from;
                         $this->statistics_model->new_flight($flight);
-
-                        $this->statistics_model->add_new_flight($id, $time);
-
                         $this->statistics_model->add_takeoff($id, $time);
                         break;
 //            case 'takeoff': /*Событие взлёта с ППБ*/
@@ -429,7 +423,7 @@ class Statistics extends Controller
                         if (!empty($start_flight)) {
                             $this->dcs_lib->calculate_flight($id, $time,$start_flight);
                             $this->statistics_model->add_fail_crash($id, $time);
-                            echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
+                            //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
                             $this->dcs_lib->add_death($id,$time);
                             $this->dcs_lib->calculate_streaks($id);
                         }

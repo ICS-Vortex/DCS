@@ -12,6 +12,14 @@
     <script src="/assets/js/stat.js"></script>
   </head>
   <body class="skin-blue sidebar-mini" style='background-image: url(<?=base_url();?>images/background.jpg);background-size:cover;'>
+    <!--backgorund-->
+    <style>
+    body{
+        background-image:url(http://burningskies-stats.16mb.com/images/background.jpg);
+        background-position: left top;
+        background-repeat: repeat;
+    }
+    </style>
         <div class="wrapper">
         <nav id="navbar" class="navbar navbar-inverse">
           <div class="container-fluid">

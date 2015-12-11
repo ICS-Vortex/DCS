@@ -11,7 +11,7 @@
     <script src="/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="/assets/js/stat.js"></script>
   </head>
-  <body class="skin-blue sidebar-mini">
+  <body class="skin-blue sidebar-mini" style='background-image: url(<?=base_url();?>images/background.jpg);background-size:cover;'>
         <div class="wrapper">
         <nav id="navbar" class="navbar navbar-inverse">
           <div class="container-fluid">
@@ -52,8 +52,36 @@
                     <? endif;?>
                 </div>
                 <div class="row">
+                    <div class="col-md-4 col-sm-12 pull-left">
+                        <h3>
+                            Общий налёт
+                            <b>
+                                <?
+                                if ($total_hours['total'] == null) {
+                                    echo "00:00:00";
+                                } else {
+                                    $time = $total_hours['total'];
+                                    $sec = $time % 60;
+                                    $time = floor($time / 60);
+                                    $min = $time % 60;
+                                    $time = floor($time / 60);
+                                    if ($sec < 10) {
+                                        $sec = "0" . $sec;
+                                    }
+                                    if ($min < 10) {
+                                        $min = "0" . $min;
+                                    }
+                                    if ($time < 10) {
+                                        $time = "0" . $time;
+                                    }
+                                    echo $time . ":" . $min . ":" . $sec;
+                                }
+                                ?>
+                            </b>.
+                        </h3>
+                    </div>
                     <div class="col-md-4 col-sm-12 pull-right">
-                        <h3>Общее количество очков - <b><? echo $total_points;?></b>.</h3>
+                        <h3>Общее количество очков <b><? echo $total_points;?></b>.</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -127,19 +155,15 @@
                         <table  class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>W/L</th>
+                                    <th>Air wins/Aircraft lost (W/L) </th>
                                     <th>
                                         <?
                                             if(empty($statistics[0]['count_crashes'])){
-                                                echo 0;
+                                                echo $dogfights['kills'];
                                             }else{
-                                                if(!empty($dogfights['kills'])){
-                                                    $kl = $dogfights['kills'] / $statistics[0]['count_crashes'];
-                                                    $KL = round($kl, 2);
-                                                    echo $KL;
-                                                }else{
-                                                    echo 0;
-                                                }
+                                                $kl = $dogfights['kills'] / $statistics[0]['count_crashes'];
+                                                $KL = round($kl, 2);
+                                                echo $KL;
                                             }
                                         ?>
                                     </th>

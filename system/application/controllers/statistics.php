@@ -59,6 +59,7 @@ class Statistics extends Controller
         $data['dogfights'] = $this->statistics_model->get_dogfights_by_id($id);
         $data['now_streak'] = $this->statistics_model->get_temporary_streak($id);
         $data['best_streak'] = $this->statistics_model->get_best_streak($id);
+        $data['total_hours'] = $this->statistics_model->get_total_hours($id);
         $kill_points = $this->statistics_model->get_total_points_by_id($id);
         $dogfight_points = $this->statistics_model->get_points_for_dogfights($id);
         $points = $kill_points['points'] + $dogfight_points['points'];
@@ -378,6 +379,15 @@ class Statistics extends Controller
                             $dogfight['points'] = $data[6];
                             $insert = $this->statistics_model->insert_dogfight($dogfight);
                             $streak = $this->statistics_model->add_temporary_streak($id);
+
+                            $start_flight = $this->statistics_model->get_start_flight($victim_id);
+                            if (!empty($start_flight)) {
+                                $this->dcs_lib->calculate_flight($victim_id, $time,$start_flight);
+                                $this->statistics_model->add_fail_crash($victim_id, $time);
+                                //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
+                                $this->dcs_lib->add_death($victim_id,$time);
+                                $this->dcs_lib->calculate_streaks($victim_id);
+                            }
                         }else{
                             $check_unit_type_temp = $data[5];
                             $check_type = $this->statistics_model->check_unit_type($check_unit_type_temp);

@@ -18,6 +18,8 @@
     <script src="/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <script language="JavaScript" src="/assets/js/mainpage.js"></script>
+
     <script>
         $('#myModal').on('shown.bs.modal', function () {
           $('#myInput').focus();
@@ -43,10 +45,12 @@
                     <div id="check_email"></div>
                     <label for="password">Пароль</label>
                     <input type="password" class="form-control" id="password" value="" name="password" placeholder="Пароль">
-                    <script language="JavaScript" src="/assets/js/mainpage.js"></script>
                 </div>
             </div>
             <div class="modal-footer">
+                <div class="error pull-left" style="display: block;">
+
+                </div>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
                 <button type="button" class="btn btn-primary" id="enter_button">Войти</button>
             </div>
@@ -73,7 +77,9 @@
                     <li class=""><a href="http://digitalcombatsimulator.com" target="_blank"><b>DCS Site</b></a></li>
                     <li class=""><a href="http://forums.eagle.ru/forumdisplay.php?f=54" target="_blank"><b>Русский ED форум</b></a></li>
                     <li class=""><a href="https://www.facebook.com/burningskieswwii/" target="_blank"><b>Facebook</b></a></li>
+                    <li class=""><a href="#" data-toggle="modal" data-target="#myModal" ><b>Вход</b></a></li>
                     <li class="" style="position:absolute;right: 50%;top:30%"><b>ALPHA version</b></li>
+
 
                     <!--<li class=""><a href="https://www.facebook.com/burningskieswwii/" target="_blank" class="btn-lg" data-toggle="modal" data-target="#myModal"><b>Вход</b></a></li>-->
 
@@ -182,7 +188,7 @@
                 <tr>
                     <th>Позиция</th>
                     <th>Ник</th>
-                    <th>Общий налёт</th>
+                    <th>Любимый ЛА</th>
                     <th>Уничтожил техники</th>
                     <th>Воздушных побед</th>
                     <th>Текущий стрик</th>
@@ -200,25 +206,7 @@
                                 <a class="" id="nicks" style="color: blue;" href="<?= base_url(); ?>statistics/show/<?= $players['id']; ?>"><b><?= $players['nickname']; ?></b></a>
                             </td>
                             <td>
-                                <? if ($players['total_flights'] == null) {
-                                    echo "00:00:00";
-                                } else {
-                                    $time = $players['total_flights'];
-                                    $sec = $time % 60;
-                                    $time = floor($time / 60);
-                                    $min = $time % 60;
-                                    $time = floor($time / 60);
-                                    if ($sec < 10) {
-                                        $sec = "0" . $sec;
-                                    }
-                                    if ($min < 10) {
-                                        $min = "0" . $min;
-                                    }
-                                    if ($time < 10) {
-                                        $time = "0" . $time;
-                                    }
-                                    echo $time . ":" . $min . ":" . $sec;
-                                } ?>
+                                <?=$players['favor_plane'];?>
                             </td>
                             <td>
                                 <?

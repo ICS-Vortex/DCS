@@ -66,8 +66,14 @@ class Statistics_model extends Model
                   fails_flights.fails AS total_fail,
                   dogfights.victims AS total_victims,
                   (IFNULL(total_air_points.air_points,0)+IFNULL(total_ground_points.ground_points,0)) AS points,
-                  last_streak.streak AS last_streak
+                  last_streak.streak AS last_streak,
+                  (IFNULL(favor_planes.plane,'---')) AS favor_plane
                 FROM pilots
+                LEFT JOIN (
+                      SELECT pilot_id,GROUP_CONCAT(DISTINCT plane ORDER BY plane ASC SEPARATOR ', ') AS plane  FROM
+(SELECT pilot_id,plane,count(*) AS cc FROM dcs_favor_planes a GROUP BY pilot_id,plane) a
+WHERE cc=(SELECT max(cc) FROM (SELECT pilot_id,plane,COUNT(*) AS cc FROM dcs_favor_planes a GROUP BY pilot_id,plane) b WHERE b.pilot_id=a.pilot_id) GROUP BY pilot_id
+                ) AS favor_planes ON favor_planes.pilot_id=pilots.id -- pilot,planes,max_planes
                 LEFT JOIN
                      (SELECT pilot_id, SUM(total) AS total FROM flight_hours
                         GROUP BY pilot_id
@@ -102,6 +108,14 @@ class Statistics_model extends Model
                 ORDER BY points DESC
             ");
         return $query->result_array();
+    }
+
+    function get_total_hours($id){
+        $query = $this->db->query("
+            SELECT SUM(total) AS total FROM flight_hours
+            WHERE pilot_id={$id}
+        ");
+        return $query->row_array();
     }
 
     // Получение зрителей

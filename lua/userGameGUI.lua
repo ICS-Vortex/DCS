@@ -157,6 +157,7 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 		local _killer_player_name = net.get_player_info(arg1, 'name')
 		local _killer_player_ucid = net.get_player_info(arg1, 'ucid')
 		local _killed_target_type = arg5
+		local _killer_type = arg2
 		--записываем стороны убийцы и убитого
 		local _killed_target_side = arg6
 		local _killer_player_side = arg3
@@ -212,12 +213,12 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 				net.log(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
 			--]]
 			--если игрока убил бот
-			--[[
+			---[[
 			elseif _killer_player_name == nil and _killed_player_name ~= nil then
 				--отправляем запись о смерти на сервер статистики
-				save_stat(_killed_player_name..";dead;".._killed_player_ucid)
+				save_stat(_killed_player_name..";shotby;".._killed_player_ucid..";".._killer_type)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
-				net.log(_killed_player_name..";dead;".._killed_player_ucid)
+				net.log(_killed_player_name..";shotby;".._killed_player_ucid..";".._killer_type)
 			--]]
 			end
 		end

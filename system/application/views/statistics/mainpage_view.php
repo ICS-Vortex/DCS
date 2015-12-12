@@ -30,6 +30,7 @@
 <body class="skin-blue">
 <!--backgorund-->
 <style>
+
     body{
         background-image:url(http://burningskies-stats.16mb.com/images/background.jpg);
         background-position: left top;

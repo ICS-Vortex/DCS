@@ -11,11 +11,11 @@
     <script src="/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="/assets/js/stat.js"></script>
   </head>
-  <body class="skin-blue sidebar-mini" style='background-image: url(<?=base_url();?>images/background.jpg);background-size:cover;'>
+  <body class="skin-blue sidebar-mini">
     <!--backgorund-->
     <style>
     body{
-        background-image:url(http://burningskies-stats.16mb.com/images/background.jpg);
+        background-image:url(http://burningskies-stats.16mb.com/images/background_tile.jpg);
         background-position: left top;
         background-repeat: repeat;
     }

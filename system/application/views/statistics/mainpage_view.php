@@ -32,7 +32,7 @@
 <style>
 
     body{
-        background-image:url(http://burningskies-stats.16mb.com/images/background.jpg);
+        background-image:url(http://burningskies-stats.16mb.com/images/background_tile.jpg);
         background-position: left top;
         background-repeat: repeat;
     }

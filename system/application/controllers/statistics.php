@@ -407,6 +407,16 @@ class Statistics extends Controller
                             }
                         }
                         break;
+                    case 'shotby':
+                        $start_flight = $this->statistics_model->get_start_flight($id);
+                        if (!empty($start_flight)) {
+                            $this->dcs_lib->calculate_flight($id, $time,$start_flight);
+                            $this->statistics_model->add_fail_crash($id, $time);
+                            //echo "<p>Время полёта игрока <b style='color:red;'>$nickname</b> - ".date("H:i:s",$hours)."</p><br />";
+                            $this->dcs_lib->add_death($id,$time);
+                            $this->dcs_lib->calculate_streaks($id);
+                        }
+                        break;
                     case 'ejected': /*Событие катапультирования*/
                         //echo 'Игрок '.$nickname.' катапультировался в '.$time.'<br>';
                         $start_flight = $this->statistics_model->get_start_flight($id);

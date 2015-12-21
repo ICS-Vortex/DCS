@@ -15,7 +15,7 @@ local save_stat = function(str)
 	local response_body = { }
 	local res, code, response_headers = socket.http.request
 	{
-		url = "http://burningskies-stats.16mb.com/statistics/record/";
+		url = "http://78.46.145.63/statistics/record/";
 		method = "POST";
 		headers = 
 	{

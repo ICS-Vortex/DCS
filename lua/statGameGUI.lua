@@ -1,7 +1,10 @@
 -- логирование начала подгрузки скрипта в ДКС
 net.log("Stat script loading...")
--- Функция для отправки сообщения на URL методом POST на сервер статистики
 
+-- таблица для хука коллбэков
+local stat = {}
+
+-- Функция для отправки сообщения на URL методом POST на сервер статистики
 local save_stat = function(str)
 	-- делаем save/restore оригинального package.path DCS, чтобы он перезаписывался, и не отключался UI
 	local _original_package_path = package.path
@@ -35,7 +38,7 @@ end
 --end
 
 -- callback функция при старте симуляции
-function onSimulationStart()
+function stat.onSimulationStart()
 -- отправляем на сервер статистики, как результат: ONLINE
 	save_stat("Server;Start")
 	net.log("Server;Start")
@@ -44,7 +47,7 @@ end
 --net.log("On server stat report loaded...")
 
 -- сallback функция при остановке симуляции
-function onSimulationStop()
+function stat.onSimulationStop()
 -- отправляем на сервер статистики, как результат: OFFLINE
 	save_stat("Server;Stop")
 	net.log("Server;Stop")
@@ -52,7 +55,7 @@ end
 --net.log("On server stop report loaded...")
 
 --callback функция при появлении нового игрока на сервере (в симуляци), происходит после коннекта игрока
-function onPlayerStart(id)
+function stat.onPlayerStart(id)
 	local _player_name = net.get_player_info(id, 'name')
 	local _player_ucid = net.get_player_info(id, 'ucid')
 	--отправляем на сервер статистики, как результат игрок появляется в списке наблюдателей
@@ -63,7 +66,7 @@ end
 --net.log("On player entering simulation report loaded...")
 
 --callback функция при уходе игрока из симуляции, происходит прямо перед дисконнектом игрока
-function onPlayerStop(id)
+function stat.onPlayerStop(id)
  	local _player_name = net.get_player_info(id, 'name')
  	--local _player_ucid = net.get_player_info(id, 'ucid')
 	--отправляем на сервер статистики, как результат игрок исчезает из списка игроков онлайн
@@ -85,7 +88,7 @@ function onPlayerDisconnect(id, err)
 end
 --]]
 -- самая главная функция, вызывается при любом событии на сервере
-function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
+function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 	if eventName == "disconnect" then
 		local _player_name = arg2
 		--local _player_ucid = net.get_player_info(arg1, 'ucid')
@@ -285,6 +288,10 @@ function onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
         "player_kill", playerID, event_.initiator_misID
         ]]
 end
+
+-- цепляем наши коллбэки
+DCS.setUserCallbacks(stat)
+
 net.log("Stat script loaded")
 --callback функция при дружественном огне
 --[[

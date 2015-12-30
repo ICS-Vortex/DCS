@@ -39,9 +39,11 @@ end
 
 -- callback функция при старте симуляции
 function stat.onSimulationStart()
+-- берём имя миссии
+	local _mission_name = DCS.getMissionName()
 -- отправляем на сервер статистики, как результат: ONLINE
-	save_stat("Server;Start")
-	net.log("Server;Start")
+	save_stat("Server;Start;".._mission_name)
+	net.log("Server;Start;".._mission_name)
 end
 -- логируем в dcs.log, чтобы убедиться, что функция подгрузилась (можно удалить или закомментить)
 --net.log("On server stat report loaded...")

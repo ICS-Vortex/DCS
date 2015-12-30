@@ -227,7 +227,7 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 			end
 		end
     --при самоубийстве игрока, например от собственной бомбы
-    elseif eventName == "self_kill" then 
+    elseif eventName == "pilot_death" then 
     	local _player_name = net.get_player_info(arg1, 'name')
     	local _player_ucid = net.get_player_info(arg1, 'ucid')
 		--отправляем запись о смерти на сервер статистики

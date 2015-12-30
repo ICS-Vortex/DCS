@@ -58,10 +58,11 @@ end
 function stat.onPlayerStart(id)
 	local _player_name = net.get_player_info(id, 'name')
 	local _player_ucid = net.get_player_info(id, 'ucid')
+	local _player_ip = net.get_player_info(id, 'ipaddr')
 	--отправляем на сервер статистики, как результат игрок появляется в списке наблюдателей
-	save_stat(_player_name..";entered;".._player_ucid)
+	save_stat(_player_name..";entered;".._player_ucid..";".._player_ip)
 	--вспомогательная запись в лог. (можно удалить или закомментить)
-	net.log(_player_name..";entered;".._player_ucid)
+	net.log(_player_name..";entered;".._player_ucid..";".._player_ip)
 end
 --net.log("On player entering simulation report loaded...")
 

@@ -103,8 +103,10 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
     elseif eventName == "crash" then
     	local _player_name = net.get_player_info(arg1, 'name')
     	local _player_ucid = net.get_player_info(arg1, 'ucid')
+    	local _AC_side = DCS.getUnitProperty(arg2, DCS.UNIT_COALITION)
+    	local _AC_type = DCS.getUnitProperty(arg2, DCS.UNIT_TYPE)
 		--отправляем прыжок игрока на сервер статистики
-		save_stat(_player_name..";crashed;".._player_ucid)
+		save_stat(_player_name..";crashed;".._player_ucid..";".._AC_side..";".._AC_type)
 		--вспомогательная запись в лог. (можно удалить или закомментить)
 		net.log(_player_name..";crashed;".._player_ucid)
     --при прыжке пилота
@@ -184,15 +186,15 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 			--если игрока убил другой игрок
 			if _killer_player_name ~= nil and _killed_player_name ~= nil then
 				--отправляем запись об убийстве на сервер статистики
-				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_player_name..";".._killed_player_ucid..";"..50)
+				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_player_name..";".._killed_player_ucid..";"..50..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
-				net.log(_killer_target_side..";".._killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_side..";".._killed_player_name..";".._killed_player_ucid..";"..50)
+				net.log(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_player_name..";".._killed_player_ucid..";"..50..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 			--если игрок убил бота
 			elseif _killer_player_name ~= nil and _killed_player_name == nil then
 				--отправляем запись об убийстве на сервер статистики
-				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
+				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
-				net.log(_killer_player_side..";".._killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score)
+				net.log(_killer_player_side..";".._killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 			--[[ данная часть учитывает вооружение, мы пока вооружение не передаем, поэтому закомментировано 
 			--если игрока убил не бот и передалось имя вооружения
 			if _killer_player_name ~= nil and _weapon_name ~= nil and _killed_player_name ~= nil then
@@ -223,9 +225,9 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 			---[[
 			elseif _killer_player_name == nil and _killed_player_name ~= nil then
 				--отправляем запись о смерти на сервер статистики
-				save_stat(_killed_player_name..";shotby;".._killed_player_ucid..";".._killer_type)
+				save_stat(_killed_player_name..";shotby;".._killed_player_ucid..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
-				net.log(_killed_player_name..";shotby;".._killed_player_ucid..";".._killer_type)
+				net.log(_killed_player_name..";shotby;".._killed_player_ucid..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 			--]]
 			end
 		end

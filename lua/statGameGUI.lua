@@ -29,6 +29,32 @@ local save_stat = function(str)
 		sink = ltn12.sink.table(response_body);
 	}
 end
+
+-- Функция для отправки сообщения на URL методом POST на сервер статистики
+local save_stat_new = function(str)
+	-- делаем save/restore оригинального package.path DCS, чтобы он перезаписывался, и не отключался UI
+	local _original_package_path = package.path
+		package.path = "./LuaSocket/?.lua"
+		local http = require("socket.http")
+	package.path = _original_package_path
+
+	--	http.request("http://jiran.t2me.ru/stat.php?name="..url_encode(os.date("%c") .. ";" .. str)) 
+
+	local request_body = "postname=" .. os.date("%c") .. ";" .. string.gsub(str,"\"","")
+	local response_body = { }
+	local res, code, response_headers = socket.http.request
+	{
+		url = "http://s1.fossil.by/recorder/record/";
+		method = "POST";
+		headers = 
+	{
+		["Content-Type"] = "application/x-www-form-urlencoded";
+		["Content-Length"] = #request_body;
+	};
+		source = ltn12.source.string(request_body);
+		sink = ltn12.sink.table(response_body);
+	}
+end
 -- логируем в dcs.log, чтобы убедиться, что функция подгрузилась (можно удалить или закомментить)
 --net.log("HTTP request to stat server loaded...")
 
@@ -43,6 +69,7 @@ function stat.onSimulationStart()
 	local _mission_name = DCS.getMissionName()
 -- отправляем на сервер статистики, как результат: ONLINE
 	save_stat("Server;Start;".._mission_name)
+	save_stat_new("Server;Start;".._mission_name)
 	net.log("Server;Start;".._mission_name)
 end
 -- логируем в dcs.log, чтобы убедиться, что функция подгрузилась (можно удалить или закомментить)
@@ -52,6 +79,7 @@ end
 function stat.onSimulationStop()
 -- отправляем на сервер статистики, как результат: OFFLINE
 	save_stat("Server;Stop")
+	save_stat_new("Server;Stop")
 	net.log("Server;Stop")
 end
 --net.log("On server stop report loaded...")
@@ -64,6 +92,7 @@ function stat.onPlayerStart(id)
 	local _player_ip = string.sub(_player_ip_with_port, 1, -7)
 	--отправляем на сервер статистики, как результат игрок появляется в списке наблюдателей
 	save_stat(_player_name..";entered;".._player_ucid..";".._player_ip)
+	save_stat_new(_player_name..";entered;".._player_ucid..";".._player_ip)
 	--вспомогательная запись в лог. (можно удалить или закомментить)
 	net.log(_player_name..";entered;".._player_ucid..";".._player_ip)
 end
@@ -75,6 +104,7 @@ function stat.onPlayerStop(id)
  	--local _player_ucid = net.get_player_info(id, 'ucid')
 	--отправляем на сервер статистики, как результат игрок исчезает из списка игроков онлайн
 	save_stat(_player_name..";left;server")--;".._player_ucid)
+	save_stat_new(_player_name..";left;server")
 	--вспомогательная запись в лог. (можно удалить или закомментить)
 	net.log(_player_name..";left;server")--;".._player_ucid)
 end
@@ -98,6 +128,7 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 		--local _player_ucid = net.get_player_info(arg1, 'ucid')
 		--отправляем на сервер статистики, как результат игрок исчезает из списка игроков онлайн
 		save_stat(_player_name..";left;server")--;".._player_ucid)
+		save_stat_new(_player_name..";left;server")
 		--вспомогательная запись в лог. (можно удалить или закомментить)
 		net.log(_player_name..";left;server")--;".._player_ucid)
     elseif eventName == "crash" then
@@ -107,6 +138,7 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
     	local _AC_type = DCS.getUnitProperty(arg2, DCS.UNIT_TYPE)
 		--отправляем прыжок игрока на сервер статистики
 		save_stat(_player_name..";crashed;".._player_ucid..";".._AC_side..";".._AC_type)
+		save_stat_new(_player_name..";crashed;".._player_ucid..";".._AC_side..";".._AC_type)
 		--вспомогательная запись в лог. (можно удалить или закомментить)
 		net.log(_player_name..";crashed;".._player_ucid)
     --при прыжке пилота
@@ -115,6 +147,7 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
     	local _player_ucid = net.get_player_info(arg1, 'ucid')
 		--отправляем прыжок игрока на сервер статистики
 		save_stat(_player_name..";ejected;".._player_ucid)
+		save_stat_new(_player_name..";ejected;".._player_ucid)
 		--вспомогательная запись в лог. (можно удалить или закомментить)
 		net.log(_player_name..";ejected;".._player_ucid)
     --при взлёте игрока
@@ -126,11 +159,13 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 			if airdrome_name ~= "" then
 				--отправляем взлёт игрока на сервер статистики
 				save_stat(_player_name..";takeoff from;".._player_ucid..";".._airdrome_name)
+				save_stat_new(_player_name..";takeoff from;".._player_ucid..";".._airdrome_name)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
 				net.log(_player_name..";takeoff from;".._player_ucid..";".._airdrome_name)
 				-- если не с аэродрома, то
 			else
 				save_stat(_player_name..";takeoff;".._player_ucid)
+				save_stat_new(_player_name..";takeoff from;".._player_ucid..";".._airdrome_name)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
 				net.log(_player_name..";takeoff;".._player_ucid)
 			end
@@ -143,11 +178,13 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 		if airdrome_name ~= "" then
 			--отправляем посадку игрока на сервер статистики
 			save_stat(_player_name..";landed at;".._player_ucid..";".._airdrome_name)
+			save_stat_new(_player_name..";landed at;".._player_ucid..";".._airdrome_name)
 			--вспомогательная запись в лог. (можно удалить или закомментить)
 			net.log(_player_name..";landed at;".._player_ucid..";".._airdrome_name)
 		-- если не на аэродроме, то
 		else
 			save_stat(_player_name..";landed at;".._player_ucid)
+			save_stat_new(_player_name..";landed at;".._player_ucid)
 			--вспомогательная запись в лог. (можно удалить или закомментить)
 			net.log(_player_name..";landed at;".._player_ucid)
 		end
@@ -187,12 +224,14 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 			if _killer_player_name ~= nil and _killed_player_name ~= nil then
 				--отправляем запись об убийстве на сервер статистики
 				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_player_name..";".._killed_player_ucid..";"..50..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
+				save_stat_new(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_player_name..";".._killed_player_ucid..";"..50..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
 				net.log(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_player_name..";".._killed_player_ucid..";"..50..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 			--если игрок убил бота
 			elseif _killer_player_name ~= nil and _killed_player_name == nil then
 				--отправляем запись об убийстве на сервер статистики
 				save_stat(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
+				save_stat_new(_killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
 				net.log(_killer_player_side..";".._killer_player_name..";killed;".._killer_player_ucid..";".._killed_target_category..";".._killed_target_type..";".._kill_score..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 			--[[ данная часть учитывает вооружение, мы пока вооружение не передаем, поэтому закомментировано 
@@ -226,6 +265,7 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 			elseif _killer_player_name == nil and _killed_player_name ~= nil then
 				--отправляем запись о смерти на сервер статистики
 				save_stat(_killed_player_name..";shotby;".._killed_player_ucid..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
+				save_stat_new(_killed_player_name..";shotby;".._killed_player_ucid..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 				--вспомогательная запись в лог. (можно удалить или закомментить)
 				net.log(_killed_player_name..";shotby;".._killed_player_ucid..";".._killer_player_side..";".._killer_type..";".._killed_target_side..";".._killed_target_type)
 			--]]
@@ -237,6 +277,7 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
     	local _player_ucid = net.get_player_info(arg1, 'ucid')
 		--отправляем запись о смерти на сервер статистики
 		save_stat(_player_name..";dead;".._player_ucid)
+		save_stat_new(_player_name..";dead;".._player_ucid)
 		--вспомогательная запись в лог. (можно удалить или закомментить)
 		net.log(_player_name..";dead;".._player_ucid)
     --выбор игроком слота, происходит когда...(протесттить:)
@@ -257,18 +298,21 @@ function stat.onGameEvent(eventName,arg1,arg2,arg3,arg4,arg5,arg6,arg7)
 			_player_side = "SPECTATORS"
 			--если спектатор, то нас не интересует тип юнита игрока, поэтому сразу отправляем на сервер статистики, как результат игрок отображается в наблюдателях
 			save_stat(_player_name..";joined SPECTATORS;".._player_ucid)
+			save_stat_new(_player_name..";joined SPECTATORS;".._player_ucid)
 			--вспомогательная запись в лог. (можно удалить или закомментить)
 			net.log(_player_name..";joined SPECTATORS;".._player_ucid)
 		elseif _player_side_id == 1 then
 			_player_side = "RED"
 			--если за красных, то пока пишу ID cлота, в будущем по ID cлота нужно определить тип юнита (P-51D и т.п.) похоже это делается с помощью DCS.getUnitType(missionId)
 			save_stat(_player_name..";joined ".._player_side..";".._player_ucid..";".._player_aircraft_type) --";".._player_vehicle_type)
+			save_stat_new(_player_name..";joined ".._player_side..";".._player_ucid..";".._player_aircraft_type)
 			--вспомогательная запись в лог. (можно удалить или закомментить)
 			net.log(_player_name..";joined ".._player_side..";".._player_ucid..";".._player_aircraft_type) --";".._player_vehicle_type)
 		elseif _player_side_id == 2 then
 			_player_side = "BLUE"
 			--если за синих, то пока пишу ID cлота, в будущем по ID cлота нужно определить тип юнита (P-51D и т.п.) похоже это делается с помощью DCS.getUnitType(missionId)
 			save_stat(_player_name..";joined ".._player_side..";".._player_ucid..";".._player_aircraft_type)--..";".._player_vehicle_type)
+			save_stat_new(_player_name..";joined ".._player_side..";".._player_ucid..";".._player_aircraft_type)
 			--вспомогательная запись в лог. (можно удалить или закомментить)
 			net.log(_player_name..";joined ".._player_side..";".._player_ucid..";".._player_aircraft_type)--..";".._player_vehicle_type)
 		end
